@@ -1,0 +1,5 @@
+# BibTool resource file
+expand.macros = ON
+check.double  = ON
+pass.comments = ON
+print.use.tab = OFF

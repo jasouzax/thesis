@@ -1,0 +1,28 @@
+% Preamble: packages and defaults
+\usepackage{fancyvrb}   % provides VerbatimOut to capture verbatim to a file
+\usepackage{ifplatform} % detect Windows vs Unix for deletion command
+\usepackage{svg} 
+
+% path to plantuml jar (adjust if needed)
+\newcommand{\plantumljar}{plantuml.jar} % change to full path if needed, e.g. /home/user/plantuml.jar
+
+% counter so each environment instance gets a unique filename
+\newcounter{plantumlctr}
+
+% plantuml environment: verbatim body -> .puml -> java -jar plantuml.jar -tpng -> include png -> delete files
+\newenvironment{plantuml}{%
+  \refstepcounter{plantumlctr}%
+  \VerbatimEnvironment
+  % open verbatim output file
+  \begin{VerbatimOut}{uml-\theplantumlctr.puml}%
+}{%
+  \end{VerbatimOut}%
+  % create PNG from PUML (requires -shell-escape)
+  \immediate\write18{java -jar "\plantumljar" -tsvg "uml-\theplantumlctr.puml"}%
+  % include produced image (adjust options as desired)
+  \begin{center}
+    \includesvg[width=\linewidth]{uml-\theplantumlctr.svg}%
+  \end{center}
+  % remove the generated files (choose correct command per OS)
+
+}
