@@ -1,5 +1,6 @@
 # Thesis of Jasouza
-[link to paper](https://raw.githubusercontent.com/jasouzax/thesis/main/paper/thesis.pdf)
+> [view research paper](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjasouzax%2Fthesis%2Fmain%2Fpaper%2Fthesis.pdf)
+
 Development of Visual [Sensory Substitution Device](https://en.wikipedia.org/wiki/Sensory_substitution) for the visually impared especially the blind, through incorporating three novel ideas to solve issues of existing solutions: Virtual World Mapping, Emulating Human Sensoring, and Adaptable Modular System. Content of thesis:
 - [Title](#title)
 - [Background of the Study](#background-of-the-study)
