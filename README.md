@@ -1,6 +1,8 @@
 # Thesis of Jasouza
-[![Research Paper](https://img.shields.io/badge/view-research_paper-blue?logo=googledocs&logoColor=white)](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjasouzax%2Fthesis%2Fmain%2Fpaper%2Fthesis.pdf) 
-[![Old Research Paper](https://img.shields.io/badge/view-old_research_paper-red?logo=googledocs&logoColor=white)](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjasouzax%2Fthesis%2Fmain%2Fpaper_docx%2Fpaper.docx) 
+[![Newest Research Paper](https://img.shields.io/badge/view_paper-newest-green?logo=googledocs&logoColor=white)](https://docs.google.com/document/d/1brccSWi5AcJKPoC_3GKw_ykeO7DbrOrs/edit?usp=sharing&ouid=111452299615151735072&rtpof=true&sd=true) 
+[![Finalized Latex Research Paper](https://img.shields.io/badge/view_paper-finalized-blue?logo=googledocs&logoColor=white)](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjasouzax%2Fthesis%2Fmain%2Fpaper%2Fthesis.pdf) 
+[![Old Research Paper](https://img.shields.io/badge/view_old-docx-red?logo=googledocs&logoColor=white)](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjasouzax%2Fthesis%2Fmain%2Fpaper_docx%2Fpaper.docx) 
+[![Presentation](https://img.shields.io/badge/view-presentation-yellow?logo=canva&logoColor=white)](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjasouzax%2Fthesis%2Fmain%2Fpaper_docx%2Fpaper.docx) 
 
 Development of Visual [Sensory Substitution Device](https://en.wikipedia.org/wiki/Sensory_substitution) for the visually impared especially the blind, through incorporating three novel ideas to solve issues of existing solutions: Virtual World Mapping, Emulating Human Sensoring, and Adaptable Modular System. Content of thesis:
 - [Title](#title)
