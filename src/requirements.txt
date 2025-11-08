@@ -1,0 +1,7 @@
+# pip install "numpy>=2.0,<2.3" mediapipe opencv-python --upgrade
+# or
+# pip install -r requirements.txt --upgrade
+
+numpy>=2.0,<2.3
+mediapipe
+opencv-python

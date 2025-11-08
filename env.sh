@@ -38,3 +38,11 @@ cit() {
   rm *.tex *.ttf *.bib svg-inkscape -r
   cd -
 }
+pev() {
+  local new=0
+  [ ! -d "$src/py" ] && new=1
+
+  [ "$new" -eq 1 ] && python -m venv "$src/py"
+  source "$src/py/bin/activate"
+  [ "$new" -eq 1 ] && pip install -r "$src/src/requirements.txt" --upgrade
+}

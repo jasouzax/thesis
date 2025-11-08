@@ -1,11 +1,27 @@
 # Thesis of Jasouza
-[![Research Paper](https://img.shields.io/badge/view-research_paper-blue?logo=googledocs&logoColor=white)](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjasouzax%2Fthesis%2Fmain%2Fpaper%2Fthesis.pdf) 
-[![Old Research Paper](https://img.shields.io/badge/view-old_research_paper-red?logo=googledocs&logoColor=white)](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjasouzax%2Fthesis%2Fmain%2Fpaper_docx%2Fpaper.docx) 
+[![Newest Research Paper](https://img.shields.io/badge/view_paper-newest-green?logo=googledocs&logoColor=white)](https://docs.google.com/document/d/1brccSWi5AcJKPoC_3GKw_ykeO7DbrOrs/edit?usp=sharing&ouid=111452299615151735072&rtpof=true&sd=true) 
+[![Finalized Latex Research Paper](https://img.shields.io/badge/view_paper-finalized-blue?logo=googledocs&logoColor=white)](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjasouzax%2Fthesis%2Fmain%2Fpaper%2Fthesis.pdf) 
+[![Old Research Paper](https://img.shields.io/badge/view_paper-old-red?logo=googledocs&logoColor=white)](https://docs.google.com/viewer?url=https%3A%2F%2Fraw.githubusercontent.com%2Fjasouzax%2Fthesis%2Fmain%2Fpaper_docx%2Fpaper.docx) 
+[![Presentation](https://img.shields.io/badge/view-presentation-yellow?logo=canva&logoColor=white)](https://www.canva.com/design/DAGy9N0ifu0/KmzhW12R2Bfle-Uk-cPgsA/edit?fbclid=IwY2xjawN7G_9leHRuA2FlbQIxMQBicmlkETEyeXZ0bDhtRkJRRVJzaGtoc3J0YwZhcHBfaWQBMAABHuphZnyKfcV8rvY6a9OIxzDHERqb7Z1Vec5hVnpH6kIlpI155KWfAZN7d6uz_aem_ld3J6VKXleSJbmHN4ZYuMQ) 
 
-Development of Visual [Sensory Substitution Device](https://en.wikipedia.org/wiki/Sensory_substitution) for the visually impared especially the blind, through incorporating three novel ideas to solve issues of existing solutions: Virtual World Mapping, Emulating Human Sensoring, and Adaptable Modular System. Content of thesis:
+Development of Visual [Sensory Substitution Device](https://en.wikipedia.org/wiki/Sensory_substitution) for the visually impared especially the blind, through incorporating three novel ideas to solve issues of existing solutions: Virtual World Mapping, Emulating Human Sensoring, and Adaptable Modular System
 - [Title](#title)
 - [Background of the Study](#background-of-the-study)
 - [Rationale](#rationale)
+
+## Timeline to take note of
+Vietnam field trip, Service Learning, and [Robothia Conference on Robotics and Technologies](https://www.ihsanyassin.com/cms/conference.php?conf_id=883736a8-1285-42f8-95f5-dd1f653de3f6)
+- `Nov 24, 2025` - Service Learning 1st Seminar
+- `Dec 01, 2025` - Robothia 2026 Deadline of paper submission 
+- `Dec 03, 2025` - Service Learning 2nd Seminar
+- `Dec 05, 2025` - Field trip Vietnam
+- `Jan 14, 2026` - Service Learning 3rd Seminar
+- `Jan 15, 2026` - Robothia 2026 Start of acceptance notification
+- `Feb 01, 2026` - Robothia 2026 Camera-Ready Deadline
+- `Apr 11, 2026` - Robothia 2026 Start and End of Conference
+
+## Todos
+- [ ] Contact visually impared organization for research testing like [NCDA](https://ncda.gov.ph/iloilo/) and [Resources for the Blind](https://blind.org.ph/)
 
 ## Title
 > World Navigation Hat - Development of a Wearable Navigation Aid using AIoT for the Visually Impaired
