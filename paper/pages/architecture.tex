@@ -1,0 +1,10 @@
+\subsection{System Architecture}
+
+\begin{figure}[H]
+    \centering
+    \caption{System Architecture}
+    \includegraphics[width=\linewidth]{architecture.png}
+    \label{fig:architecture}
+\end{figure}
+
+Figure \ref{fig:architecture} shows the architecture of the system, it first starts at the Smart Hat which is responsible for capturing direct sensor data like Camera, GPS, IMU, etc. and parsing/matching it to commands. Some of these commands require internet access or heavy computation which is where it makes an API request to the Server which is responsible for managing user's information like current location, credentials, etc. and also executing heavy computation like run AI/Language models. If the API request requires internet access like to find a path in google maps, or message/call people through platforms, etc. then the server could make another API request to these providers. After the server is done computing what the user needs the user recieves the data and applies it to its virtual map or audio output.

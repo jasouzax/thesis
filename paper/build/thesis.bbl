@@ -369,115 +369,6 @@
       \verb http://iovs.arvojournals.org/article.aspx?volume=27%5C&page=1698
       \endverb
     \endentry
-    \entry{jiang_2025}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=4c5d606a05a84603eee4846b94e2ce5d}{%
-           family={Jiang},
-           familyi={J\bibinitperiod},
-           given={Pingping},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7abfdd685d00cc65dad517b0bd57c4a7}{%
-           family={Rossiter},
-           familyi={R\bibinitperiod},
-           given={Jonathan},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ce5c659c0757a4b956e521411f45a41e}{%
-           family={Kent},
-           familyi={K\bibinitperiod},
-           given={Christopher},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=831b7206082eb7436b732a175ba840ec}{%
-           family={Papadelis},
-           familyi={P\bibinitperiod},
-           given={Christos},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Public Library of Science (PLoS)}%
-      }
-      \strng{namehash}{4eb5912675988083c5af97ee11c8827d}
-      \strng{fullhash}{c73db89594abef8d6220a09cb5e45f99}
-      \strng{fullhashraw}{c73db89594abef8d6220a09cb5e45f99}
-      \strng{bibnamehash}{c73db89594abef8d6220a09cb5e45f99}
-      \strng{authorbibnamehash}{c73db89594abef8d6220a09cb5e45f99}
-      \strng{authornamehash}{4eb5912675988083c5af97ee11c8827d}
-      \strng{authorfullhash}{c73db89594abef8d6220a09cb5e45f99}
-      \strng{authorfullhashraw}{c73db89594abef8d6220a09cb5e45f99}
-      \strng{editorbibnamehash}{831b7206082eb7436b732a175ba840ec}
-      \strng{editornamehash}{831b7206082eb7436b732a175ba840ec}
-      \strng{editorfullhash}{831b7206082eb7436b732a175ba840ec}
-      \strng{editorfullhashraw}{831b7206082eb7436b732a175ba840ec}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1932-6203}
-      \field{journaltitle}{PLOS ONE}
-      \field{month}{3}
-      \field{number}{3}
-      \field{title}{Auditory and tactile frequency mapping for visual distance perception: A step forward in sensory substitution and augmentation}
-      \field{volume}{20}
-      \field{year}{2025}
-      \field{pages}{e0318354}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1371/journal.pone.0318354
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1371/journal.pone.0318354
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1371/journal.pone.0318354
-      \endverb
-    \endentry
-    \entry{jaiyu_2025}{misc}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=4220c575640d4afc3c40130b21ab90cc}{%
-           family={Jiayu},
-           familyi={J\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=07d8568fd7de797aa19f0f0120ebe1a4}{%
-           family={{Liu}},
-           familyi={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {arXiv}%
-      }
-      \strng{namehash}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{fullhash}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{fullhashraw}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{bibnamehash}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{authorbibnamehash}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{authornamehash}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{authorfullhash}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{authorfullhashraw}{8e5540dd503678f901e09cb7f0309de9}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Developing an AI-Guided Assistant Device for the Deaf and Hearing Impaired}
-      \field{year}{2025}
-      \verb{doi}
-      \verb 10.48550/ARXIV.2507.14215
-      \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2507.14215
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2507.14215
-      \endverb
-      \keyw{Machine Learning (cs.LG),Sound (cs.SD),Audio and Speech Processing (eess.AS),FOS: Computer and information sciences,FOS: Computer and information sciences,FOS: Electrical engineering,electronic engineering,information engineering,FOS: Electrical engineering,electronic engineering,information engineering}
-    \endentry
     \entry{krantz_2012}{inbook}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=1ed704129b1889c128cb689c60043cef}{%
@@ -987,6 +878,49 @@
       \endverb
       \verb{url}
       \verb https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment
+      \endverb
+    \endentry
+    \entry{zeki_2015}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c9d4d592f436253a7fd4dd626421ff7f}{%
+           family={Zeki},
+           familyi={Z\bibinitperiod},
+           given={Semir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers Media SA}%
+      }
+      \strng{namehash}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{fullhash}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{fullhashraw}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{bibnamehash}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{authorbibnamehash}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{authornamehash}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{authorfullhash}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{authorfullhashraw}{c9d4d592f436253a7fd4dd626421ff7f}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1662-5145}
+      \field{journaltitle}{Frontiers in Integrative Neuroscience}
+      \field{month}{4}
+      \field{title}{Area V5â€”a microcosm of the visual brain}
+      \field{volume}{9}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.3389/fnint.2015.00021
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.3389/fnint.2015.00021
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.3389/fnint.2015.00021
       \endverb
     \endentry
   \enddatalist
@@ -1341,115 +1275,6 @@
       \verb http://iovs.arvojournals.org/article.aspx?volume=27%5C&page=1698
       \endverb
     \endentry
-    \entry{jiang_2025}{article}{}{}
-      \name{author}{3}{}{%
-        {{un=0,uniquepart=base,hash=4c5d606a05a84603eee4846b94e2ce5d}{%
-           family={Jiang},
-           familyi={J\bibinitperiod},
-           given={Pingping},
-           giveni={P\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=7abfdd685d00cc65dad517b0bd57c4a7}{%
-           family={Rossiter},
-           familyi={R\bibinitperiod},
-           given={Jonathan},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ce5c659c0757a4b956e521411f45a41e}{%
-           family={Kent},
-           familyi={K\bibinitperiod},
-           given={Christopher},
-           giveni={C\bibinitperiod},
-           givenun=0}}%
-      }
-      \name{editor}{1}{}{%
-        {{hash=831b7206082eb7436b732a175ba840ec}{%
-           family={Papadelis},
-           familyi={P\bibinitperiod},
-           given={Christos},
-           giveni={C\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Public Library of Science (PLoS)}%
-      }
-      \strng{namehash}{4eb5912675988083c5af97ee11c8827d}
-      \strng{fullhash}{c73db89594abef8d6220a09cb5e45f99}
-      \strng{fullhashraw}{c73db89594abef8d6220a09cb5e45f99}
-      \strng{bibnamehash}{c73db89594abef8d6220a09cb5e45f99}
-      \strng{authorbibnamehash}{c73db89594abef8d6220a09cb5e45f99}
-      \strng{authornamehash}{4eb5912675988083c5af97ee11c8827d}
-      \strng{authorfullhash}{c73db89594abef8d6220a09cb5e45f99}
-      \strng{authorfullhashraw}{c73db89594abef8d6220a09cb5e45f99}
-      \strng{editorbibnamehash}{831b7206082eb7436b732a175ba840ec}
-      \strng{editornamehash}{831b7206082eb7436b732a175ba840ec}
-      \strng{editorfullhash}{831b7206082eb7436b732a175ba840ec}
-      \strng{editorfullhashraw}{831b7206082eb7436b732a175ba840ec}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{1932-6203}
-      \field{journaltitle}{PLOS ONE}
-      \field{month}{3}
-      \field{number}{3}
-      \field{title}{Auditory and tactile frequency mapping for visual distance perception: A step forward in sensory substitution and augmentation}
-      \field{volume}{20}
-      \field{year}{2025}
-      \field{pages}{e0318354}
-      \range{pages}{-1}
-      \verb{doi}
-      \verb 10.1371/journal.pone.0318354
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1371/journal.pone.0318354
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1371/journal.pone.0318354
-      \endverb
-    \endentry
-    \entry{jaiyu_2025}{misc}{}{}
-      \name{author}{2}{}{%
-        {{un=0,uniquepart=base,hash=4220c575640d4afc3c40130b21ab90cc}{%
-           family={Jiayu},
-           familyi={J\bibinitperiod}}}%
-        {{un=0,uniquepart=base,hash=07d8568fd7de797aa19f0f0120ebe1a4}{%
-           family={{Liu}},
-           familyi={L\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {arXiv}%
-      }
-      \strng{namehash}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{fullhash}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{fullhashraw}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{bibnamehash}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{authorbibnamehash}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{authornamehash}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{authorfullhash}{8e5540dd503678f901e09cb7f0309de9}
-      \strng{authorfullhashraw}{8e5540dd503678f901e09cb7f0309de9}
-      \field{sortinit}{J}
-      \field{sortinithash}{b2f54a9081ace9966a7cb9413811edb4}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{title}{Developing an AI-Guided Assistant Device for the Deaf and Hearing Impaired}
-      \field{year}{2025}
-      \verb{doi}
-      \verb 10.48550/ARXIV.2507.14215
-      \endverb
-      \verb{urlraw}
-      \verb https://arxiv.org/abs/2507.14215
-      \endverb
-      \verb{url}
-      \verb https://arxiv.org/abs/2507.14215
-      \endverb
-      \keyw{Machine Learning (cs.LG),Sound (cs.SD),Audio and Speech Processing (eess.AS),FOS: Computer and information sciences,FOS: Computer and information sciences,FOS: Electrical engineering,electronic engineering,information engineering,FOS: Electrical engineering,electronic engineering,information engineering}
-    \endentry
     \entry{krantz_2012}{inbook}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=1ed704129b1889c128cb689c60043cef}{%
@@ -1959,6 +1784,49 @@
       \endverb
       \verb{url}
       \verb https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment
+      \endverb
+    \endentry
+    \entry{zeki_2015}{article}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=c9d4d592f436253a7fd4dd626421ff7f}{%
+           family={Zeki},
+           familyi={Z\bibinitperiod},
+           given={Semir},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Frontiers Media SA}%
+      }
+      \strng{namehash}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{fullhash}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{fullhashraw}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{bibnamehash}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{authorbibnamehash}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{authornamehash}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{authorfullhash}{c9d4d592f436253a7fd4dd626421ff7f}
+      \strng{authorfullhashraw}{c9d4d592f436253a7fd4dd626421ff7f}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1662-5145}
+      \field{journaltitle}{Frontiers in Integrative Neuroscience}
+      \field{month}{4}
+      \field{title}{Area V5â€”a microcosm of the visual brain}
+      \field{volume}{9}
+      \field{year}{2015}
+      \verb{doi}
+      \verb 10.3389/fnint.2015.00021
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.3389/fnint.2015.00021
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.3389/fnint.2015.00021
       \endverb
     \endentry
   \enddatalist

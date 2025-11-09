@@ -1,0 +1,10 @@
+\subsection{Block diagram of the System}
+
+\begin{figure}[H]
+    \centering
+    \caption{Block diagram of the System}
+    \includegraphics[width=\linewidth]{block_diagram.png}
+    \label{fig:block}
+\end{figure}
+
+Figure \ref{fig:block} explains how to build the setup by connections, it first starts with the Raspberry PI which is powered by a 25W (5V at 5A at high performance) UPS module that is connected to a lithium battery, it reads from two primary sensors the Camera for visual information, and the MPU 6050 to position the generated point cloud. After all is processed the raspberry pi and it additional applications can send the API request to the server through the SIM868, where the server can process the request through external services like AI models or external APIs like google maps, the response is then retrieved by the raspberry pi. After all is done the final generated audio cue is sent to the speakers.

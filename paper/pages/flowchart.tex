@@ -1,0 +1,43 @@
+\subsection{Flowchart of device}
+
+\begin{figure}[H]
+    \caption{Flowchart of device's main pipeline}
+    \begin{plantuml}
+        @startuml
+
+        | Main Pipeline |
+        start
+        :Two images from
+        stereo cameras; <<load>>
+        if () then ( )
+            :Generate point cloud;
+            :Record to virtual
+            environment;
+        else
+            | Guesture Pipeline |
+            :Scan for hand guesture;
+            if (Guesture matches
+                an instruction?) then (yes)
+                :Update mode
+                of expression;
+                if (Instruction requires
+                    Services?) then (yes)
+                    | Server Pipeline |
+                    :Process instruction
+                    server-sided;
+                    :Read response; <<load>>
+                    :Add to output audio;
+                endif
+            endif
+        endif
+
+        | Main Pipeline |
+        :Generate audio based
+        on mode of expression;
+        :Output audio
+        to earphones; <<load>>
+        
+        @enduml
+    \end{plantuml}
+    \label{fig:flowchart}
+\end{figure}

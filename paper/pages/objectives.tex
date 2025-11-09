@@ -1,35 +1,64 @@
 % Objectives of the study
-\section{Objectives of the study}
-Objectives of our study
+%\section{Objectives of the study}
+%Objectives of our study
 
 \subsection{General Objective}
 To develop an AIoT visual sensory substitution hat device that converts real-time environment information through emulating human sensory processes into audio cues for the visually impaired people (VIP)
 
 \subsection{Specific Objectives}
 \begin{enumerate}
-    \item To develop a working photogrammetry (2D to 3D) system that:
+    % Software
+    \item To develop the main pipeline to represent environmental information to audio cues
     \begin{enumerate}
-        \item Creates a depth map based on the stereo camera
-        \item Transforms it into a point cloud projection
-        \item Matches the point cloud project to existing virtual map with help from IMU
-        \item Can include additional information such as color and movement
+        \item Working photogrammetry (2D to 3D) system from the cameras
+        \item Uses help from the IMU to create a virtual environment
+        \item Toggable modes to prioritize what information is cued into audio
+        \item Allows insertion anywhere in the pipeline for more custom preferences
     \end{enumerate}
-    \item To develop a system of representing environmental information though audio cues that:
+    % Hardware
+    \item To develop the device to be portable and comfortable
     \begin{enumerate}
-        \item Includes different modes of representing audio based on human sensory processes
-        \item Each mode prioritizes a specific aspect of the environment compromising other aspects
-        \item The modes can transition from one mode to another
+        \item Uses battery instead of needing direct connection to power
+        \item Can be charged through UPS instead of disposable batteries
+        \item All packed into a hat to avoid putting strain on sensitive areas like eyes, nose, and ears
     \end{enumerate}
-    \item To develop the modular operating system such that:
+    % User experience
+    \item To develop an interface that is not visually dependent nor over stimulating
     \begin{enumerate}
-        \item Features can be added as applications even if the prototype only includes the core features
-        \item Integrate these application with the central pipeline from visual to audio information
-        \item Add one application that recognizes hand guestures and interpret it has instructions to navigate the system
+        \item Command and instructions are derived from hand guestures through hand recognition
+        \item The commands and instructions are easy to understand and navigate
+        \item The audio output is controlled minimizing unessary information
     \end{enumerate}
-    \item To develop an AIoT server that:
+    % Testing
+    \item To test if users develop unsubconscious visual senses of the environment
     \begin{enumerate}
-        \item Keep tracks of users' information such has location, credentials, etc.
-        \item Uses that information to process API requests for the users
-        \item API methods can include accessing other APIs like Google maps, or towards AI like Language Models
+        \item They can navigate indoor through rooms/doors/furnitures
+        \item They can detect movement and even catch trown objects
     \end{enumerate}
+
+    % \item To develop a working photogrammetry (2D to 3D) system that:
+    % \begin{enumerate}
+    %     \item Creates a depth map based on the stereo camera
+    %     \item Transforms it into a point cloud projection
+    %     \item Matches the point cloud project to existing virtual map with help from IMU
+    %     \item Can include additional information such as color and movement
+    % \end{enumerate}
+    % \item To develop a system of representing environmental information though audio cues that:
+    % \begin{enumerate}
+    %     \item Includes different modes of representing audio based on human sensory processes
+    %     \item Each mode prioritizes a specific aspect of the environment compromising other aspects
+    %     \item The modes can transition from one mode to another
+    % \end{enumerate}
+    % \item To develop the modular operating system such that:
+    % \begin{enumerate}
+    %     \item Features can be added as applications even if the prototype only includes the core features
+    %     \item Integrate these application with the central pipeline from visual to audio information
+    %     \item Add one application that recognizes hand guestures and interpret it has instructions to navigate the system
+    % \end{enumerate}
+    % \item To develop an AIoT server that:
+    % \begin{enumerate}
+    %     \item Keep tracks of users' information such has location, credentials, etc.
+    %     \item Uses that information to process API requests for the users
+    %     \item API methods can include accessing other APIs like Google maps, or towards AI like Language Models
+    % \end{enumerate}
 \end{enumerate}

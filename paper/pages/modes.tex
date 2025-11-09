@@ -1,0 +1,12 @@
+% Research Design/Methods
+\subsection{Research Design/Methods}
+
+The main process translates visual/environmental data to audio/haptic via stereo projection to point clouds, spectrograms, and binaural output through emulating human sensory processes. Secondary processes network users via IoT for sensor/actuator/API interactions (e.g., maps, weather). Qualitative research tests comfort, overload, and modularity through user experiments: Physical proficiency (obstacle navigation, movement detection, ball catching); Digital proficiency (communication, browsing). Timeline: Concept (Aug 2025), Prototype (Sep 2025), Testing (Oct 2025), Paper/Defense (Nov 2025). Ethical considerations: Informed consent, privacy via API security, inclusivity in design. For the main processes that emulates human sensory processes, these processes are grouped into modes that the user can gradually switch to through hand gestures but if there is no hand detected then there is no audio generated. Modes includes:
+\begin{enumerate}
+    \item \textbf{Nothing} - There is no hand so don't generate any audio
+    \item \textbf{Complete} - The whole front view of the user is translated into audio cues, the depth is mapped to volume, the vertical placement is mapped to frequency, and the horizontal placement is mapped to Binaural channels. This audio map is however smoothened out through blurring to give a general and summarized environment (Triggered if a back whole hand is detected)
+    \item \textbf{Focused} - The visual close to the center of the user is translated to audio cues and gradually fades off has it goes away from the origin point, here color is included has the audio texture (Triggered if a back closed hand is detected)
+    \item \textbf{Movement} - Any movement across the user is transformed into audio cues (Triggered if a back closed hand with thumbs up is detected)
+    \item \textbf{Text} - Reads the text infront of the user (Triggered if back closed hand with index finger up)
+    \item \textbf{Face} - Gives a unique audio cue representing the user's face structure (Triggered if back closed hand with thumbs up and index finger is up)
+\end{enumerate}

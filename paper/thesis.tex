@@ -13,11 +13,13 @@
 \usepackage{lipsum}                     % Dummy text, TODO REMOVE
 \usepackage{tocloft}                    % Clean table design
 \usepackage{indentfirst}                % Indent at paragraph start
-\usepackage[colorinlistoftodos,textsize=small]{todonotes} % TODO REMOVE
 \usepackage[svgnames]{xcolor}           % Colors by name (for diagrams)
 \usepackage{circuitikz}                 % Circuit diagrams
 \include{plantuml}                      % PlantUML for UML diagrams
 \usepackage{gensymb}                    % Symbols like degrees
+\usetikzlibrary{svg.path}               % SVGs
+\usepackage{float}                      % Force figures to be exactly in their position
+\usepackage[colorinlistoftodos,textsize=small]{todonotes} % TODO REMOVE
 
 % Section and Subsection Design
 \usepackage{titlesec}                   % Custom section design
@@ -75,34 +77,57 @@
 \author{Jason C. D'Souza}
 \date{\today}
 
-
 % Document Content
 \begin{document}
     \include{head_foot}
+    % Abstract
+    % Title
     \input{title}
-    % Table of contents
-    %\renewcommand{\contentsname}{\centering\textbf{Table of Contents}\par}
+    % Table of contents/figures/tables
     \tableofcontents
     \vspace*{\fill} \clearpage
     \listoffigures
     \vspace*{\fill} \clearpage
     \listoftables
     \vspace*{\fill} \clearpage
-    % Pages about the Study's Vison
-    \input{background}
-    \input{rationale}
-    \input{objectives}
-    \input{significance}
-    % Pages about the Study's Methods
-    \input{conceptual}
-    \input{theoretical}
-    \input{scope}
-    % Related studies
-    % Methods and Materials
-    \section{Methods and Materials}
-    \input{research_design}
-    \input{hardware_materials}
+    % Introduction
+    \section{Introduction}
+      \input{background}
+      \input{rationale}
+      \input{objectives}
+      \input{significance}
+      \input{conceptual}
+      \input{theoretical}
+      \input{scope}
+    % Related Review Literature
+    \section{Related Review Literature}
+      \todo{FILL THIS IN}
+    % Methods
+    \section{Methodology}
+      \input{architecture}
+      \input{blockdiagram}
+      \input{flowchart}
+      % Circuit Diagram
+      \input{schematics}
+      \input{wireframe}
+      % Prototype Measurements
+      % Key Materials
+      % Other Materials
+      % Prototype Materials
+    % Testing
+    \section{Testing}
+      % Unit Testings
+      % Expected Results
+    % Formulas
     % References
     \section{References}
     \printbibliography[heading=none]
+
+    % Related studies
+
+    % Pages about the Study's Methods
+    % Methods and Materials
+    %\input{research_design}
+    %\input{hardware_materials}
+    % References
 \end{document}
