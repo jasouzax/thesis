@@ -1,7 +1,8 @@
-# pip install "numpy>=2.0,<2.3" mediapipe opencv-python --upgrade
+# pip install "numpy>=2.0,<2.3" mediapipe opencv-python open3d --upgrade
 # or
 # pip install -r requirements.txt --upgrade
 
 numpy>=2.0,<2.3
 mediapipe
 opencv-python
+open3d
