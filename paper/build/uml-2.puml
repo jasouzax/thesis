@@ -1,35 +1,25 @@
         @startuml
+        skinparam componentStyle rectangle
+        left to right direction
 
-        | Main Pipeline |
-        start
-        :Two images from
-        stereo cameras; <<load>>
-        if () then ( )
-            :Generate point cloud;
-            :Record to virtual
-            environment;
-        else
-            | Guesture Pipeline |
-            :Scan for hand guesture;
-            if (Guesture matches
-                an instruction?) then (yes)
-                :Update mode
-                of expression;
-                if (Instruction requires
-                    Services?) then (yes)
-                    | Server Pipeline |
-                    :Process instruction
-                    server-sided;
-                    :Read response; <<load>>
-                    :Add to output audio;
-                endif
-            endif
-        endif
+        [Microcontroller] as mc
+        [UPS Module] as ups
+        [SIM and GPS Module] as sim
+        [Wifi or Mobile Data] as net
+        [Server (NodeJS)] as sv
 
-        | Main Pipeline |
-        :Generate audio based
-        on mode of expression;
-        :Output audio
-        to earphones; <<load>>
+        [Lithium Battery 5V] -> ups
+        [Digital Camera (OV5640)] --> mc
+        ups --> mc
+        [IMU] --> mc
 
+        mc --> [Speaker]
+        mc --> sim
+
+        sim --> net
+        net -> sv
+        sv -> [External APIs]
+        sv -> [Local AI
+        - Ollama GPT-OSS
+        - Yolo]
         @enduml

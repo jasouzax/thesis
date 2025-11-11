@@ -9,6 +9,14 @@ Development of Visual [Sensory Substitution Device](https://en.wikipedia.org/wik
 - [Background of the Study](#background-of-the-study)
 - [Rationale](#rationale)
 
+## Summary
+- [**Problem**](https://pmc.ncbi.nlm.nih.gov/articles/PMC5044782) - Issue facing visual sensory substitution devices in widespread adoption that being **cognitive overload** and **limited generaliziblity**.
+- **Solution** - To **emulate human visual attention** to solve cognitive overload, and to implement a **virtual navigatable world system** to solve limited generaliziblity.
+- **Hypothesis** - Would emulating *human visual processes* to minimize substituted information and implementing *navigation techniques to virtual worlds (physical and digital)* prevent cognitive overload, allow subconscious sensory augmentation, and help integrate visually impared individuals in the physical and digital aspects?
+   - [**Null Hypothesis**](https://en.wikipedia.org/wiki/Null_hypothesis) $H_0$ - The solution we implemented provided did not prevent cognitive overload nor help individuals navigate both physical and digital worlds.
+   - **Alternative Hypothesis** $H_1$ - The solution we implemented forwarded the progress of sensory substitution devices by solving the two issues facing most sensory substitution devices.
+   - **P-Value Testing** - Quantitative testing such has accuracy of individual's pointing to direction of movement, and Qualitative testing (Focus Group Discussion (FGD)) such as how much of them sense through the device subconsciously.
+
 ## Timeline to take note of
 Vietnam field trip, Service Learning, and [Robothia Conference on Robotics and Technologies](https://www.ihsanyassin.com/cms/conference.php?conf_id=883736a8-1285-42f8-95f5-dd1f653de3f6)
 - `Nov 24, 2025` - Service Learning 1st Seminar
@@ -25,11 +33,14 @@ Vietnam field trip, Service Learning, and [Robothia Conference on Robotics and T
 
 ## Title
 > World Navigation Hat - Development of a Wearable Navigation Aid using AIoT for the Visually Impaired
-### Targets *([ref](https://www.thesavvyscientist.com/thesis-title-examples))*
-- **Make it descriptive of the research so it’s immediately obvious what it is about!** - It's a visual sensory substitution device but not much people understand what that means so just use **"Wearable Navigation Aid"**, and although the main feature is it's visual substitution mostly use full for the full blind, it additionally incorporates other visual independent assists which can be useful for people with a variety of visual impairments thus use **"Visually Impaired"**
-- **Don’t get lost in the detail** - Our device incorporates multiple methods to achieve the goal such as manual algorithms *(world mapping, emulating senses, priority audio cueing, etc.)*, artificial intellegence *(hand gesture recognition, voice recognition, face recognition, etc.)*, and IoT *(central server for API and automation, world tracking through sensors like GPS, IMU, etc.)*. To summarize the whole process we will just use **"AIoT"** to summerize/generalize the whole process
-- **The title should tie together the chapters of your thesis** - The thesis will primarly be about the creation and testing of this device thus use **"Development"**, however since our thesis is a prototype mainly focusing on the hardware and software aspect to solve the issue the final prototype will be bulky to be worn has an eyewear so the paper will be taking into account the device has a hat instead to put all of that load in the head instead of sensitive areas like eyes and ears, thus use **"Hat"**
-- **Be strategic** - The main feature of our thesis, is to solve the inequality the visually impared faces when they participate in society, such has navigating the physical world *(going from one place to another especially if the infastructure is not designed for them in mind)*, and the digital world *(social media, internet, etc.)* thus use **"World Navigation"**
+<details>
+   <summary><a href="https://www.thesavvyscientist.com/thesis-title-examples">Target</a></summary>
+   
+   - **Make it descriptive of the research so it’s immediately obvious what it is about!** - It's a visual sensory substitution device but not much people understand what that means so just use **"Wearable Navigation Aid"**, and although the main feature is it's visual substitution mostly use full for the full blind, it additionally incorporates other visual independent assists which can be useful for people with a variety of visual impairments thus use **"Visually Impaired"**
+   - **Don’t get lost in the detail** - Our device incorporates multiple methods to achieve the goal such as manual algorithms *(world mapping, emulating senses, priority audio cueing, etc.)*, artificial intellegence *(hand gesture recognition, voice recognition, face recognition, etc.)*, and IoT *(central server for API and automation, world tracking through sensors like GPS, IMU, etc.)*. To summarize the whole process we will just use **"AIoT"** to summerize/generalize the whole process
+   - **The title should tie together the chapters of your thesis** - The thesis will primarly be about the creation and testing of this device thus use **"Development"**, however since our thesis is a prototype mainly focusing on the hardware and software aspect to solve the issue the final prototype will be bulky to be worn has an eyewear so the paper will be taking into account the device has a hat instead to put all of that load in the head instead of sensitive areas like eyes and ears, thus use **"Hat"**
+   - **Be strategic** - The main feature of our thesis, is to solve the inequality the visually impared faces when they participate in society, such has navigating the physical world *(going from one place to another especially if the infastructure is not designed for them in mind)*, and the digital world *(social media, internet, etc.)* thus use **"World Navigation"**
+</details>
 
 ## Background of the Study
 ### Targets *([ref](https://www.enago.com/academy/what-is-background-in-a-research-paper))*
@@ -69,3 +80,17 @@ Rationale
 - 
 
 Objectives
+
+
+## Materials and costs
+| Quantity | Material | Total Cost |
+| - | - | - |
+| 1 | Raspberry PI Zero 2W | &#8369;1,280 |
+| 2 | OV5640 USB Camera 5MP and 160&deg; FOV | &#8369;2,500 |
+| 1 | TRRS 3.5 Jack Breakout | &#8369;25 |
+| 1 | Type-C 5A/3A 18650 Lithium Battery UPS | &#8369;121 |
+| 1 | Stereo Earphone | &#8369;101 |
+| 1 | MPU6050 | &#8369;102 |
+| 1 | SIM868 GSM GPRS GPS | &#8369;660 |
+| 2 | 18650 Lithium Battery | &#8369;70 |
+**TOTAL:** &#8369;4,859

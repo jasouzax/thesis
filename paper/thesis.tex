@@ -1,133 +1,102 @@
 % Main Thesis Paper
-% "latex-workshop.latex.outDir": "%DIR%/build",
-% "latex-workshop.latex.recipe.default": "latexmk (lualatex)"
-\documentclass[12pt,a4paper]{report}    % Template of thesis paper is 'report'
-
-% Imports
-\usepackage{graphicx}                   % Including images
-\usepackage{fancyhdr}                   % Thesis header
-\usepackage[utf8]{inputenc}             % Input encoding
-\usepackage[T1]{fontenc}                % Font encoding
-\usepackage{fontspec}                   % Use .ttf fonts
-\usepackage{hyperref}                   % Hyperlinks
-\usepackage{lipsum}                     % Dummy text, TODO REMOVE
-\usepackage{tocloft}                    % Clean table design
-\usepackage{indentfirst}                % Indent at paragraph start
-\usepackage[svgnames]{xcolor}           % Colors by name (for diagrams)
-\usepackage{circuitikz}                 % Circuit diagrams
-\include{plantuml}                      % PlantUML for UML diagrams
-\usepackage{gensymb}                    % Symbols like degrees
-\usetikzlibrary{svg.path}               % SVGs
-\usepackage{float}                      % Force figures to be exactly in their position
-\usepackage[colorinlistoftodos,textsize=small]{todonotes} % TODO REMOVE
-
-% Section and Subsection Design
-\usepackage{titlesec}                   % Custom section design
-\setcounter{secnumdepth}{0}             % Remove section numbering
-\titleformat{\section}
-  {\normalfont\bfseries\centering}      % Bold + centered
-  {\thesection.}{1em}{}                 % Number format
-\titlespacing*{\section}{0pt}{0pt}{0pt} % Remove vertical space before/after
-\titleformat{\subsection}
-  {\normalfont\bfseries}                % Bold only
-  {\thesubsection.}{1em}{}              % Number format
-\titlespacing*{\subsection}{0pt}{0pt}{0pt} % Remove extra space
-
-% Lists designs
-\usepackage{enumitem}                   % Enumerated lists
-\setlist[enumerate,1]{label=(\arabic*),ref=\arabic*}
-\setlist[enumerate,2]{label=(\theenumi.\alph*),ref=\theenumi.\alph*}
-
-% Document Style
-\usepackage[
-  top=2.54cm,
-  bottom=2.54cm,
-  left=3.81cm,
-  right=2.54cm,
-  includefoot
-]{geometry}
-\setmainfont{TeX Gyre Termes}           % Default font (another name for Times new roman)
-\usepackage{setspace} \setstretch{2.0}  % Line spaces to 2.0
-
-% Table Designing
-\renewcommand{\cfttoctitlefont}{\hfill\normalfont\bfseries}
-\renewcommand{\cftaftertoctitle}{\hfill}
-\renewcommand{\contentsname}{Table of Contents}
-\renewcommand{\cftloftitlefont}{\hfill\normalfont\bfseries}
-\renewcommand{\cftafterloftitle}{\hfill}
-\renewcommand{\listfigurename}{List of Figures}
-\renewcommand{\cftlottitlefont}{\hfill\normalfont\bfseries}
-\renewcommand{\cftafterlottitle}{\hfill}
-\renewcommand{\listtablename}{List of Tables}
-
-% Bibliography
-\usepackage[
-  style=apa,
-  sortcites=true,
-  backend=biber,
-  doi=false,
-  url=false,
-  isbn=false,
-]{biblatex}
-\DeclareLanguageMapping{english}{english-apa}
-\addbibresource{references.bib}
+\input{preference}
 
 % Document Properties
+\hypersetup{
+  pdftitle={World Navigation Hat Thesis},
+  pdfauthor={Jasouza},
+  pdfsubject={Development of a Wearable Navigation Aid using AIoT for the Visually Impaired},
+  pdfkeywords={sensory substitution device, hat, aiot, visually impared}
+}
 \title{World Navigation Hat - Development of a Wearable Navigation Aid using AIoT for the Visually Impaired}
 \author{Jason C. D'Souza}
 \date{\today}
 
 % Document Content
 \begin{document}
-    \include{head_foot}
-    % Abstract
-    % Title
-    \input{title}
-    % Table of contents/figures/tables
-    \tableofcontents
-    \vspace*{\fill} \clearpage
-    \listoffigures
-    \vspace*{\fill} \clearpage
-    \listoftables
-    \vspace*{\fill} \clearpage
-    % Introduction
-    \section{Introduction}
-      \input{background}
-      \input{rationale}
-      \input{objectives}
-      \input{significance}
-      \input{conceptual}
-      \input{theoretical}
-      \input{scope}
-    % Related Review Literature
-    \section{Related Review Literature}
-      \todo{FILL THIS IN}
-    % Methods
-    \section{Methodology}
-      \input{architecture}
-      \input{blockdiagram}
-      \input{flowchart}
-      % Circuit Diagram
-      \input{schematics}
-      \input{wireframe}
-      % Prototype Measurements
-      % Key Materials
-      % Other Materials
-      % Prototype Materials
-    % Testing
-    \section{Testing}
-      % Unit Testings
-      % Expected Results
-    % Formulas
-    % References
-    \section{References}
-    \printbibliography[heading=none]
+  \frontmatter
+  \pdfbookmark[0]{Frontmatter}{frontmatter}
+  \pagenumbering{roman}
+  % Title
+  \input{title}
+  % ! Approval Sheet
+  % ! English Editing Certification
+  % ! Abstract
+  % ! Acknowledgement
+  % Table of contents/figures/tables
+  \tableofcontents
+  \vspace*{\fill} \clearpage
+  \listoffigures
+  \vspace*{\fill} \clearpage
+  \listoftables
+  \vspace*{\fill} \clearpage
+  \cleardoublepage
+  \mainmatter
+  \setcounter{page}{1}
+  % Introduction
+  \section{Introduction}
+    \input{background}
+    \input{rationale}
+    \input{objectives}
+    \input{significance}
+    \input{conceptual}
+    \input{theoretical}
+    \input{scope}
+  % Review of Related Literature
+  \section{Review of Related Literature}
+    % ! Related Studies
+    \input{related_studies}
+    \input{related_literature}
+  % Methods
+  \section{Materials and Methods}
+    \input{research_design}
+    \input{materials}
+    \input{prototype_building}
+    \input{data_presentation}
+    \input{ethical_considerations}
+  % Results and Discussion
+  \section{Results and Discussion}
+    % ! System General Description
+    % ! Physical Layout of Actual Project
+    % ! Screen Layout of Software Outputs
+    % ! Experimental Set-Up & Testing Results
+    % ! Implementation Results
+    % ! Installation Set-UP & User Manual
+    % ! Discussion and Analysis of Results
+    % ! Summary of Findings
+    % ! Conclusion
+    % ! Recommendation
+    % ! Reference
+  \section{Appendices}
+    % ! Certifications (Plagiarism, Statistician, etc.)
+    % ! Plagiarism
+    % ! Definition of Terms & Standard Used
+    % ! Images of Actual Circuit & Sample Output
+    % ! Program Source Codes
+    % ! Grammarian Certification
+    % ! Researchers and Adviser's Profile
+    % ! Total Budget
+    % ! Gantt chart for Project Proposal Timeline
+    % ! Prior Arts
+    % ! Materials and Specification of the components
+  % References
+  \section{References}
+  \printbibliography[heading=none]
 
-    % Related studies
 
-    % Pages about the Study's Methods
-    % Methods and Materials
-    %\input{research_design}
-    %\input{hardware_materials}
-    % References
+  % Testing
+  %\section{Testing}
+    % ! Unit Testings
+    % ! Expected Results
+  % Results and Anlysis
+  %\section{Results and Statistical Analysis}
+    % ! Result Hypotesis
+    % ! Result Calibration
+    % ! Result Algorithm
+  % Discussion
+  %\section{Discussion}
+    % ! Discussion
+  % Formulas
+  %\section{Formulas}
+  % References
 \end{document}

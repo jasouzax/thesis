@@ -3,7 +3,31 @@
 \begin{figure}[H]
     \centering
     \caption{Block diagram of the System}
-    \includegraphics[width=\linewidth]{block_diagram.png}
+    \begin{plantuml}
+        @startuml
+        skinparam componentStyle rectangle
+        left to right direction
+
+        [Microcontroller] as mc
+        [UPS Module] as ups
+        [SIM and GPS Module] as sim
+        [Wifi or Mobile Data] as net
+        [Server] as sv
+
+        [Lithium Battery] --> ups
+        [Digital Camera] --> mc
+        ups --> mc
+        [IMU] --> mc
+
+        mc --> [Speaker]
+        mc --> sim
+
+        sim --> net
+        net -> sv
+        sv --> [External APIs]
+        sv --> [Local AIs]
+        @enduml
+    \end{plantuml}
     \label{fig:block}
 \end{figure}
 

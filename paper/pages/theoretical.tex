@@ -11,3 +11,43 @@ This research attempts to solve an issue facing most Visual Sensory Substitution
     \item \textbf{Temporal Dynamics and Scanning} - Vision is not a singlular static snapshot but rather continuous sample of the world via eye movements has humans typically shift gaze 3-4 times a second \parencite{kristjansson_2016}. \\ Thus our device should rapidly provide updating audio to allow temporal integration rather than one large static soundscape all at once, this also solves the issue of cognitive overload and sensory fautigue.
     \item \textbf{Multisensory Integration} - The brain integrates additional senses like auditory, vestibular, and proprioceptive senses to form a coherent representation of the environment \parencite{kristjansson_2016}. \\ Thus our device should align with those senses to prevent conflicting senses that could often cause nausea. This could be in a form of aligning the virtual environment with IMU to align with vestibular senses, or lower the output audio when the user is focusing on something else like talking to others.
 \end{enumerate}
+
+Aside from these principles our device should be able to assist the user by navigating the physical world and the digitial world. While the principle assists with navigating the physical world like environment, object, etc. we implement AIoT to assist the user navigating the digital world like google maps, weather, social media platforms, etc. This is where the device will act as the client while the AIoT is managed by the server, as seen in figure \ref{fig:architecture}.
+
+\begin{figure}[H]
+    \centering
+    \caption{AIoT System Architecture}
+    \includegraphics[width=\linewidth]{architecture.png}
+    \label{fig:architecture}
+\end{figure}
+
+The figure \ref{fig:architecture} shows the following components of the system:
+\begin{enumerate}
+    \item \textbf{Sensors} - The sensors captures stereo images through camera, user's head orientation through IMU, and voice commands through Microphone.
+    \item \textbf{Microcontroller} - The raspberry pi zero 2w is the main microcontroller that handles client side processes like the five provided applications.
+    \item \textbf{Actuators} - The Speaker from the earphone is the only major actualor of the system.
+    \item \textbf{Applications} - There are five major client side applications that interacts with the virtual maps such as to Emulate Human Vision, Photogrammetry, Hand Guesture Recognition, Voice Recognition, and Server API. Two of these application uses client side AI models:
+        \begin{enumerate}
+            \item \textbf{Hand Gesture Recognition} - \textbf{MediaPipe} an Open-source model by Google is used to detect the hand gesture from the user.
+            \item \textbf{Voice Recognition} - \textbf{WhisperX} by OpenAI is used to recognize instructions/infomations provided by the user
+        \end{enumerate}
+    \item \textbf{Virtual Maps} - There are two kinds of map that stores and manages two kinds of data, data that is plotted into physical space called the Physical Map, and data is not plotted into physical space called Digital Map.
+    \item \textbf{Server Side} - The server side is responsible for dealing for dealing with client data and interact with external APIs such as:
+        \begin{enumerate}
+            \item \textbf{Web APIs} - Interacts with web APIs such as google maps for directions or social media for communication
+            \item \textbf{Local AIs} - Processes local AI such has Ollama GPT-OSS for assistant without actual humans or Yolo for advance image recognition/segmentation
+        \end{enumerate}
+\end{enumerate}
+
+The system is as follows:
+\begin{enumerate}
+    \item The stereo camera with help from the IMU is processed by the Photogrammetry Application to generate the Physical Map, where the Emulated Vision Application can process it into audo cues.
+    \item The right camera is individually processed by the Hand Gesture Application to detect if the guesture matches any instruction, if it does it records it in the Digital Map.
+    \item If the Digital Map requests to enable voice commands then the Microphone is processed by the Voice Recognition to be provided to the Digital Map.
+    \item If the Digital Map requests to access Network data such as GPS or Server APIs then that request is sent to the central Server.
+    \item The central server processes the request either by running the AI models or making other external API request to fulfill the request, the response is sent back to the client's Digital Map.
+    \item Once the Digital Map want to provide information to the user it is sent to the Physical Map which is then sent the the Emulated Human Application to generate the final Audio.
+\end{enumerate}
+
+
+%The connections of between each components allowing this to work could be seen in figure \ref{fig:blockdiagram}, such as the connections of each materials with relation to the raspberry pi.

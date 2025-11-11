@@ -1,0 +1,5 @@
+#!/usr/bin/env -S deno run -A
+console.log(123);
+Deno.serve((_req) => {
+  return new Response("Hello, World!");
+});

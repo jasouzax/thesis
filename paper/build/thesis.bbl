@@ -19,137 +19,51 @@
 
 \refsection{0}
   \datalist[entry]{apa/apasortcite//global/global/global}
-    \entry{arvind_2023}{inbook}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=b0ad921b1a323b2f8bbeb3c6d8183c80}{%
-           family={Arvind},
-           familyi={A\bibinitperiod},
-           given={Aniketh},
-           giveni={A\bibinitperiod},
+    \entry{commere_2023}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=147d9ef6433c0ed73b2ba4de07e92e1e}{%
+           family={Commère},
+           familyi={C\bibinitperiod},
+           given={Louis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=217ceced2277f16595bc20d19609fbf2}{%
+           family={Rouat},
+           familyi={R\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Springer Nature Switzerland}%
+        {arXiv}%
       }
-      \strng{namehash}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{fullhash}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{fullhashraw}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{bibnamehash}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{authorbibnamehash}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{authornamehash}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{authorfullhash}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{authorfullhashraw}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \strng{namehash}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{fullhash}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{fullhashraw}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{bibnamehash}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{authorbibnamehash}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{authornamehash}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{authorfullhash}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{authorfullhashraw}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Intelligent Systems and Pattern Recognition}
-      \field{isbn}{9783031463389}
-      \field{issn}{1865-0937}
-      \field{month}{11}
-      \field{title}{A Deep Neural Architecture Search Net-Based Wearable Object Classification System for the Visually Impaired}
+      \field{title}{Evaluation of short range depth sonifications for visual-to-auditory sensory substitution}
       \field{year}{2023}
-      \field{pages}{198\bibrangedash 213}
-      \range{pages}{16}
       \verb{doi}
-      \verb 10.1007/978-3-031-46338-9_15
+      \verb 10.48550/ARXIV.2304.05462
       \endverb
       \verb{urlraw}
-      \verb http://dx.doi.org/10.1007/978-3-031-46338-9_15
+      \verb https://arxiv.org/abs/2304.05462
       \endverb
       \verb{url}
-      \verb http://dx.doi.org/10.1007/978-3-031-46338-9_15
+      \verb https://arxiv.org/abs/2304.05462
       \endverb
-    \endentry
-    \entry{gao_2025}{article}{}{}
-      \name{author}{8}{}{%
-        {{un=0,uniquepart=base,hash=6ac6e9eadf1a7d0d5801f9f820d0aa44}{%
-           family={Gao},
-           familyi={G\bibinitperiod},
-           given={Yun},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8b7713202a971a205c088bdcb0002a8e}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Dan},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f47cc1ff1ed8ea8025326fb247ba534f}{%
-           family={Song},
-           familyi={S\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a1c3531b0ecf613e0e663906ae837dda}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Xueyi},
-           giveni={X\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b4e13f6f94a9d0d97389b3deeda85063}{%
-           family={Hou},
-           familyi={H\bibinitperiod},
-           given={Bangbang},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=eaee7401f664ec22cbc44943e3323a04}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Hengfa},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9ad5bf8051d8a970af9884a0eee944ec}{%
-           family={Liao},
-           familyi={L\bibinitperiod},
-           given={Junqi},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a2693716158322590ecde7b42087ab71}{%
-           family={Zhou},
-           familyi={Z\bibinitperiod},
-           given={Liang},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media LLC}%
-      }
-      \strng{namehash}{0cd2a7d45e0d7e1b0afe6ab6a97c23a5}
-      \strng{fullhash}{3e9d46cc31c1a17b83beca484be1929e}
-      \strng{fullhashraw}{3e9d46cc31c1a17b83beca484be1929e}
-      \strng{bibnamehash}{3e9d46cc31c1a17b83beca484be1929e}
-      \strng{authorbibnamehash}{3e9d46cc31c1a17b83beca484be1929e}
-      \strng{authornamehash}{0cd2a7d45e0d7e1b0afe6ab6a97c23a5}
-      \strng{authorfullhash}{3e9d46cc31c1a17b83beca484be1929e}
-      \strng{authorfullhashraw}{3e9d46cc31c1a17b83beca484be1929e}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2041-1723}
-      \field{journaltitle}{Nature Communications}
-      \field{month}{3}
-      \field{number}{1}
-      \field{title}{A wearable obstacle avoidance device for visually impaired individuals with cross-modal learning}
-      \field{volume}{16}
-      \field{year}{2025}
-      \verb{doi}
-      \verb 10.1038/s41467-025-58085-x
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1038/s41467-025-58085-x
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1038/s41467-025-58085-x
-      \endverb
+      \keyw{Human-Computer Interaction (cs.HC),FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
     \entry{gershman_2024}{article}{}{}
       \name{author}{1}{}{%
@@ -195,6 +109,146 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1016/j.isci.2024.110523
+      \endverb
+    \endentry
+    \entry{hamilton_fletcher_2021}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=5744a778158db81f01972b42a0f110d5}{%
+           family={Hamilton-Fletcher},
+           familyi={H\bibinithyphendelim F\bibinitperiod},
+           given={Giles},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2321f09fe540b263ed569b3cd3ce534}{%
+           family={Alvarez},
+           familyi={A\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b5e718631fe4d7958a517e8c6499197}{%
+           family={Obrist},
+           familyi={O\bibinitperiod},
+           given={Marianna},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d853451fe7311e1d392c00f6e0f8a3c}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Jamie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{fea3d0f8e7a131ecbcdd5233785defe7}
+      \strng{fullhash}{6c5e766b3b14acebe2034dfc44415126}
+      \strng{fullhashraw}{6c5e766b3b14acebe2034dfc44415126}
+      \strng{bibnamehash}{6c5e766b3b14acebe2034dfc44415126}
+      \strng{authorbibnamehash}{6c5e766b3b14acebe2034dfc44415126}
+      \strng{authornamehash}{fea3d0f8e7a131ecbcdd5233785defe7}
+      \strng{authorfullhash}{6c5e766b3b14acebe2034dfc44415126}
+      \strng{authorfullhashraw}{6c5e766b3b14acebe2034dfc44415126}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1783-8738}
+      \field{journaltitle}{Journal on Multimodal User Interfaces}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{SoundSight: a mobile sensory substitution device that sonifies colour, distance, and temperature}
+      \field{volume}{16}
+      \field{year}{2021}
+      \field{pages}{107\bibrangedash 123}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s12193-021-00376-w
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/s12193-021-00376-w
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s12193-021-00376-w
+      \endverb
+    \endentry
+    \entry{han_2026}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=f4bb9ce773f3cd36dddd36712822b738}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Zaidao},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5f39a4eae252fcb19c70a2184e53517}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Sanqian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8fde8559617f603b3e2b3cf30cb48e9b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiang},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cc286ecccf72cb308652d6e9767c1d6}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Xiaoqing},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d279c3bb861ee530e8f18c20cbd8b1c}{%
+           family={Higashita},
+           familyi={H\bibinitperiod},
+           given={Risa},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eec567144e7053ded431c59378f366e7}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jiang},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{af2e2bbc4d704c936c13c69cd06b1590}
+      \strng{fullhash}{0adbce57073b4a73db8d092c761cd8b7}
+      \strng{fullhashraw}{0adbce57073b4a73db8d092c761cd8b7}
+      \strng{bibnamehash}{0adbce57073b4a73db8d092c761cd8b7}
+      \strng{authorbibnamehash}{0adbce57073b4a73db8d092c761cd8b7}
+      \strng{authornamehash}{af2e2bbc4d704c936c13c69cd06b1590}
+      \strng{authorfullhash}{0adbce57073b4a73db8d092c761cd8b7}
+      \strng{authorfullhashraw}{0adbce57073b4a73db8d092c761cd8b7}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0141-9382}
+      \field{journaltitle}{Displays}
+      \field{month}{1}
+      \field{title}{Multi-path sensory substitution device navigates the blind and visually impaired individuals}
+      \field{volume}{91}
+      \field{year}{2026}
+      \field{pages}{103200}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.displa.2025.103200
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.displa.2025.103200
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.displa.2025.103200
       \endverb
     \endentry
     \entry{hou_2025}{article}{}{}
@@ -258,71 +312,6 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1038/s41598-025-98891-3
-      \endverb
-    \endentry
-    \entry{ikram_2024}{article}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=78bafce28ef34f8d0bad2c842ec6d4ed}{%
-           family={Ikram},
-           familyi={I\bibinitperiod},
-           given={Sunnia},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ebbc6b28ccc317a82e074cbbdc59ee3c}{%
-           family={Bajwa},
-           familyi={B\bibinitperiod},
-           given={Prof.\bibnamedelimi Imran},
-           giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f827edebc33c893cb7a9b23064328d44}{%
-           family={Gyawali},
-           familyi={G\bibinitperiod},
-           given={Sujan},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b771240f37bea7bf11487dc2e337b254}{%
-           family={Ikram},
-           familyi={I\bibinitperiod},
-           given={Amna},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=434263a59651ff4f969ab9ce1d2748ab}{%
-           family={Alsubaie},
-           familyi={A\bibinitperiod},
-           given={Najah},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media LLC}%
-      }
-      \strng{namehash}{c7600808f5dcbd2ce4af331b9ee241f3}
-      \strng{fullhash}{a0f9ac079e7f8745bfe7db1870db87ef}
-      \strng{fullhashraw}{a0f9ac079e7f8745bfe7db1870db87ef}
-      \strng{bibnamehash}{a0f9ac079e7f8745bfe7db1870db87ef}
-      \strng{authorbibnamehash}{a0f9ac079e7f8745bfe7db1870db87ef}
-      \strng{authornamehash}{c7600808f5dcbd2ce4af331b9ee241f3}
-      \strng{authorfullhash}{a0f9ac079e7f8745bfe7db1870db87ef}
-      \strng{authorfullhashraw}{a0f9ac079e7f8745bfe7db1870db87ef}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{12}
-      \field{title}{A IoT-enabled Obstacle Detection and Recognition Technique for Blind Persons}
-      \field{year}{2024}
-      \verb{doi}
-      \verb 10.21203/rs.3.rs-5482522/v1
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.21203/rs.3.rs-5482522/v1
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.21203/rs.3.rs-5482522/v1
       \endverb
     \endentry
     \entry{iwasaki_1986}{article}{}{}
@@ -591,69 +580,180 @@
       \endverb
       \keyw{Sound (cs.SD),Computation and Language (cs.CL),Audio and Speech Processing (eess.AS),FOS: Computer and information sciences,FOS: Computer and information sciences,FOS: Electrical engineering,electronic engineering,information engineering,FOS: Electrical engineering,electronic engineering,information engineering}
     \endentry
-    \entry{muhsin_2023}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=ee31eeb4a109766cd80ebd910af6d29b}{%
-           family={Muhsin},
-           familyi={M\bibinitperiod},
-           given={Zahra\bibnamedelima J.},
-           giveni={Z\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=261f490d2d34022950a82d683238c297}{%
-           family={Qahwaji},
-           familyi={Q\bibinitperiod},
-           given={Rami},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=561ebbadd8a46b4d1e41122c6287a44d}{%
-           family={Ghanchi},
-           familyi={G\bibinitperiod},
-           given={Faruque},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=04ec8e00846b39cc48c61a1ab577fc80}{%
-           family={Al-Taee},
-           familyi={A\bibinithyphendelim T\bibinitperiod},
-           given={Majid},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
+    \entry{realsense2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e75ec088ba42c54fb34430cfc379fb32}{%
+           family={{RealSense AI}},
+           familyi={R\bibinitperiod}}}%
       }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media LLC}%
-      }
-      \strng{namehash}{f28f5544b3907d2e4aef7c516220da47}
-      \strng{fullhash}{495c429acf12926b2dfffac1dd4020ad}
-      \strng{fullhashraw}{495c429acf12926b2dfffac1dd4020ad}
-      \strng{bibnamehash}{495c429acf12926b2dfffac1dd4020ad}
-      \strng{authorbibnamehash}{495c429acf12926b2dfffac1dd4020ad}
-      \strng{authornamehash}{f28f5544b3907d2e4aef7c516220da47}
-      \strng{authorfullhash}{495c429acf12926b2dfffac1dd4020ad}
-      \strng{authorfullhashraw}{495c429acf12926b2dfffac1dd4020ad}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \strng{namehash}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{fullhash}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{fullhashraw}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{bibnamehash}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{authorbibnamehash}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{authornamehash}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{authorfullhash}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{authorfullhashraw}{e75ec088ba42c54fb34430cfc379fb32}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1783-8738}
-      \field{journaltitle}{Journal on Multimodal User Interfaces}
-      \field{month}{12}
-      \field{number}{1}
-      \field{title}{Review of substitutive assistive tools and technologies for people with visual impairments: recent advancements and prospects}
-      \field{volume}{18}
-      \field{year}{2023}
-      \field{pages}{135\bibrangedash 156}
-      \range{pages}{22}
-      \verb{doi}
-      \verb 10.1007/s12193-023-00427-4
-      \endverb
+      \field{title}{Eyesynth: {P}owering {S}onic {V}ision for the {B}lind}
+      \field{year}{2025}
       \verb{urlraw}
-      \verb http://dx.doi.org/10.1007/s12193-023-00427-4
+      \verb https://realsenseai.com/case-studies/powering-sonic-vision-for-the-blind/
       \endverb
       \verb{url}
-      \verb http://dx.doi.org/10.1007/s12193-023-00427-4
+      \verb https://realsenseai.com/case-studies/powering-sonic-vision-for-the-blind/
+      \endverb
+    \endentry
+    \entry{ruan_2025}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=3404e5f281e717394b0b794e37249ee8}{%
+           family={Ruan},
+           familyi={R\bibinitperiod},
+           given={Ligao},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5744a778158db81f01972b42a0f110d5}{%
+           family={Hamilton-Fletcher},
+           familyi={H\bibinithyphendelim F\bibinitperiod},
+           given={Giles},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=305e1b849fa601cf065e6e239625fb46}{%
+           family={Beheshti},
+           familyi={B\bibinitperiod},
+           given={Mahya},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=07a0d241a2f2f93daa932f36c9fe9f7b}{%
+           family={Hudson},
+           familyi={H\bibinitperiod},
+           given={Todd\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7cc5405aac72c5985839611227a6cd8}{%
+           family={Porfiri},
+           familyi={P\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c968630d8631019f38d94eacd9416e3}{%
+           family={Rizzo},
+           familyi={R\bibinitperiod},
+           given={John-Ross},
+           giveni={J\bibinithyphendelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Informa UK Limited}%
+      }
+      \strng{namehash}{4a1a1ec01ca53036f45963d4266b2bef}
+      \strng{fullhash}{3c613c733961253fb58d632e2fb4018e}
+      \strng{fullhashraw}{3c613c733961253fb58d632e2fb4018e}
+      \strng{bibnamehash}{3c613c733961253fb58d632e2fb4018e}
+      \strng{authorbibnamehash}{3c613c733961253fb58d632e2fb4018e}
+      \strng{authornamehash}{4a1a1ec01ca53036f45963d4266b2bef}
+      \strng{authorfullhash}{3c613c733961253fb58d632e2fb4018e}
+      \strng{authorfullhashraw}{3c613c733961253fb58d632e2fb4018e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1748-3115}
+      \field{journaltitle}{Disability and Rehabilitation: Assistive Technology}
+      \field{month}{2}
+      \field{number}{6}
+      \field{title}{Multi-faceted sensory substitution using wearable technology for curb alerting: a pilot investigation with persons with blindness and low vision}
+      \field{volume}{20}
+      \field{year}{2025}
+      \field{pages}{1884\bibrangedash 1897}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/17483107.2025.2463541
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1080/17483107.2025.2463541
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/17483107.2025.2463541
+      \endverb
+    \endentry
+    \entry{sami_2025}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=21794f0f22213f7c8d18c00f100d34d1}{%
+           family={Sami},
+           familyi={S\bibinitperiod},
+           given={Memoona},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a8a53ad000fb4934a8f657a7a8bc5d1}{%
+           family={Agha},
+           familyi={A\bibinitperiod},
+           given={Dua},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4964e66c3ef8a65eb45625dc9e4ea273}{%
+           family={Baloch},
+           familyi={B\bibinitperiod},
+           given={Junaid},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d243060621f80a2dffc229dd96d9644a}{%
+           family={Dewani},
+           familyi={D\bibinitperiod},
+           given={Amirita},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b69925d5b9fcbe997131e4e83f6bcf9}{%
+           family={Maheshwari},
+           familyi={M\bibinitperiod},
+           given={Kohal\bibnamedelima Deep},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Sukkur IBA University}%
+      }
+      \strng{namehash}{6245c6f0e69037db92691763cc308f57}
+      \strng{fullhash}{1a927e85813f4b03acb6da5a5a168da9}
+      \strng{fullhashraw}{1a927e85813f4b03acb6da5a5a168da9}
+      \strng{bibnamehash}{1a927e85813f4b03acb6da5a5a168da9}
+      \strng{authorbibnamehash}{1a927e85813f4b03acb6da5a5a168da9}
+      \strng{authornamehash}{6245c6f0e69037db92691763cc308f57}
+      \strng{authorfullhash}{1a927e85813f4b03acb6da5a5a168da9}
+      \strng{authorfullhashraw}{1a927e85813f4b03acb6da5a5a168da9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2520-0755}
+      \field{journaltitle}{Sukkur IBA Journal of Computing and Mathematical Sciences}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Efficient Object Detection and Voice-Assisted Navigation for the Visually Impaired: The Smart Hat Approach}
+      \field{volume}{8}
+      \field{year}{2025}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.30537/sjcms.v8i2.1535
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.30537/sjcms.v8i2.1535
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.30537/sjcms.v8i2.1535
       \endverb
     \endentry
     \entry{shinagawa_2025}{misc}{}{}
@@ -815,6 +915,94 @@
       \endverb
       \keyw{Human-Computer Interaction (cs.HC),Robotics (cs.RO),FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
+    \entry{udayakumar_2025}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=f98b78cefaf9375baa40bc4d678843e0}{%
+           family={Udayakumar},
+           familyi={U\bibinitperiod},
+           given={Devi},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5cd27ddeaa9e19759d2b512582afeae5}{%
+           family={Gopalakrishnan},
+           familyi={G\bibinitperiod},
+           given={Sarika},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84a8116a2ac67d0811ed7608839cd559}{%
+           family={Raghuram},
+           familyi={R\bibinitperiod},
+           given={Aparna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d407cddb7170304bef48600ed902ac4a}{%
+           family={Kartha},
+           familyi={K\bibinitperiod},
+           given={Arathy},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7136bf809b367aeb510b441595ef85fe}{%
+           family={Krishnan},
+           familyi={K\bibinitperiod},
+           given={Arun\bibnamedelima Kumar},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c6704918a537441025c7e91df8c9f5fe}{%
+           family={Ramamirtham},
+           familyi={R\bibinitperiod},
+           given={Ramkumar},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4782268e3cf6acae781421c625c6e215}{%
+           family={Muthangi},
+           familyi={M\bibinitperiod},
+           given={Ramu},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2e61a5c01f99f37915fd9d64fae359a}{%
+           family={Raju},
+           familyi={R\bibinitperiod},
+           given={Ramakrishna},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Ovid Technologies (Wolters Kluwer Health)}%
+      }
+      \strng{namehash}{45efcd425318a95904f924154710985d}
+      \strng{fullhash}{b27db560b7052eda1ce3ab61c9be1668}
+      \strng{fullhashraw}{b27db560b7052eda1ce3ab61c9be1668}
+      \strng{bibnamehash}{b27db560b7052eda1ce3ab61c9be1668}
+      \strng{authorbibnamehash}{b27db560b7052eda1ce3ab61c9be1668}
+      \strng{authornamehash}{45efcd425318a95904f924154710985d}
+      \strng{authorfullhash}{b27db560b7052eda1ce3ab61c9be1668}
+      \strng{authorfullhashraw}{b27db560b7052eda1ce3ab61c9be1668}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1998-3689}
+      \field{journaltitle}{Indian Journal of Ophthalmology}
+      \field{month}{5}
+      \field{number}{Suppl 3}
+      \field{title}{Artificial intelligence-powered smart vision glasses for the visually impaired}
+      \field{volume}{73}
+      \field{year}{2025}
+      \field{pages}{S492\bibrangedash S497}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.4103/ijo.ijo_1621_24
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.4103/IJO.IJO_1621_24
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.4103/IJO.IJO_1621_24
+      \endverb
+    \endentry
     \entry{usertesting_2024}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=138c191690c707625d53ef2fcb24395d}{%
@@ -847,6 +1035,61 @@
       \endverb
       \verb{url}
       \verb https://www.usertesting.com/blog/gestalt-principles
+      \endverb
+    \endentry
+    \entry{viancy_2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e614a8db18580866e9d01d317ef794dc}{%
+           family={Viancy\bibnamedelima V},
+           familyi={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Nithin\bibnamedelimb R\bibnamedelima C},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5573870936246f7cb1aed1e8f482b59b}{%
+           family={M\bibnamedelima Mouli},
+           familyi={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Manushri},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b86a52347ab2e5689414a0cd12d780f0}{%
+           family={S},
+           familyi={S\bibinitperiod},
+           given={Sridevi},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{354914d43c7f00885a8fb56033f80a1c}
+      \strng{fullhash}{0c0d0c6d7c5ada7a8cba662fa1a63ce6}
+      \strng{fullhashraw}{0c0d0c6d7c5ada7a8cba662fa1a63ce6}
+      \strng{bibnamehash}{0c0d0c6d7c5ada7a8cba662fa1a63ce6}
+      \strng{authorbibnamehash}{0c0d0c6d7c5ada7a8cba662fa1a63ce6}
+      \strng{authornamehash}{354914d43c7f00885a8fb56033f80a1c}
+      \strng{authorfullhash}{0c0d0c6d7c5ada7a8cba662fa1a63ce6}
+      \strng{authorfullhashraw}{0c0d0c6d7c5ada7a8cba662fa1a63ce6}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2024 International Conference on Inventive Computation Technologies (ICICT)}
+      \field{month}{4}
+      \field{title}{Aural Vision - Envisioning the Independence of the Visually Impaired}
+      \field{year}{2024}
+      \field{pages}{387\bibrangedash 392}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/icict60155.2024.10545004
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/ICICT60155.2024.10545004
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/ICICT60155.2024.10545004
       \endverb
     \endentry
     \entry{who_2023}{misc}{}{}
@@ -910,7 +1153,7 @@
       \field{issn}{1662-5145}
       \field{journaltitle}{Frontiers in Integrative Neuroscience}
       \field{month}{4}
-      \field{title}{Area V5â€”a microcosm of the visual brain}
+      \field{title}{Area V5 - microcosm of the visual brain}
       \field{volume}{9}
       \field{year}{2015}
       \verb{doi}
@@ -921,141 +1164,189 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.3389/fnint.2015.00021
+      \endverb
+    \endentry
+    \entry{zhao_2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=0677bf42cec59492510735b7b22ea035}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Yiming},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a7fe627a1432331b3a2a443fd53e216}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Shuo},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4342b2312a45f6c7e301d1a0b0bf154f}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dab70d591a330d9a459610be40d59923}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Informa UK Limited}%
+      }
+      \strng{namehash}{b98c8449e589f602333c839b2fc1182a}
+      \strng{fullhash}{58d487e6feffa7a7708c84b29e0843aa}
+      \strng{fullhashraw}{58d487e6feffa7a7708c84b29e0843aa}
+      \strng{bibnamehash}{58d487e6feffa7a7708c84b29e0843aa}
+      \strng{authorbibnamehash}{58d487e6feffa7a7708c84b29e0843aa}
+      \strng{authornamehash}{b98c8449e589f602333c839b2fc1182a}
+      \strng{authorfullhash}{58d487e6feffa7a7708c84b29e0843aa}
+      \strng{authorfullhashraw}{58d487e6feffa7a7708c84b29e0843aa}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1460-2202}
+      \field{journaltitle}{Current Eye Research}
+      \field{month}{4}
+      \field{number}{8}
+      \field{title}{Evaluation of the Efficacy of an Assistive Device for Blind People: A Prospective, Non-Randomized, Single Arm, and Open Label Clinical Trial}
+      \field{volume}{50}
+      \field{year}{2025}
+      \field{pages}{865\bibrangedash 869}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1080/02713683.2025.2495212
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1080/02713683.2025.2495212
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/02713683.2025.2495212
+      \endverb
+    \endentry
+    \entry{zvori_teanu_2021}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=578a539f9ba33e34474ba5f5db2c73c3}{%
+           family={Zvorișteanu},
+           familyi={Z\bibinitperiod},
+           given={Otilia},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=801aae0dc5fd301366d6638a4cde8bc4}{%
+           family={Caraiman},
+           familyi={C\bibinitperiod},
+           given={Simona},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ac4db32c417444c707470bd631a9c7a}{%
+           family={Lupu},
+           familyi={L\bibinitperiod},
+           given={Robert-Gabriel},
+           giveni={R\bibinithyphendelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e86bc8d43d73e102bae97ab32bc8519}{%
+           family={Botezatu},
+           familyi={B\bibinitperiod},
+           given={Nicolae\bibnamedelima Alexandru},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac4e60e8a42c4e13cd60edd4f2cfdfce}{%
+           family={Burlacu},
+           familyi={B\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI AG}%
+      }
+      \strng{namehash}{42cca54138a20efac1552409a9063223}
+      \strng{fullhash}{b5947cc605cc11a63a863776d0a571c1}
+      \strng{fullhashraw}{b5947cc605cc11a63a863776d0a571c1}
+      \strng{bibnamehash}{b5947cc605cc11a63a863776d0a571c1}
+      \strng{authorbibnamehash}{b5947cc605cc11a63a863776d0a571c1}
+      \strng{authornamehash}{42cca54138a20efac1552409a9063223}
+      \strng{authorfullhash}{b5947cc605cc11a63a863776d0a571c1}
+      \strng{authorfullhashraw}{b5947cc605cc11a63a863776d0a571c1}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2079-9292}
+      \field{journaltitle}{Electronics}
+      \field{month}{7}
+      \field{number}{14}
+      \field{title}{Sensory Substitution for the Visually Impaired: A Study on the Usability of the Sound of Vision System in Outdoor Environments}
+      \field{volume}{10}
+      \field{year}{2021}
+      \field{pages}{1619}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/electronics10141619
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.3390/electronics10141619
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.3390/electronics10141619
       \endverb
     \endentry
   \enddatalist
   \datalist[entry]{apa/global//global/global/global}
-    \entry{arvind_2023}{inbook}{}{}
-      \name{author}{1}{}{%
-        {{un=0,uniquepart=base,hash=b0ad921b1a323b2f8bbeb3c6d8183c80}{%
-           family={Arvind},
-           familyi={A\bibinitperiod},
-           given={Aniketh},
-           giveni={A\bibinitperiod},
+    \entry{commere_2023}{misc}{}{}
+      \name{author}{2}{}{%
+        {{un=0,uniquepart=base,hash=147d9ef6433c0ed73b2ba4de07e92e1e}{%
+           family={Commère},
+           familyi={C\bibinitperiod},
+           given={Louis},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=217ceced2277f16595bc20d19609fbf2}{%
+           family={Rouat},
+           familyi={R\bibinitperiod},
+           given={Jean},
+           giveni={J\bibinitperiod},
            givenun=0}}%
       }
       \list{publisher}{1}{%
-        {Springer Nature Switzerland}%
+        {arXiv}%
       }
-      \strng{namehash}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{fullhash}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{fullhashraw}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{bibnamehash}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{authorbibnamehash}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{authornamehash}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{authorfullhash}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \strng{authorfullhashraw}{b0ad921b1a323b2f8bbeb3c6d8183c80}
-      \field{sortinit}{A}
-      \field{sortinithash}{2f401846e2029bad6b3ecc16d50031e2}
+      \strng{namehash}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{fullhash}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{fullhashraw}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{bibnamehash}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{authorbibnamehash}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{authornamehash}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{authorfullhash}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \strng{authorfullhashraw}{0d7e7ae149b4562d29aeaf4db1e94318}
+      \field{sortinit}{C}
+      \field{sortinithash}{4d103a86280481745c9c897c925753c0}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{booktitle}{Intelligent Systems and Pattern Recognition}
-      \field{isbn}{9783031463389}
-      \field{issn}{1865-0937}
-      \field{month}{11}
-      \field{title}{A Deep Neural Architecture Search Net-Based Wearable Object Classification System for the Visually Impaired}
+      \field{title}{Evaluation of short range depth sonifications for visual-to-auditory sensory substitution}
       \field{year}{2023}
-      \field{pages}{198\bibrangedash 213}
-      \range{pages}{16}
       \verb{doi}
-      \verb 10.1007/978-3-031-46338-9_15
+      \verb 10.48550/ARXIV.2304.05462
       \endverb
       \verb{urlraw}
-      \verb http://dx.doi.org/10.1007/978-3-031-46338-9_15
+      \verb https://arxiv.org/abs/2304.05462
       \endverb
       \verb{url}
-      \verb http://dx.doi.org/10.1007/978-3-031-46338-9_15
+      \verb https://arxiv.org/abs/2304.05462
       \endverb
-    \endentry
-    \entry{gao_2025}{article}{}{}
-      \name{author}{8}{}{%
-        {{un=0,uniquepart=base,hash=6ac6e9eadf1a7d0d5801f9f820d0aa44}{%
-           family={Gao},
-           familyi={G\bibinitperiod},
-           given={Yun},
-           giveni={Y\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=8b7713202a971a205c088bdcb0002a8e}{%
-           family={Wu},
-           familyi={W\bibinitperiod},
-           given={Dan},
-           giveni={D\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f47cc1ff1ed8ea8025326fb247ba534f}{%
-           family={Song},
-           familyi={S\bibinitperiod},
-           given={Jie},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a1c3531b0ecf613e0e663906ae837dda}{%
-           family={Zhang},
-           familyi={Z\bibinitperiod},
-           given={Xueyi},
-           giveni={X\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b4e13f6f94a9d0d97389b3deeda85063}{%
-           family={Hou},
-           familyi={H\bibinitperiod},
-           given={Bangbang},
-           giveni={B\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=eaee7401f664ec22cbc44943e3323a04}{%
-           family={Liu},
-           familyi={L\bibinitperiod},
-           given={Hengfa},
-           giveni={H\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=9ad5bf8051d8a970af9884a0eee944ec}{%
-           family={Liao},
-           familyi={L\bibinitperiod},
-           given={Junqi},
-           giveni={J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=a2693716158322590ecde7b42087ab71}{%
-           family={Zhou},
-           familyi={Z\bibinitperiod},
-           given={Liang},
-           giveni={L\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media LLC}%
-      }
-      \strng{namehash}{0cd2a7d45e0d7e1b0afe6ab6a97c23a5}
-      \strng{fullhash}{3e9d46cc31c1a17b83beca484be1929e}
-      \strng{fullhashraw}{3e9d46cc31c1a17b83beca484be1929e}
-      \strng{bibnamehash}{3e9d46cc31c1a17b83beca484be1929e}
-      \strng{authorbibnamehash}{3e9d46cc31c1a17b83beca484be1929e}
-      \strng{authornamehash}{0cd2a7d45e0d7e1b0afe6ab6a97c23a5}
-      \strng{authorfullhash}{3e9d46cc31c1a17b83beca484be1929e}
-      \strng{authorfullhashraw}{3e9d46cc31c1a17b83beca484be1929e}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{issn}{2041-1723}
-      \field{journaltitle}{Nature Communications}
-      \field{month}{3}
-      \field{number}{1}
-      \field{title}{A wearable obstacle avoidance device for visually impaired individuals with cross-modal learning}
-      \field{volume}{16}
-      \field{year}{2025}
-      \verb{doi}
-      \verb 10.1038/s41467-025-58085-x
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.1038/s41467-025-58085-x
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.1038/s41467-025-58085-x
-      \endverb
+      \keyw{Human-Computer Interaction (cs.HC),FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
     \entry{gershman_2024}{article}{}{}
       \name{author}{1}{}{%
@@ -1101,6 +1392,146 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1016/j.isci.2024.110523
+      \endverb
+    \endentry
+    \entry{hamilton_fletcher_2021}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=5744a778158db81f01972b42a0f110d5}{%
+           family={Hamilton-Fletcher},
+           familyi={H\bibinithyphendelim F\bibinitperiod},
+           given={Giles},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=f2321f09fe540b263ed569b3cd3ce534}{%
+           family={Alvarez},
+           familyi={A\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=9b5e718631fe4d7958a517e8c6499197}{%
+           family={Obrist},
+           familyi={O\bibinitperiod},
+           given={Marianna},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=3d853451fe7311e1d392c00f6e0f8a3c}{%
+           family={Ward},
+           familyi={W\bibinitperiod},
+           given={Jamie},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{2}{%
+        {Springer Science}%
+        {Business Media LLC}%
+      }
+      \strng{namehash}{fea3d0f8e7a131ecbcdd5233785defe7}
+      \strng{fullhash}{6c5e766b3b14acebe2034dfc44415126}
+      \strng{fullhashraw}{6c5e766b3b14acebe2034dfc44415126}
+      \strng{bibnamehash}{6c5e766b3b14acebe2034dfc44415126}
+      \strng{authorbibnamehash}{6c5e766b3b14acebe2034dfc44415126}
+      \strng{authornamehash}{fea3d0f8e7a131ecbcdd5233785defe7}
+      \strng{authorfullhash}{6c5e766b3b14acebe2034dfc44415126}
+      \strng{authorfullhashraw}{6c5e766b3b14acebe2034dfc44415126}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1783-8738}
+      \field{journaltitle}{Journal on Multimodal User Interfaces}
+      \field{month}{7}
+      \field{number}{1}
+      \field{title}{SoundSight: a mobile sensory substitution device that sonifies colour, distance, and temperature}
+      \field{volume}{16}
+      \field{year}{2021}
+      \field{pages}{107\bibrangedash 123}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/s12193-021-00376-w
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1007/s12193-021-00376-w
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1007/s12193-021-00376-w
+      \endverb
+    \endentry
+    \entry{han_2026}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=f4bb9ce773f3cd36dddd36712822b738}{%
+           family={Han},
+           familyi={H\bibinitperiod},
+           given={Zaidao},
+           giveni={Z\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d5f39a4eae252fcb19c70a2184e53517}{%
+           family={Li},
+           familyi={L\bibinitperiod},
+           given={Sanqian},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8fde8559617f603b3e2b3cf30cb48e9b}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Xiang},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2cc286ecccf72cb308652d6e9767c1d6}{%
+           family={Hu},
+           familyi={H\bibinitperiod},
+           given={Xiaoqing},
+           giveni={X\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5d279c3bb861ee530e8f18c20cbd8b1c}{%
+           family={Higashita},
+           familyi={H\bibinitperiod},
+           given={Risa},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=eec567144e7053ded431c59378f366e7}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Jiang},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Elsevier BV}%
+      }
+      \strng{namehash}{af2e2bbc4d704c936c13c69cd06b1590}
+      \strng{fullhash}{0adbce57073b4a73db8d092c761cd8b7}
+      \strng{fullhashraw}{0adbce57073b4a73db8d092c761cd8b7}
+      \strng{bibnamehash}{0adbce57073b4a73db8d092c761cd8b7}
+      \strng{authorbibnamehash}{0adbce57073b4a73db8d092c761cd8b7}
+      \strng{authornamehash}{af2e2bbc4d704c936c13c69cd06b1590}
+      \strng{authorfullhash}{0adbce57073b4a73db8d092c761cd8b7}
+      \strng{authorfullhashraw}{0adbce57073b4a73db8d092c761cd8b7}
+      \field{sortinit}{H}
+      \field{sortinithash}{23a3aa7c24e56cfa16945d55545109b5}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{0141-9382}
+      \field{journaltitle}{Displays}
+      \field{month}{1}
+      \field{title}{Multi-path sensory substitution device navigates the blind and visually impaired individuals}
+      \field{volume}{91}
+      \field{year}{2026}
+      \field{pages}{103200}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1016/j.displa.2025.103200
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1016/j.displa.2025.103200
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1016/j.displa.2025.103200
       \endverb
     \endentry
     \entry{hou_2025}{article}{}{}
@@ -1164,71 +1595,6 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.1038/s41598-025-98891-3
-      \endverb
-    \endentry
-    \entry{ikram_2024}{article}{}{}
-      \name{author}{5}{}{%
-        {{un=0,uniquepart=base,hash=78bafce28ef34f8d0bad2c842ec6d4ed}{%
-           family={Ikram},
-           familyi={I\bibinitperiod},
-           given={Sunnia},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=ebbc6b28ccc317a82e074cbbdc59ee3c}{%
-           family={Bajwa},
-           familyi={B\bibinitperiod},
-           given={Prof.\bibnamedelimi Imran},
-           giveni={P\bibinitperiod\bibinitdelim I\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=f827edebc33c893cb7a9b23064328d44}{%
-           family={Gyawali},
-           familyi={G\bibinitperiod},
-           given={Sujan},
-           giveni={S\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=b771240f37bea7bf11487dc2e337b254}{%
-           family={Ikram},
-           familyi={I\bibinitperiod},
-           given={Amna},
-           giveni={A\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=434263a59651ff4f969ab9ce1d2748ab}{%
-           family={Alsubaie},
-           familyi={A\bibinitperiod},
-           given={Najah},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-      }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media LLC}%
-      }
-      \strng{namehash}{c7600808f5dcbd2ce4af331b9ee241f3}
-      \strng{fullhash}{a0f9ac079e7f8745bfe7db1870db87ef}
-      \strng{fullhashraw}{a0f9ac079e7f8745bfe7db1870db87ef}
-      \strng{bibnamehash}{a0f9ac079e7f8745bfe7db1870db87ef}
-      \strng{authorbibnamehash}{a0f9ac079e7f8745bfe7db1870db87ef}
-      \strng{authornamehash}{c7600808f5dcbd2ce4af331b9ee241f3}
-      \strng{authorfullhash}{a0f9ac079e7f8745bfe7db1870db87ef}
-      \strng{authorfullhashraw}{a0f9ac079e7f8745bfe7db1870db87ef}
-      \field{sortinit}{I}
-      \field{sortinithash}{8d291c51ee89b6cd86bf5379f0b151d8}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{}
-      \true{uniqueprimaryauthor}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{12}
-      \field{title}{A IoT-enabled Obstacle Detection and Recognition Technique for Blind Persons}
-      \field{year}{2024}
-      \verb{doi}
-      \verb 10.21203/rs.3.rs-5482522/v1
-      \endverb
-      \verb{urlraw}
-      \verb http://dx.doi.org/10.21203/rs.3.rs-5482522/v1
-      \endverb
-      \verb{url}
-      \verb http://dx.doi.org/10.21203/rs.3.rs-5482522/v1
       \endverb
     \endentry
     \entry{iwasaki_1986}{article}{}{}
@@ -1497,69 +1863,180 @@
       \endverb
       \keyw{Sound (cs.SD),Computation and Language (cs.CL),Audio and Speech Processing (eess.AS),FOS: Computer and information sciences,FOS: Computer and information sciences,FOS: Electrical engineering,electronic engineering,information engineering,FOS: Electrical engineering,electronic engineering,information engineering}
     \endentry
-    \entry{muhsin_2023}{article}{}{}
-      \name{author}{4}{}{%
-        {{un=0,uniquepart=base,hash=ee31eeb4a109766cd80ebd910af6d29b}{%
-           family={Muhsin},
-           familyi={M\bibinitperiod},
-           given={Zahra\bibnamedelima J.},
-           giveni={Z\bibinitperiod\bibinitdelim J\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=261f490d2d34022950a82d683238c297}{%
-           family={Qahwaji},
-           familyi={Q\bibinitperiod},
-           given={Rami},
-           giveni={R\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=561ebbadd8a46b4d1e41122c6287a44d}{%
-           family={Ghanchi},
-           familyi={G\bibinitperiod},
-           given={Faruque},
-           giveni={F\bibinitperiod},
-           givenun=0}}%
-        {{un=0,uniquepart=base,hash=04ec8e00846b39cc48c61a1ab577fc80}{%
-           family={Al-Taee},
-           familyi={A\bibinithyphendelim T\bibinitperiod},
-           given={Majid},
-           giveni={M\bibinitperiod},
-           givenun=0}}%
+    \entry{realsense2025}{misc}{}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=e75ec088ba42c54fb34430cfc379fb32}{%
+           family={{RealSense AI}},
+           familyi={R\bibinitperiod}}}%
       }
-      \list{publisher}{2}{%
-        {Springer Science}%
-        {Business Media LLC}%
-      }
-      \strng{namehash}{f28f5544b3907d2e4aef7c516220da47}
-      \strng{fullhash}{495c429acf12926b2dfffac1dd4020ad}
-      \strng{fullhashraw}{495c429acf12926b2dfffac1dd4020ad}
-      \strng{bibnamehash}{495c429acf12926b2dfffac1dd4020ad}
-      \strng{authorbibnamehash}{495c429acf12926b2dfffac1dd4020ad}
-      \strng{authornamehash}{f28f5544b3907d2e4aef7c516220da47}
-      \strng{authorfullhash}{495c429acf12926b2dfffac1dd4020ad}
-      \strng{authorfullhashraw}{495c429acf12926b2dfffac1dd4020ad}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \strng{namehash}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{fullhash}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{fullhashraw}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{bibnamehash}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{authorbibnamehash}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{authornamehash}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{authorfullhash}{e75ec088ba42c54fb34430cfc379fb32}
+      \strng{authorfullhashraw}{e75ec088ba42c54fb34430cfc379fb32}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{}
       \true{uniqueprimaryauthor}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{issn}{1783-8738}
-      \field{journaltitle}{Journal on Multimodal User Interfaces}
-      \field{month}{12}
-      \field{number}{1}
-      \field{title}{Review of substitutive assistive tools and technologies for people with visual impairments: recent advancements and prospects}
-      \field{volume}{18}
-      \field{year}{2023}
-      \field{pages}{135\bibrangedash 156}
-      \range{pages}{22}
-      \verb{doi}
-      \verb 10.1007/s12193-023-00427-4
-      \endverb
+      \field{title}{Eyesynth: {P}owering {S}onic {V}ision for the {B}lind}
+      \field{year}{2025}
       \verb{urlraw}
-      \verb http://dx.doi.org/10.1007/s12193-023-00427-4
+      \verb https://realsenseai.com/case-studies/powering-sonic-vision-for-the-blind/
       \endverb
       \verb{url}
-      \verb http://dx.doi.org/10.1007/s12193-023-00427-4
+      \verb https://realsenseai.com/case-studies/powering-sonic-vision-for-the-blind/
+      \endverb
+    \endentry
+    \entry{ruan_2025}{article}{}{}
+      \name{author}{6}{}{%
+        {{un=0,uniquepart=base,hash=3404e5f281e717394b0b794e37249ee8}{%
+           family={Ruan},
+           familyi={R\bibinitperiod},
+           given={Ligao},
+           giveni={L\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5744a778158db81f01972b42a0f110d5}{%
+           family={Hamilton-Fletcher},
+           familyi={H\bibinithyphendelim F\bibinitperiod},
+           given={Giles},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=305e1b849fa601cf065e6e239625fb46}{%
+           family={Beheshti},
+           familyi={B\bibinitperiod},
+           given={Mahya},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=07a0d241a2f2f93daa932f36c9fe9f7b}{%
+           family={Hudson},
+           familyi={H\bibinitperiod},
+           given={Todd\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=e7cc5405aac72c5985839611227a6cd8}{%
+           family={Porfiri},
+           familyi={P\bibinitperiod},
+           given={Maurizio},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=8c968630d8631019f38d94eacd9416e3}{%
+           family={Rizzo},
+           familyi={R\bibinitperiod},
+           given={John-Ross},
+           giveni={J\bibinithyphendelim R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Informa UK Limited}%
+      }
+      \strng{namehash}{4a1a1ec01ca53036f45963d4266b2bef}
+      \strng{fullhash}{3c613c733961253fb58d632e2fb4018e}
+      \strng{fullhashraw}{3c613c733961253fb58d632e2fb4018e}
+      \strng{bibnamehash}{3c613c733961253fb58d632e2fb4018e}
+      \strng{authorbibnamehash}{3c613c733961253fb58d632e2fb4018e}
+      \strng{authornamehash}{4a1a1ec01ca53036f45963d4266b2bef}
+      \strng{authorfullhash}{3c613c733961253fb58d632e2fb4018e}
+      \strng{authorfullhashraw}{3c613c733961253fb58d632e2fb4018e}
+      \field{sortinit}{R}
+      \field{sortinithash}{5e1c39a9d46ffb6bebd8f801023a9486}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1748-3115}
+      \field{journaltitle}{Disability and Rehabilitation: Assistive Technology}
+      \field{month}{2}
+      \field{number}{6}
+      \field{title}{Multi-faceted sensory substitution using wearable technology for curb alerting: a pilot investigation with persons with blindness and low vision}
+      \field{volume}{20}
+      \field{year}{2025}
+      \field{pages}{1884\bibrangedash 1897}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1080/17483107.2025.2463541
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1080/17483107.2025.2463541
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/17483107.2025.2463541
+      \endverb
+    \endentry
+    \entry{sami_2025}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=21794f0f22213f7c8d18c00f100d34d1}{%
+           family={Sami},
+           familyi={S\bibinitperiod},
+           given={Memoona},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=0a8a53ad000fb4934a8f657a7a8bc5d1}{%
+           family={Agha},
+           familyi={A\bibinitperiod},
+           given={Dua},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4964e66c3ef8a65eb45625dc9e4ea273}{%
+           family={Baloch},
+           familyi={B\bibinitperiod},
+           given={Junaid},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d243060621f80a2dffc229dd96d9644a}{%
+           family={Dewani},
+           familyi={D\bibinitperiod},
+           given={Amirita},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4b69925d5b9fcbe997131e4e83f6bcf9}{%
+           family={Maheshwari},
+           familyi={M\bibinitperiod},
+           given={Kohal\bibnamedelima Deep},
+           giveni={K\bibinitperiod\bibinitdelim D\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Sukkur IBA University}%
+      }
+      \strng{namehash}{6245c6f0e69037db92691763cc308f57}
+      \strng{fullhash}{1a927e85813f4b03acb6da5a5a168da9}
+      \strng{fullhashraw}{1a927e85813f4b03acb6da5a5a168da9}
+      \strng{bibnamehash}{1a927e85813f4b03acb6da5a5a168da9}
+      \strng{authorbibnamehash}{1a927e85813f4b03acb6da5a5a168da9}
+      \strng{authornamehash}{6245c6f0e69037db92691763cc308f57}
+      \strng{authorfullhash}{1a927e85813f4b03acb6da5a5a168da9}
+      \strng{authorfullhashraw}{1a927e85813f4b03acb6da5a5a168da9}
+      \field{sortinit}{S}
+      \field{sortinithash}{b164b07b29984b41daf1e85279fbc5ab}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2520-0755}
+      \field{journaltitle}{Sukkur IBA Journal of Computing and Mathematical Sciences}
+      \field{month}{2}
+      \field{number}{2}
+      \field{title}{Efficient Object Detection and Voice-Assisted Navigation for the Visually Impaired: The Smart Hat Approach}
+      \field{volume}{8}
+      \field{year}{2025}
+      \field{pages}{1\bibrangedash 12}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.30537/sjcms.v8i2.1535
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.30537/sjcms.v8i2.1535
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.30537/sjcms.v8i2.1535
       \endverb
     \endentry
     \entry{shinagawa_2025}{misc}{}{}
@@ -1721,6 +2198,94 @@
       \endverb
       \keyw{Human-Computer Interaction (cs.HC),Robotics (cs.RO),FOS: Computer and information sciences,FOS: Computer and information sciences}
     \endentry
+    \entry{udayakumar_2025}{article}{}{}
+      \name{author}{8}{}{%
+        {{un=0,uniquepart=base,hash=f98b78cefaf9375baa40bc4d678843e0}{%
+           family={Udayakumar},
+           familyi={U\bibinitperiod},
+           given={Devi},
+           giveni={D\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5cd27ddeaa9e19759d2b512582afeae5}{%
+           family={Gopalakrishnan},
+           familyi={G\bibinitperiod},
+           given={Sarika},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=84a8116a2ac67d0811ed7608839cd559}{%
+           family={Raghuram},
+           familyi={R\bibinitperiod},
+           given={Aparna},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=d407cddb7170304bef48600ed902ac4a}{%
+           family={Kartha},
+           familyi={K\bibinitperiod},
+           given={Arathy},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7136bf809b367aeb510b441595ef85fe}{%
+           family={Krishnan},
+           familyi={K\bibinitperiod},
+           given={Arun\bibnamedelima Kumar},
+           giveni={A\bibinitperiod\bibinitdelim K\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c6704918a537441025c7e91df8c9f5fe}{%
+           family={Ramamirtham},
+           familyi={R\bibinitperiod},
+           given={Ramkumar},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4782268e3cf6acae781421c625c6e215}{%
+           family={Muthangi},
+           familyi={M\bibinitperiod},
+           given={Ramu},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=c2e61a5c01f99f37915fd9d64fae359a}{%
+           family={Raju},
+           familyi={R\bibinitperiod},
+           given={Ramakrishna},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Ovid Technologies (Wolters Kluwer Health)}%
+      }
+      \strng{namehash}{45efcd425318a95904f924154710985d}
+      \strng{fullhash}{b27db560b7052eda1ce3ab61c9be1668}
+      \strng{fullhashraw}{b27db560b7052eda1ce3ab61c9be1668}
+      \strng{bibnamehash}{b27db560b7052eda1ce3ab61c9be1668}
+      \strng{authorbibnamehash}{b27db560b7052eda1ce3ab61c9be1668}
+      \strng{authornamehash}{45efcd425318a95904f924154710985d}
+      \strng{authorfullhash}{b27db560b7052eda1ce3ab61c9be1668}
+      \strng{authorfullhashraw}{b27db560b7052eda1ce3ab61c9be1668}
+      \field{sortinit}{U}
+      \field{sortinithash}{6901a00e45705986ee5e7ca9fd39adca}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1998-3689}
+      \field{journaltitle}{Indian Journal of Ophthalmology}
+      \field{month}{5}
+      \field{number}{Suppl 3}
+      \field{title}{Artificial intelligence-powered smart vision glasses for the visually impaired}
+      \field{volume}{73}
+      \field{year}{2025}
+      \field{pages}{S492\bibrangedash S497}
+      \range{pages}{-1}
+      \verb{doi}
+      \verb 10.4103/ijo.ijo_1621_24
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.4103/IJO.IJO_1621_24
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.4103/IJO.IJO_1621_24
+      \endverb
+    \endentry
     \entry{usertesting_2024}{misc}{}{}
       \name{author}{1}{}{%
         {{un=0,uniquepart=base,hash=138c191690c707625d53ef2fcb24395d}{%
@@ -1753,6 +2318,61 @@
       \endverb
       \verb{url}
       \verb https://www.usertesting.com/blog/gestalt-principles
+      \endverb
+    \endentry
+    \entry{viancy_2024}{article}{}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=e614a8db18580866e9d01d317ef794dc}{%
+           family={Viancy\bibnamedelima V},
+           familyi={V\bibinitperiod\bibinitdelim V\bibinitperiod},
+           given={Nithin\bibnamedelimb R\bibnamedelima C},
+           giveni={N\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim C\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5573870936246f7cb1aed1e8f482b59b}{%
+           family={M\bibnamedelima Mouli},
+           familyi={M\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Manushri},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=b86a52347ab2e5689414a0cd12d780f0}{%
+           family={S},
+           familyi={S\bibinitperiod},
+           given={Sridevi},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {IEEE}%
+      }
+      \strng{namehash}{354914d43c7f00885a8fb56033f80a1c}
+      \strng{fullhash}{0c0d0c6d7c5ada7a8cba662fa1a63ce6}
+      \strng{fullhashraw}{0c0d0c6d7c5ada7a8cba662fa1a63ce6}
+      \strng{bibnamehash}{0c0d0c6d7c5ada7a8cba662fa1a63ce6}
+      \strng{authorbibnamehash}{0c0d0c6d7c5ada7a8cba662fa1a63ce6}
+      \strng{authornamehash}{354914d43c7f00885a8fb56033f80a1c}
+      \strng{authorfullhash}{0c0d0c6d7c5ada7a8cba662fa1a63ce6}
+      \strng{authorfullhashraw}{0c0d0c6d7c5ada7a8cba662fa1a63ce6}
+      \field{sortinit}{V}
+      \field{sortinithash}{afb52128e5b4dc4b843768c0113d673b}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{2024 International Conference on Inventive Computation Technologies (ICICT)}
+      \field{month}{4}
+      \field{title}{Aural Vision - Envisioning the Independence of the Visually Impaired}
+      \field{year}{2024}
+      \field{pages}{387\bibrangedash 392}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/icict60155.2024.10545004
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1109/ICICT60155.2024.10545004
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1109/ICICT60155.2024.10545004
       \endverb
     \endentry
     \entry{who_2023}{misc}{}{}
@@ -1816,7 +2436,7 @@
       \field{issn}{1662-5145}
       \field{journaltitle}{Frontiers in Integrative Neuroscience}
       \field{month}{4}
-      \field{title}{Area V5â€”a microcosm of the visual brain}
+      \field{title}{Area V5 - microcosm of the visual brain}
       \field{volume}{9}
       \field{year}{2015}
       \verb{doi}
@@ -1827,6 +2447,140 @@
       \endverb
       \verb{url}
       \verb http://dx.doi.org/10.3389/fnint.2015.00021
+      \endverb
+    \endentry
+    \entry{zhao_2025}{article}{}{}
+      \name{author}{4}{}{%
+        {{un=0,uniquepart=base,hash=0677bf42cec59492510735b7b22ea035}{%
+           family={Zhao},
+           familyi={Z\bibinitperiod},
+           given={Yiming},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=5a7fe627a1432331b3a2a443fd53e216}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Shuo},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=4342b2312a45f6c7e301d1a0b0bf154f}{%
+           family={Tao},
+           familyi={T\bibinitperiod},
+           given={Yong},
+           giveni={Y\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=dab70d591a330d9a459610be40d59923}{%
+           family={Kang},
+           familyi={K\bibinitperiod},
+           given={Hao},
+           giveni={H\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {Informa UK Limited}%
+      }
+      \strng{namehash}{b98c8449e589f602333c839b2fc1182a}
+      \strng{fullhash}{58d487e6feffa7a7708c84b29e0843aa}
+      \strng{fullhashraw}{58d487e6feffa7a7708c84b29e0843aa}
+      \strng{bibnamehash}{58d487e6feffa7a7708c84b29e0843aa}
+      \strng{authorbibnamehash}{58d487e6feffa7a7708c84b29e0843aa}
+      \strng{authornamehash}{b98c8449e589f602333c839b2fc1182a}
+      \strng{authorfullhash}{58d487e6feffa7a7708c84b29e0843aa}
+      \strng{authorfullhashraw}{58d487e6feffa7a7708c84b29e0843aa}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{1460-2202}
+      \field{journaltitle}{Current Eye Research}
+      \field{month}{4}
+      \field{number}{8}
+      \field{title}{Evaluation of the Efficacy of an Assistive Device for Blind People: A Prospective, Non-Randomized, Single Arm, and Open Label Clinical Trial}
+      \field{volume}{50}
+      \field{year}{2025}
+      \field{pages}{865\bibrangedash 869}
+      \range{pages}{5}
+      \verb{doi}
+      \verb 10.1080/02713683.2025.2495212
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.1080/02713683.2025.2495212
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.1080/02713683.2025.2495212
+      \endverb
+    \endentry
+    \entry{zvori_teanu_2021}{article}{}{}
+      \name{author}{5}{}{%
+        {{un=0,uniquepart=base,hash=578a539f9ba33e34474ba5f5db2c73c3}{%
+           family={Zvorișteanu},
+           familyi={Z\bibinitperiod},
+           given={Otilia},
+           giveni={O\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=801aae0dc5fd301366d6638a4cde8bc4}{%
+           family={Caraiman},
+           familyi={C\bibinitperiod},
+           given={Simona},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=2ac4db32c417444c707470bd631a9c7a}{%
+           family={Lupu},
+           familyi={L\bibinitperiod},
+           given={Robert-Gabriel},
+           giveni={R\bibinithyphendelim G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=7e86bc8d43d73e102bae97ab32bc8519}{%
+           family={Botezatu},
+           familyi={B\bibinitperiod},
+           given={Nicolae\bibnamedelima Alexandru},
+           giveni={N\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=ac4e60e8a42c4e13cd60edd4f2cfdfce}{%
+           family={Burlacu},
+           familyi={B\bibinitperiod},
+           given={Adrian},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{publisher}{1}{%
+        {MDPI AG}%
+      }
+      \strng{namehash}{42cca54138a20efac1552409a9063223}
+      \strng{fullhash}{b5947cc605cc11a63a863776d0a571c1}
+      \strng{fullhashraw}{b5947cc605cc11a63a863776d0a571c1}
+      \strng{bibnamehash}{b5947cc605cc11a63a863776d0a571c1}
+      \strng{authorbibnamehash}{b5947cc605cc11a63a863776d0a571c1}
+      \strng{authornamehash}{42cca54138a20efac1552409a9063223}
+      \strng{authorfullhash}{b5947cc605cc11a63a863776d0a571c1}
+      \strng{authorfullhashraw}{b5947cc605cc11a63a863776d0a571c1}
+      \field{sortinit}{Z}
+      \field{sortinithash}{96892c0b0a36bb8557c40c49813d48b3}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{issn}{2079-9292}
+      \field{journaltitle}{Electronics}
+      \field{month}{7}
+      \field{number}{14}
+      \field{title}{Sensory Substitution for the Visually Impaired: A Study on the Usability of the Sound of Vision System in Outdoor Environments}
+      \field{volume}{10}
+      \field{year}{2021}
+      \field{pages}{1619}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/electronics10141619
+      \endverb
+      \verb{urlraw}
+      \verb http://dx.doi.org/10.3390/electronics10141619
+      \endverb
+      \verb{url}
+      \verb http://dx.doi.org/10.3390/electronics10141619
       \endverb
     \endentry
   \enddatalist

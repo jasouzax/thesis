@@ -4,12 +4,15 @@ doi() {
   [ -z "$1" ] && echo -e "\x1b[33mdoi \x1b[0;2m{doi code}\x1b[0m\n  Returns the Bibtex of the DOI" && return
   curl -LH "Accept: application/x-bibtex" "https://doi.org/$1"
 }
+rst() {
+  rm "$src/paper/build/"*
+}
 pdf() {
   [ "$1" = '-h' ] && echo -e "\x1b[33mpdf\x1b[0m\n  Compiles the Thesis Paper as PDF" && return
   #[ -e "$src/paper/build" ] && rm "$src/paper/build/"* -r
   mkdir -p "$src/paper/build"
   cd "$src/paper/build"
-  cp ../*.{tex,bib} ../{pages,assets,lib}/* .
+  cp ../*.{tex,bib} ../{pages,assets}/* .
   lualatex -shell-escape thesis.tex
   [ -e "$src/paper/build/thesis.pdf" ] && cp "$src/paper/build/thesis.pdf" ..
   mv *.svg ../assets
@@ -45,4 +48,11 @@ pev() {
   [ "$new" -eq 1 ] && python -m venv "$src/py"
   source "$src/py/bin/activate"
   [ "$new" -eq 1 ] && pip install -r "$src/src/requirements.txt" --upgrade
+}
+uml() {
+  [ -z "$1" ] && echo -e "\x1b[33muml\x1b[0m\n  Compiled PlantUML (.puml) files to svg" && return
+  java -jar "$src/paper/assets/plantuml.jar" -tsvg "$1"
+}
+hos() {
+  python3 -m http.server -d "$src/paper" 8000 &
 }

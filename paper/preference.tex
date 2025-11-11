@@ -1,0 +1,150 @@
+% ----- Document Design ----- %
+\documentclass[12pt,a4paper,oneside]{book}         % Template of thesis paper is 'report'
+\usepackage[
+  top=2.54cm,
+  bottom=2.54cm,
+  left=3.81cm,
+  right=2.54cm,
+  includefoot
+]{geometry}                                 % Margins of paper
+\usepackage[T1]{fontenc}                    % Font encoding
+\usepackage{fontspec}                       % Use .ttf fonts
+\setmainfont{TeX Gyre Termes}               % Default font (another name for "Times New Roman")
+\usepackage{setspace} \setstretch{2.0}      % Line spaces to 2.0
+\usepackage{indentfirst}                    % Indent at paragraph start
+
+% ----- General Imports ----- %
+\usepackage{graphicx}                       % Including images
+\usepackage[utf8]{inputenc}                 % Input encoding
+\usepackage[
+  bookmarksopen=true,
+  bookmarksopenlevel=1
+]{hyperref}                                 % Hyperlinks + Proper Bookmarks
+
+% ------ Debug/Dev Tools (Remove before finalization) ----- %
+\usepackage{lipsum}                         % Dummy text
+\usepackage[
+    colorinlistoftodos,
+    textsize=small
+]{todonotes}                                % Todo Notes
+
+% ----- Sections/Subsections Design ----- %
+\usepackage{titlesec}                       % Custom section design
+\setcounter{secnumdepth}{0}                 % Remove section numbering
+\titleformat{\section}
+  {\normalfont\bfseries\centering}          % Bold + centered
+  {\thesection.}{1em}{}                     % Number format
+\titlespacing*{\section}{0pt}{0pt}{0pt}     % Remove vertical space before/after
+\titleformat{\subsection}
+  {\normalfont\bfseries}                    % Bold only
+  {\thesubsection.}{1em}{}                  % Number format
+\titlespacing*{\subsection}{0pt}{0pt}{0pt}  % Remove extra space
+
+% ----- Document Outline Fix ----- %
+\usepackage{bookmark}
+\bookmarksetup{
+  open,
+  numbered,
+  startatroot
+}
+\makeatletter
+\let\oldsection\section
+\renewcommand\section{
+  \bookmarksetup{startatroot}
+  \oldsection
+}
+\makeatletter
+
+% ----- Enumeration Design ----- %
+\usepackage{enumitem}                       % Enumerated lists
+\setlist[enumerate,1]{label=(\arabic*),ref=\arabic*}
+\setlist[enumerate,2]{label=(\theenumi.\alph*),ref=\theenumi.\alph*}
+
+% ----- Table Design ----- %
+\usepackage{multirow}                       % Allow multi-spanning rows
+\usepackage{tocloft}                        % Clean table design
+
+% ----- Figure Design ----- %
+\usepackage{float}                          % Force figures to be exactly in their position
+
+% ----- Table/List of Contents/Figures/Tables Design ----- %
+\renewcommand{\cfttoctitlefont}{\hfill\normalfont\bfseries}
+\renewcommand{\cftaftertoctitle}{\hfill}
+\renewcommand{\contentsname}{Table of Contents}
+\renewcommand{\cftloftitlefont}{\hfill\normalfont\bfseries}
+\renewcommand{\cftafterloftitle}{\hfill}
+\renewcommand{\listfigurename}{List of Figures}
+\renewcommand{\cftlottitlefont}{\hfill\normalfont\bfseries}
+\renewcommand{\cftafterlottitle}{\hfill}
+\renewcommand{\listtablename}{List of Tables}
+
+% ----- Bibliography Design ----- %
+\usepackage[
+  style=apa,
+  sortcites=true,
+  backend=biber,
+  doi=false,
+  url=false,
+  isbn=false,
+]{biblatex}
+\DeclareLanguageMapping{english}{english-apa}
+\addbibresource{references.bib}
+
+% ----- Graphical Diagram Design ----- %
+\usepackage[svgnames]{xcolor}               % Colors by name (for diagrams)
+\usepackage{circuitikz}                     % Circuit diagrams
+\usepackage{gensymb}                        % Symbols like degrees
+\usetikzlibrary{svg.path}                   % SVGs
+\usepackage{fancyvrb}                       % provides VerbatimOut to capture verbatim to a file
+\usepackage{ifthen}                         % Allows SVG/PNG switching
+\usepackage{svg}                            % Allows embedded SVGs
+
+\newcommand{\plantumltype}{png}             % Prefered default output
+\newcounter{plantumlctr}                    % Number of UMLS
+\newenvironment{plantuml}{                  % Embedded PlantUML support
+  \refstepcounter{plantumlctr}
+  \VerbatimEnvironment
+  \begin{VerbatimOut}{uml-\theplantumlctr.puml}%
+}{
+  \end{VerbatimOut}
+  \immediate\write18{java -jar "plantuml.jar" -t\plantumltype\space "uml-\theplantumlctr.puml"}
+  \begin{center}
+    \ifthenelse{\equal{\plantumltype}{png}}{
+      \includegraphics[width=\linewidth]{uml-\theplantumlctr.png}
+    }{
+      \includesvg[width=\linewidth]{uml-\theplantumlctr.svg}
+    }
+  \end{center}
+}
+
+% ------ Paper's header/footers design ----- %
+\usepackage{fancyhdr}                       % Thesis header/footer
+\setlength{\headheight}{3cm}
+\setlength{\footskip}{2pt}
+% In every pages
+\pagestyle{fancy}
+    \renewcommand{\headrulewidth}{0pt}
+    \fancyhead{} \fancyfoot{}
+    \fancyhead[L]{\includegraphics[height=2.4cm]{logo_sanag.png}}
+    \fancyhead[C]{
+        {\setmainfont[Path=./]{old_english.ttf} \Large University of San Agustin}\\[3pt]
+        {\small General Luna St., 5000 Iloilo City, Philippines \\[-5pt]
+            www.usa.edu.ph } \\ [5pt]
+        \textbf{COLLEGE OF TECHNOLOGY}
+    }
+    \fancyhead[R]{\includegraphics[height=2.4cm]{logo_cot.png}}
+    \fancyfoot[C]{\thepage}
+% In table of contents/figures/tables
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyhead[L]{\includegraphics[height=2.4cm]{logo_sanag.png}}
+  \fancyhead[C]{
+      {\setmainfont[Path=./]{old_english.ttf} \Large University of San Agustin}\\[3pt]
+      {\small General Luna St., 5000 Iloilo City, Philippines \\[-5pt]
+          www.usa.edu.ph } \\ [5pt]
+      \textbf{COLLEGE OF TECHNOLOGY}
+  }
+  \fancyhead[R]{\includegraphics[height=2.4cm]{logo_cot.png}}
+  \fancyfoot[C]{\thepage}
+  \renewcommand{\headrulewidth}{0pt}
+}
