@@ -19,6 +19,16 @@ pdf() {
   rm *.tex *.ttf *.bib svg-inkscape -r
   cd -
 }
+liv() {
+  cd "$src/paper/build"
+  cp ../*.{tex,bib} ../{pages,assets}/* .
+  latexmk -lualatex -synctex=1 -pvc thesis.tex
+  #latexmk -lualatex -pvc -interaction=nonstopmode thesis.tex
+  [ -e "$src/paper/build/thesis.pdf" ] && cp "$src/paper/build/thesis.pdf" ..
+  mv *.svg ../assets
+  rm *.tex *.ttf *.bib svg-inkscape -r
+  cd -
+}
 bib() {
   [ "$1" = '-h' ] && echo -e "\x1b[33mbib\x1b[0m\n  Code formats the \x1b[1m\"references.bib\"\x1b[0m" && return
   cd "$src/paper"
@@ -45,7 +55,7 @@ pev() {
   local new=0
   [ ! -d "$src/py" ] && new=1
 
-  [ "$new" -eq 1 ] && python -m venv "$src/py"
+  [ "$new" -eq 1 ] && python3 -m venv "$src/py"
   source "$src/py/bin/activate"
   [ "$new" -eq 1 ] && pip install -r "$src/src/requirements.txt" --upgrade
 }

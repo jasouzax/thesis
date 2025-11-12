@@ -19,7 +19,5 @@
         sim --> net
         net -> sv
         sv -> [External APIs]
-        sv -> [Local AI
-        - Ollama GPT-OSS
-        - Yolo]
+        sv -> [Local AI\n- Ollama GPT-OSS\n- Yolo]
         @enduml

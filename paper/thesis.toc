@@ -1,0 +1,29 @@
+\contentsline {section}{Title Page}{i}{Doc-Start}%
+\contentsline {section}{Introduction}{1}{Doc-Start}%
+\contentsline {subsection}{Background of the study}{1}{Doc-Start}%
+\contentsline {subsection}{Rationale}{2}{section*.1}%
+\contentsline {subsection}{General Objective}{4}{section*.1}%
+\contentsline {subsection}{Specific Objectives}{4}{section*.1}%
+\contentsline {subsection}{Significance of the study}{5}{Item.23}%
+\contentsline {subsection}{Conceptual Framework}{8}{Item.37}%
+\contentsline {subsection}{Theoretical Framework}{9}{plantumlctr.1}%
+\contentsline {subsection}{Scope and Delimitation}{11}{Item.43}%
+\contentsline {section}{Review of Related Literature}{12}{Item.43}%
+\contentsline {subsection}{Related Studies}{12}{Item.43}%
+\contentsline {subsection}{Review of Related Literature}{12}{Item.43}%
+\contentsline {subsection}{Summary of Related Literature}{20}{Item.47}%
+\contentsline {section}{Materials and Methods}{22}{Item.47}%
+\contentsline {subsection}{Research Design/Methods}{22}{Item.47}%
+\contentsline {subsection}{Materials and Requirements}{23}{Item.47}%
+\contentsline {subsubsection}{Materials and Processes}{23}{Item.47}%
+\contentsline {subsubsection}{Hardware Material}{23}{Item.47}%
+\contentsline {subsubsection}{Software Specification}{23}{Item.47}%
+\contentsline {subsubsection}{Library and Board Managers}{23}{Item.47}%
+\contentsline {subsubsection}{Other Materials/Equipment/Devices}{23}{Item.47}%
+\contentsline {subsection}{Prototype Building Procedures}{23}{Item.47}%
+\contentsline {subsection}{Data Presentation and Analysis}{23}{Item.47}%
+\contentsline {subsubsection}{Formula References}{26}{table.0.1}%
+\contentsline {subsection}{Ethical Considerations}{26}{table.0.1}%
+\contentsline {section}{Results and Discussion}{26}{table.0.1}%
+\contentsline {section}{Appendices}{26}{table.0.1}%
+\contentsline {section}{References}{26}{table.0.1}%

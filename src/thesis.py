@@ -1,24 +1,25 @@
 #!/usr/bin/env python3
-import cv2
-import numpy as np
-import mediapipe as mp
-from mediapipe.python.solutions import hands as mp_hands
-from mediapipe.python.solutions import drawing_utils as mp_drawing
-from mediapipe.python.solutions import drawing_styles as mp_drawing_styles
-import os
-import torch
+import sys                                                                  # System for CLI Arguments
+import cv2                                                                  # OpenCV2 for Image Processing
+import numpy as np                                                          # Numpy for Data Processing
+import mediapipe as mp                                                      # MediaPipe for Hand Recognition
+from mediapipe.python.solutions import hands as mp_hands                    #   MediaPipe Hand
+from mediapipe.python.solutions import drawing_utils as mp_drawing          #   MediaPipe Drawing
+from mediapipe.python.solutions import drawing_styles as mp_drawing_styles  #   MediaPipe Drawing Styles
+import os                                                                   # OS for FileSystem interaction
+import torch                                                                # Torch for AI model execution
 
 # Typing imports
-from numpy.typing import NDArray
-from typing import cast, NamedTuple, Optional, List, Any
-from dataclasses import dataclass
+from numpy.typing import NDArray                                            # NDArray Type
+from typing import cast, NamedTuple, Optional, List, Any                    # General Python Types
+from dataclasses import dataclass                                           # Dataclasses
 
 # Configuration Variables
-board:tuple[int,int]    = (9,6)     # Inner corners of checkerboard
-square_size:int         = 19        # Size of square in mm
-cam_id:tuple[int,int]   = (0,2)     # Camera ID for /dev/video{n}
-scale:float             = 0.5       # Scale ratio for faster processing (reduced for wide FOV)
-baseline:float          = 60.0      # Distance between cameras in mm
+board:tuple[int,int]    = (9,6)                                             # Inner corners of checkerboard
+square_size:int         = 19                                                # Size of square in mm
+cam_id:tuple[int,int]   = (0,2)                                             # Camera ID for /dev/video{n}
+scale:float             = 0.5                                               # Scale ratio for faster processing (reduced for wide FOV)
+baseline:float          = 60.0                                              # Distance between cameras in mm
 
 # Class Types
 class HandLandmarkList:
@@ -102,10 +103,6 @@ if err:=(not cam_left.isOpened())+((not cam_right.isOpened())<<1):
 cam_left.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 cam_right.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 
-# Set camera resolution if possible (helps with performance)
-# for cam in [cam_left, cam_right]:
-#     cam.set(cv2.CAP_PROP_FRAME_WIDTH, 640)
-#     cam.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 
 # Get camera dimensions
 print('Getting camera dimensions')

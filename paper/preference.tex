@@ -1,3 +1,4 @@
+% !TeX root = ./thesis.tex
 % ----- Document Design ----- %
 \documentclass[12pt,a4paper,oneside]{book}         % Template of thesis paper is 'report'
 \usepackage[
@@ -9,7 +10,7 @@
 ]{geometry}                                 % Margins of paper
 \usepackage[T1]{fontenc}                    % Font encoding
 \usepackage{fontspec}                       % Use .ttf fonts
-\setmainfont{TeX Gyre Termes}               % Default font (another name for "Times New Roman")
+\setmainfont{Times New Roman} %TeX Gyre Termes}               % Default font (another name for "Times New Roman")
 \usepackage{setspace} \setstretch{2.0}      % Line spaces to 2.0
 \usepackage{indentfirst}                    % Indent at paragraph start
 
@@ -22,6 +23,7 @@
 ]{hyperref}                                 % Hyperlinks + Proper Bookmarks
 
 % ------ Debug/Dev Tools (Remove before finalization) ----- %
+%\usepackage{l3pdf}                          % PDF management support
 \usepackage{lipsum}                         % Dummy text
 \usepackage[
     colorinlistoftodos,
@@ -104,15 +106,16 @@
 \newenvironment{plantuml}{                  % Embedded PlantUML support
   \refstepcounter{plantumlctr}
   \VerbatimEnvironment
-  \begin{VerbatimOut}{uml-\theplantumlctr.puml}%
+  \begin{VerbatimOut}{build/uml-\theplantumlctr.puml}%
 }{
   \end{VerbatimOut}
-  \immediate\write18{java -jar "plantuml.jar" -t\plantumltype\space "uml-\theplantumlctr.puml"}
+  \immediate\write18{echo "HELLLOOOOOOOOO WORRORORORORLLLDDD"}
+  \immediate\write18{java -jar "assets/plantuml.jar" -t\plantumltype\space "build/uml-\theplantumlctr.puml" -o "../assets"}
   \begin{center}
     \ifthenelse{\equal{\plantumltype}{png}}{
-      \includegraphics[width=\linewidth]{uml-\theplantumlctr.png}
+      \includegraphics[width=\linewidth]{assets/uml-\theplantumlctr.png}
     }{
-      \includesvg[width=\linewidth]{uml-\theplantumlctr.svg}
+      \includesvg[width=\linewidth]{assets/uml-\theplantumlctr.svg}
     }
   \end{center}
 }
@@ -125,26 +128,26 @@
 \pagestyle{fancy}
     \renewcommand{\headrulewidth}{0pt}
     \fancyhead{} \fancyfoot{}
-    \fancyhead[L]{\includegraphics[height=2.4cm]{logo_sanag.png}}
+    \fancyhead[L]{\includegraphics[height=2.4cm]{assets/logo_sanag.png}}
     \fancyhead[C]{
         {\setmainfont[Path=./]{old_english.ttf} \Large University of San Agustin}\\[3pt]
         {\small General Luna St., 5000 Iloilo City, Philippines \\[-5pt]
             www.usa.edu.ph } \\ [5pt]
         \textbf{COLLEGE OF TECHNOLOGY}
     }
-    \fancyhead[R]{\includegraphics[height=2.4cm]{logo_cot.png}}
+    \fancyhead[R]{\includegraphics[height=2.4cm]{assets/logo_cot.png}}
     \fancyfoot[C]{\thepage}
 % In table of contents/figures/tables
 \fancypagestyle{plain}{
   \fancyhf{}
-  \fancyhead[L]{\includegraphics[height=2.4cm]{logo_sanag.png}}
+  \fancyhead[L]{\includegraphics[height=2.4cm]{assets/logo_sanag.png}}
   \fancyhead[C]{
       {\setmainfont[Path=./]{old_english.ttf} \Large University of San Agustin}\\[3pt]
       {\small General Luna St., 5000 Iloilo City, Philippines \\[-5pt]
           www.usa.edu.ph } \\ [5pt]
       \textbf{COLLEGE OF TECHNOLOGY}
   }
-  \fancyhead[R]{\includegraphics[height=2.4cm]{logo_cot.png}}
+  \fancyhead[R]{\includegraphics[height=2.4cm]{assets/logo_cot.png}}
   \fancyfoot[C]{\thepage}
   \renewcommand{\headrulewidth}{0pt}
 }
