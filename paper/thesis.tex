@@ -1,7 +1,8 @@
 % !TeX root = ./thesis.tex
 % !TeX program = latexmk (lualatex)
 % Main Thesis Paper
-\input{preference}
+% lualatex -shell-escape -synctex=1 -interaction=nonstopmode -file-line-error -recorder thesis.tex
+\input{../preference}
 
 % Document Properties
 \hypersetup{
@@ -20,85 +21,76 @@
   \pdfbookmark[0]{Frontmatter}{frontmatter}
   \pagenumbering{roman}
   % Title
-  \input{pages/00_title}
+  \include{pages/00_title}
   % ! Approval Sheet
   % ! English Editing Certification
   % ! Abstract
   % ! Acknowledgement
   % Table of contents/figures/tables
-  \tableofcontents
-  \vspace*{\fill} \clearpage
-  \listoffigures
-  \vspace*{\fill} \clearpage
-  \listoftables
-  \vspace*{\fill} \clearpage
-  \cleardoublepage
-  \mainmatter
-  \setcounter{page}{1}
-  % Introduction
-  \section{Introduction}
-    \input{pages/05_background}
-    \input{pages/06_rationale}
-    \input{pages/07_objectives}
-    \input{pages/08_significance}
-    \input{pages/09_conceptual}
-    \input{pages/10_theoretical}
-    \input{pages/11_scope}
-  % Review of Related Literature
-  \section{Review of Related Literature}
-    % Prior Arts
-    \input{pages/12_related_studies}
-    \input{pages/13_related_literature}
-  % Methods
-  \section{Materials and Methods}
-    \input{pages/14_research_design}
-    \input{pages/15_materials}
-    \input{pages/16_prototype_building}
-    \input{pages/17_data_presentation}
-    \input{pages/18_ethical_considerations}
-  % Results and Discussion
-  \section{Results and Discussion}
-    % ! System General Description
-    % ! Physical Layout of Actual Project
-    % ! Screen Layout of Software Outputs
-    % ! Experimental Set-Up & Testing Results
-    % ! Implementation Results
-    % ! Installation Set-UP & User Manual
-    % ! Discussion and Analysis of Results
-    % ! Summary of Findings
-    % ! Conclusion
-    % ! Recommendation
-    % ! Reference
-  \section{Appendices}
-    % ! Certifications (Plagiarism, Statistician, etc.)
-    % ! Plagiarism
-    % ! Definition of Terms & Standard Used
-    % ! Images of Actual Circuit & Sample Output
-    % ! Program Source Codes
-    % ! Grammarian Certification
-    % \input{36_researchers_profile}
-    % ! Total Budget
-    % ! Gantt chart for Project Proposal Timeline
-    % ! Prior Arts
-    % ! Materials and Specification of the components
-  % References
-  \section{References}
-  \printbibliography[heading=none]
-
-
-  % Testing
-  %\section{Testing}
-    % ! Unit Testings
-    % ! Expected Results
-  % Results and Anlysis
-  %\section{Results and Statistical Analysis}
-    % ! Result Hypotesis
-    % ! Result Calibration
-    % ! Result Algorithm
-  % Discussion
-  %\section{Discussion}
-    % ! Discussion
-  % Formulas
-  %\section{Formulas}
-  % References
+  
+  % \addcontentsline{toc}{section}{Table of Contents}
+  % \tableofcontents
+  % \vspace*{\fill} \clearpage
+  % \addcontentsline{toc}{section}{List of Figures}
+  % \listoffigures
+  % \vspace*{\fill} \clearpage
+  % \addcontentsline{toc}{section}{List of Tables}
+  % \listoftables
+  % \vspace*{\fill} \clearpage
+  % \cleardoublepage
+  % \mainmatter
+  % \setcounter{page}{1}
+  % % Introduction
+  % \section{Introduction}
+  %   \input{../pages/05_background}
+  %   \input{../pages/06_rationale}
+  %   \input{../pages/07_objectives}
+  %   \input{../pages/08_significance}
+  %   \input{../pages/09_conceptual}
+  %   \input{../pages/10_theoretical}
+  %   \input{../pages/11_scope}
+  % % Review of Related Literature
+  % %\section{Review of Related Literature}
+  %   % Prior Arts
+  %   %\input{../pages/12_related_studies}
+  %   \input{../pages/13_related_literature}
+  % \clearpage
+  % % Methods
+  % \section{Materials and Methods}
+  %   \input{../pages/14_research_design}
+  %   \input{../pages/15_materials}
+  %   %\input{../pages/16_prototype_building}
+  %   \input{../pages/17_data_presentation}
+  %   \input{../pages/26_summary_of_findings}
+  %   \input{../pages/18_ethical_considerations}
+  % % Results and Discussion
+  % %\section{Results and Discussion}
+  %   % ! System General Description
+  %   % ! Physical Layout of Actual Project
+  %   % ! Screen Layout of Software Outputs
+  %   % ! Experimental Set-Up & Testing Results
+  %   % ! Implementation Results
+  %   % ! Installation Set-UP & User Manual
+  %   % ! Discussion and Analysis of Results
+  %   %\input{../pages/26_summary_of_findings}
+  %   % ! Conclusion
+  %   % ! Recommendation
+  %   \clearpage
+  %   \subsection{References}
+  %   \printbibliography[heading=none]
+  % \clearpage
+  % \pagenumbering{Roman}
+  % \appendix
+  % \addcontentsline{toc}{section}{Appendices}
+  %   % ! Certifications (Plagiarism, Statistician, etc.)
+  %   % ! Plagiarism
+  %   % ! Definition of Terms & Standard Used
+  %   % ! Images of Actual Circuit & Sample Output
+  %   % ! Program Source Codes
+  %   % ! Grammarian Certification
+  %   \input{../pages/36_researchers_profile}
+  %   \input{../pages/37_total_budget}
+  %   \input{../pages/38_gantt_chart}
+  %   % ! Prior Arts
+  %   % ! Materials and Specification of the components
 \end{document}

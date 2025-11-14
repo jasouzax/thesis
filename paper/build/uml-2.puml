@@ -1,23 +1,24 @@
         @startuml
+        !include <tupadr3/common>
+        !include <tupadr3/font-awesome-5/wifi>
+        !include <tupadr3/font-awesome-5/bolt>
         skinparam componentStyle rectangle
         left to right direction
 
         [Microcontroller] as mc
-        [UPS Module] as ups
+        [UPS Module (5V/3A)] as ups
         [SIM and GPS Module] as sim
         [Wifi or Mobile Data] as net
         [Server (NodeJS)] as sv
-
         [Lithium Battery 5V] -> ups
         [Digital Camera (OV5640)] --> mc
-        ups --> mc
-        [IMU] --> mc
-
-        mc --> [Speaker]
-        mc --> sim
-
-        sim --> net
-        net -> sv
-        sv -> [External APIs]
-        sv -> [Local AI\n- Ollama GPT-OSS\n- Yolo]
+        ups --> mc : <$bolt{scale=0.5}>
+        [IMU (MPU6050)] --> mc
+        [Microphone] --> mc
+        mc -> [Speaker]
+        sim <-> mc
+        sim <--> net
+        net <-> sv : <$wifi{scale=0.5}>
+        sv <--> [External APIs\n<U+2022> Google Maps\n<U+2022> Facebook] : <$wifi{scale=0.5}>
+        sv <-> [Local AI\n<U+2022> Ollama GPT-OSS\n<U+2022> Yolo]
         @enduml

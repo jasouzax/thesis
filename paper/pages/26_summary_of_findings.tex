@@ -1,0 +1,200 @@
+%\subsection{Summary of Findings}
+
+% The tables below shows the performance evaluation metrics for the MediaPipe AI model in detecting hand gestures, the columns are:
+% \begin{enumerate}
+%     \item \textbf{TP} - True Positive: Number of photos where the hand gesture was \emph{correctly classified} as the target gesture.
+%     \item \textbf{FP} - False Positive: Number of photos where a \emph{different} gesture (or no gesture) was \emph{incorrectly classified} as the target gesture.
+%     \item \textbf{FN} - False Negative: Number of photos where the \emph{target gesture was present} but was \emph{not detected} or misclassified as another gesture.
+%     \item \textbf{TN} - True Negative: Number of photos that \emph{do not contain the target gesture} and were \emph{correctly classified} as not being the target gesture.
+%     \item \textbf{Precision}: Proportion of predicted target gestures that are correct.
+%     \[
+%     \text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}
+%     \]
+%     \item \textbf{Recall} (also known as Sensitivity or True Positive Rate): Proportion of actual target gestures that were correctly identified.
+%     \[
+%     \text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}
+%     \]
+%     \item \textbf{Accuracy}: Overall proportion of correct classifications (both positive and negative).
+%     \[
+%     \text{Accuracy} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{TN} + \text{FP} + \text{FN}}
+%     \]
+% \end{enumerate}
+
+% $Precision=\frac{TP}{TP+EP}$
+% \begin{longtblr}[
+%         caption = {Precision Evaluation Metrics for Hand Gesture Recognition},
+%         label   = {tab:precision_handgesture},
+%     ]{
+%         colspec = {X[l] X[l] X[l] X[l]},
+%         rowhead = 1,
+%         width   = \textwidth,
+%         row{1} = {font=\bfseries},
+%         row{2-Z} = {ht=12pt},
+%     }
+%     \hline
+%     \textbf{Hand Gesture} & \textbf{TP} & \textbf{FP} & \textbf{Precision} \\
+%     \hline
+%     Open back hand \\
+%     \hline
+%     Closed back hand \\
+%     \hline
+%     Pointing index \\
+%     \hline
+%     Pointing thumb \\
+%     \hline
+%     Overall (Average)\\
+%     \hline
+% \end{longtblr}
+% \clearpage
+
+% $Recall=\frac{TP}{TP+FN}$
+% \begin{longtblr}[
+%         caption = {Recall Evaluation Metrics for Hand Gesture Recognition},
+%         label   = {tab:recall_handgesture},
+%     ]{
+%         colspec = {X[l] X[l] X[l] X[l] },
+%         rowhead = 1,
+%         width   = \textwidth,
+%         row{1} = {font=\bfseries},
+%         row{2-Z} = {ht=12pt},
+%     }
+%     \hline
+%     \textbf{Hand Gesture} & \textbf{TP} & \textbf{FN} & \textbf{Precision} \\
+%     \hline
+%     Open back hand \\
+%     \hline
+%     Closed back hand \\
+%     \hline
+%     Pointing index \\
+%     \hline
+%     Pointing thumb \\
+%     \hline
+%     Overall (Average)\\
+%     \hline
+% \end{longtblr}
+% \clearpage
+
+% $Accuracy=\frac{TP+TN}{TP+TN+FP+FN}$
+% \begin{longtblr}[
+%         caption = {Performance Evaluation Metrics for Hand Gesture Recognition},
+%         label   = {tab:performance_handgesture_},
+%     ]{
+%         colspec = {X[l] X[l] X[l] X[l] X[l] X[l]},
+%         rowhead = 1,
+%         width   = \textwidth,
+%         row{1} = {font=\bfseries},
+%         row{2-Z} = {ht=12pt},
+%     }
+%     \hline
+%     \textbf{Hand Gesture} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{TN} & \textbf{Accuracy} \\
+%     \hline
+%     Open back hand \\
+%     \hline
+%     Closed back hand \\
+%     \hline
+%     Pointing index \\
+%     \hline
+%     Pointing thumb \\
+%     \hline
+%     Overall (Average)\\
+%     \hline
+% \end{longtblr}
+% \clearpage
+
+
+
+% \begin{longtblr}[
+%         caption = {Performance Evaluation Metrics for Hand Gesture Recognition},
+%         label   = {tab:performance_handgesture},
+%     ]{
+%         colspec = {X[l] X[l] X[l] X[l] X[l] X[l] X[l] X[l]},
+%         rowhead = 1,
+%         width   = \textwidth,
+%         row{1} = {font=\bfseries},
+%         row{2-Z} = {ht=12pt},
+%     }
+%     \hline
+%     \textbf{Hand Gesture} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{TN} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy} \\
+%     \hline
+%     Open back hand \\
+%     \hline
+%     Closed back hand \\
+%     \hline
+%     Pointing index \\
+%     \hline
+%     Pointing thumb \\
+%     \hline
+%     Overall (Average)\\
+%     \hline
+% \end{longtblr}
+
+
+
+%The performance of the system was evaluated using three main metrics: Precision, Recall, and Accuracy. These metrics are based on the classification outcomes of the MediaPipe AI model for hand gesture recognition, represented by four key values: True Positive (TP), False Positive (FP), False Negative (FN), and True Negative (TN). True Positive (TP) refers to hand gestures that were correctly classified and recognized as the intended gesture. False Positive (FP) represents instances where a different gesture (or no gesture) was incorrectly classified as belonging to a certain target gesture. False Negative (FN) refers to hand gestures that were misclassified and not correctly identified, causing them to be recognized as the wrong gesture or not detected at all. Lastly, True Negative (TN) represents instances where non-target gestures were correctly identified as not belonging to a specific gesture class. These values serve as the foundation for computing Precision, Recall, and Accuracy, which determine how correctly, completely, and consistently the system identifies and recognizes hand gestures for device control.
+
+\begin{enumerate}
+    \item \textbf{Precision Formula:}
+    \[
+    \text{Precision} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Positives (FP)}}
+    \]
+    
+    This formula determines how correctly the system identifies and recognizes hand gestures. It shows how many of the gestures classified by the system were actually the correct target gesture.
+    
+    \item \textbf{Recall Formula:}
+    \[
+    \text{Recall} = \frac{\text{True Positives (TP)}}{\text{True Positives (TP)} + \text{False Negatives (FN)}}
+    \]
+    
+    This formula determines how well the system detects all actual instances of each gesture type. It shows how many of the real target gestures were correctly identified and recognized.
+    
+    \item \textbf{Accuracy Formula:}
+    \[
+    \text{Accuracy} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{TN} + \text{FP} + \text{FN}}
+    \]
+    
+    This formula determines the overall correctness of the system. It shows how many of the total hand gesture classifications were correctly identified and recognized.
+\end{enumerate}
+
+\begin{longtblr}[
+        caption = {Confusion Matrix of Hand Gesture Recognition Results},
+        label   = {tab:confusion_matrix_gesture},
+    ]{
+        colspec = {X[1.2,l] X[c] X[c] X[c] X[c] X[1,c]},
+        rowhead = 1,
+        width   = \textwidth,
+        row{1} = {font=\bfseries},
+        row{2-Z} = {ht=12pt},
+        hlines,
+        vlines,
+    }
+    \textbf{Actual Gesture Type} & \textbf{Classified as Open Hand} & \textbf{Classified as Closed Hand} & \textbf{Classified as Pointing Index} & \textbf{Classified as Pointing Thumb} & \textbf{Total Actual Item} \\
+    \textit{Open Back Hand} & & & & & \\
+    \textit{Closed Back Hand} & & & & & \\
+    \textit{Pointing Index} & & & & & \\
+    \textit{Pointing Thumb} & & & & & \\
+    \textbf{Total} & & & & & \\
+\end{longtblr}
+
+Table \ref{tab:confusion_matrix_gesture} presents the confusion matrix of hand gesture recognition results, which shows the relationship between the actual gesture types and the classified results produced by the MediaPipe AI model. Each row represents the true gesture category, while each column represents how the system classified and recognized the gesture into its corresponding type.
+
+\begin{longtblr}[
+        caption = {Performance Evaluation Metrics for Hand Gesture Recognition},
+        label   = {tab:performance_gesture},
+    ]{
+        colspec = {X[1.2,l] X[c] X[c] X[c] X[c] X[c] X[c] X[c]},
+        rowhead = 1,
+        width   = \textwidth,
+        row{1} = {font=\bfseries},
+        row{2-Z} = {ht=12pt},
+        hlines,
+        vlines,
+    }
+    \textbf{Gesture Type} & \textbf{TP} & \textbf{FP} & \textbf{FN} & \textbf{TN} & \textbf{Precision} & \textbf{Recall} & \textbf{Accuracy} \\
+    \textit{Open Back Hand} & & & & & & & \\
+    \textit{Closed Back Hand} & & & & & & & \\
+    \textit{Pointing Index} & & & & & & & \\
+    \textit{Pointing Thumb} & & & & & & & \\
+    \textbf{Overall (Average)} & & & & & & & \\
+\end{longtblr}
+
+Table \ref{tab:performance_gesture} presents the performance metrics of the MediaPipe AI model for each hand gesture type. It shows the values of True Positive (TP), False Positive (FP), False Negative (FN), and True Negative (TN), which represent the classification outcomes of the system. Based on these values, the Precision, Recall, and Accuracy metrics were computed to evaluate the overall performance of the gesture recognition system.

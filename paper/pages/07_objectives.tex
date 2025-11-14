@@ -8,35 +8,59 @@ To develop an AIoT visual sensory substitution hat device that converts real-tim
 \subsection{Specific Objectives}
 \begin{enumerate}
     % Software
-    \item To develop the main pipeline to represent environmental information to audio cues
+    % \item To develop a prototype main system that converts environmental information to audio cues that includes:
+    % \begin{enumerate}
+    %     \item A photogrammetry (2D to 3D) system using dual OV5640 stereo cameras and Inertial Measurement Unit (IMU) to generate depth maps and point cloud calculatio
+    %     \item Toggable modes to prioritize what information is cued into audio
+    %     \item Allows insertion anywhere in the pipeline for more custom preferences
+    % \end{enumerate}
+    \item To develop a prototype system that includes:
     \begin{enumerate}
-        \item Working photogrammetry (2D to 3D) system from the cameras
-        \item Uses help from the IMU to create a virtual environment
-        \item Toggable modes to prioritize what information is cued into audio
-        \item Allows insertion anywhere in the pipeline for more custom preferences
+        \item A photogrammetry (2D to 3D) system using dual OV5640 stereo cameras and Inertial Measurement Unit (IMU) to convert environmental information through depth maps and point cloud calculation enabling real-time 3D reconstruction of environment into audio cues for navigation.
+        \item A toggleable cue mode by hand gesture commands using (what did u use na program for hand gesture) to adjust perception focus, to prioritize specific spatial information into audio cues for navigation or to configure external services with the users’ preferences.
+        \item A modular system that inserts custom module AI services using (what did u use External API?) such as object, face, and text recognition in real-time controlled by hand gesture commands, and location-based services using SIM868 GPS module to track route of the user.
     \end{enumerate}
     % Hardware
-    \item To develop the device to be portable and comfortable
-    \begin{enumerate}
-        \item Uses battery instead of needing direct connection to power
-        \item Can be charged through UPS instead of disposable batteries
-        \item All packed into a hat to avoid putting strain on sensitive areas like eyes, nose, and ears
-    \end{enumerate}
+    % \item To develop the device to be portable and comfortable
+    % \begin{enumerate}
+    %     \item Uses battery instead of needing direct connection to power
+    %     \item Can be charged through UPS instead of disposable batteries
+    %     \item All packed into a hat to avoid putting strain on sensitive areas like eyes, nose, and ears
+    % \end{enumerate}
     % AI Testing
-    \item To test the accuracy and speed of the AI models
-    \begin{enumerate}
-        \item Determine the frames per seconds of AI or Image processes
-        \item Compare depth predictions with actual depth
-        \item Failure cases of Language Models fullfilling request
-    \end{enumerate}
+    % \item To test the accuracy and speed of the AI models
+    % \begin{enumerate}
+    %     \item Determine the frames per seconds of AI or Image processes
+    %     \item Compare depth predictions with actual depth
+    %     \item Failure cases of Language Models fullfilling request
+    % \end{enumerate}
     % User/Device Evaluation
-    \item To evaluate the user's comfort and acclimation towards the device
+    % \item To evaluate the user's comfort and acclimation towards the device
+    % \begin{enumerate}
+    %     \item Does the device become uncomfortable during long periods of usage?
+    %     \item Does the main pipeline become subconscious to the user's experience?
+    %     \item Can the user properly interpret information the device is providing them?
+    % \end{enumerate}
+    % Hardware and User
+    % \item To develop the device to be portable and comfortable to the user
+    % \begin{enumerate}
+    %     \item The device is powered through UPS allowing portability and chargeable
+    %     \item All packed into a hat to avoid putting strain on sensitive areas like eyes, nose, and ears
+    %     \item Using the device becomes subconscious to the user's experience
+    % \end{enumerate}
+    \item To design a portable device that includes:
     \begin{enumerate}
-        \item Does the device become uncomfortable during long periods of usage?
-        \item Does the main pipeline become subconscious to the user's experience?
-        \item Can the user properly interpret information the device is providing them?
+        \item A rechargeable 5V/3A UPS module with 18650 lithium-ion batteries for cord-free operation via Type-C charging
+        \item 3D-printed hat enclosure to distribute weight evenly and prevent strain on sensitive facial areas like eyes, nose, and ears.
     \end{enumerate}
 
+    \item To test the functionality of the device system by:
+    \begin{enumerate}
+        \item Calculating the Error and Success Percentage performance of photogrammetry by comparing the generated depth maps and point clouds to ground truth measurements.
+        \item Evaluating the Precision, Recall, and Accuracy of the toggleable cue mode hand gesture commands responsiveness to switching modes.
+        \item Measuring the frame per second (FPS) of AI processing, error rates in recognition, and route accuracy of the modular system.
+        \item Simulating full system functionality by combining photogrammetry, IMU, and modules to track overall FPS, audio cue fidelity, and failure cases, with qualitative feedback from the users using survey.
+    \end{enumerate}
 
     % !User experience
     % \item To develop an interface that is not visually dependent nor over stimulating

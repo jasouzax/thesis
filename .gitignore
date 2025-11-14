@@ -2,6 +2,8 @@
 py
 test
 ~$*
+server2
+node_modules
 
 # Linux
 *~

@@ -1,0 +1,31 @@
+        @startuml
+
+        start
+
+        :Receive HTTP API request from client device;
+
+        :Extract device code and authentication token;
+
+        if (Verify device authentication?) then (valid)
+        :Parse request payload;
+
+        :Identify request type;
+
+        :Route to appropriate external API;
+        :Process request;
+        :Return API response;
+
+        :Format response as JSON;
+        :Send HTTP response to client device;
+
+        else (invalid)
+        :Generate authentication error;
+        :Send HTTP 401 Unauthorized response;
+        stop
+        endif
+
+        :Log request and response;
+
+        stop
+
+        @enduml

@@ -1,177 +1,616 @@
 \subsection{Data Presentation and Analysis}
 
+% Block diagram of the System
 \begin{figure}[H]
     \centering
     \caption{Block diagram of the System}
     \begin{plantuml}
         @startuml
+        !include <tupadr3/common>
+        !include <tupadr3/font-awesome-5/wifi>
+        !include <tupadr3/font-awesome-5/bolt>
         skinparam componentStyle rectangle
         left to right direction
 
         [Microcontroller] as mc
-        [UPS Module] as ups
+        [UPS Module (5V/3A)] as ups
         [SIM and GPS Module] as sim
         [Wifi or Mobile Data] as net
         [Server (NodeJS)] as sv
-
         [Lithium Battery 5V] -> ups
         [Digital Camera (OV5640)] --> mc
-        ups --> mc
-        [IMU] --> mc
-
-        mc --> [Speaker]
-        mc --> sim
-
-        sim --> net
-        net -> sv
-        sv -> [External APIs]
-        sv -> [Local AI\n- Ollama GPT-OSS\n- Yolo]
+        ups --> mc : <$bolt{scale=0.5}>
+        [IMU (MPU6050)] --> mc
+        [Microphone] --> mc
+        mc -> [Speaker]
+        sim <-> mc
+        sim <--> net
+        net <-> sv : <$wifi{scale=0.5}>
+        sv <--> [External APIs\n<U+2022> Google Maps\n<U+2022> Facebook] : <$wifi{scale=0.5}>
+        sv <-> [Local AI\n<U+2022> Ollama GPT-OSS\n<U+2022> Yolo]
         @enduml
     \end{plantuml}
     \label{fig:block}
 \end{figure}
 
+Figure \ref{fig:block} illustrates the simplified hardware-software interaction flow of the World Navigation Hat system, showing the essential component connections and data pathways. The architecture begins with power distribution from a 5V Lithium Battery that feeds into the UPS Module (5V/3A), which provides regulated power (indicated by a lightning bolt symbol) to the central Microcontroller (Orange Pi Zero 2W or similar embedded system). Multiple input sensors connect directly to the microcontroller: the Digital Camera (OV5640) captures stereo visual data for photogrammetry and depth mapping, the IMU (MPU6050) provides 6-axis motion tracking data for head orientation and movement detection, and the Microphone captures audio input for voice command recognition through WhisperX AI processing. The microcontroller outputs audio feedback through the Speaker, delivering spatial audio cues that convey environmental information to the visually impaired user. Bidirectional communication flows between the microcontroller and the SIM and GPS Module, which provides both GPS positioning data for outdoor navigation and wireless connectivity options (WiFi or Mobile Data, indicated by wireless symbols) to enable internet access. This connectivity links the device to a remote Server (NodeJS), which hosts computationally intensive processes including Local AI models (Ollama GPT-OSS for natural language processing and Yolo for advanced object detection) and facilitates integration with External APIs such as Google Maps for navigation assistance and Facebook/Meta platforms for social connectivity and digital environment access. The server acts as the computational backbone for tasks beyond the microcontroller's capacity, processing complex AI inference requests and coordinating with cloud services, while the embedded system handles real-time sensor fusion, basic computer vision operations, and immediate audio feedback generation—creating a distributed computing architecture that balances on-device responsiveness with cloud-enhanced intelligence for comprehensive assistive navigation capabilities.
+
+% Architecture the System
 \begin{figure}[H]
-    \centering
+    \caption{Architecture of the System}
+    \includegraphics[width=\linewidth]{assets/architecture.png}
+    \label{fig:architecture}
+\end{figure}
+
+This system architecture diagram of figure \ref{fig:architecture} illustrates the complete data flow and component interaction of the World Navigation Hat, showing how sensory input is processed and transformed into actionable navigation assistance for visually impaired users. The process begins with three primary sensor categories: the dual OV5640 cameras (5MP at 160° FOV, spaced 10 cm apart) capture stereo images for photogrammetry, the Inertial Measurement Unit (IMU) tracks head motion and orientation, and the earphone microphone captures voice commands from the user. These inputs feed into the Orange Pi Zero 2W microcontroller, which runs five core applications concurrently: (1) Emulated Vision to Audio—converting stereo images into 3D point clouds and depth maps, then applying human visual processing emulation (foveation, selective attention, scene gist extraction) to generate spatially-aware audio cues delivered through the earphone speaker; (2) Photogrammetry—reconstructing 3D environmental geometry from stereo disparity calculations; (3) Hand Gesture Recognition via MediaPipe AI—detecting user hand gestures for touchless device control and parameter adjustment; (4) Voice Recognition through WhisperX AI—processing spoken commands when activated by specific gestures; and (5) Server API integration—connecting to external computational resources. Data flows bidirectionally between the Orange Pi Zero 2W and a central server platform (accessed via the SIM868 module with GPS using either cellular data or WLAN), where NodeJS processes coordinate with external APIs (Google Maps, Meta platforms) to enhance navigation capabilities. The server infrastructure manages three interconnected virtual map representations: the Virtual Physical Map derived from real-time photogrammetry and GPS positioning showing the user's immediate surroundings with obstacle locations, the Virtual Digital Map providing access to online navigation services and digital content, and a unified spatial model that bridges physical and digital navigation contexts. Throughout this pipeline, the IMU continuously synchronizes the virtual environment with the user's head movements to maintain vestibular alignment and prevent disorientation, while the modular architecture allows applications to access any stage of the processing pipeline—enabling customization for specific user needs such as text reading, face recognition, or expense tracking—all working cohesively to transform complex visual-spatial information into intuitive, non-overwhelming audio feedback that empowers independent navigation for visually impaired individuals.
+
+% 3D model of the system
+\begin{figure}[H]
+    \caption{3D model of the system}
+    \includegraphics[width=\linewidth]{assets/3d.png}
+    \label{fig:3d}
+\end{figure}
+
+This 3D CAD rendering in figure \ref{fig:3d} illustrates the physical prototype of the World Navigation Hat's core electronics enclosure, designed as a compact, wearable sensory substitution device for visually impaired individuals. The cylindrical housing features a removable top lid embossed with a stylized logo, revealing the internal Orange Pi Zero 2W single-board computer (shown in green PCB with the prominent blue Allwinner H618 processor) mounted on a platform with ventilation holes for heat dissipation during intensive AI processing tasks. The device integrates into a modified hat brim structure (visible as the curved frame at the base) with attachment points and cable routing channels that secure cameras, sensors, and the UPS battery module while maintaining ergonomic comfort for extended wear. Small external ports (visible on the lower left) provide access for USB charging, while the sealed design protects sensitive electronics from environmental elements during outdoor navigation, embodying the project's goal of transforming bulky assistive technology into an unobtrusive, socially acceptable wearable that converts real-time visual information into intuitive audio cues through advanced photogrammetry, AI-driven scene understanding, and human sensory process emulation.
+
+% Complete Circuit Diagram of the System
+\begin{figure}[H]
     \caption{Complete Circuit Diagram of the System}
-    \includegraphics[width=\linewidth]{assets/circuit.jpg}
+    \includegraphics[width=\linewidth]{assets/circuit.png}
     \label{fig:circuit}
 \end{figure}
 
+This circuit figure \ref{fig:circuit} illustrates the complete hardware interconnection architecture of the World Navigation Hat system, showing how all components integrate to form a functional wearable assistive device for visually impaired individuals.
+Power Distribution System:
+The USB-C 5V/3A UPS Module serves as the primary power source, positioned at the bottom of the diagram with a yellow arrow indicating the external power input connection. This rechargeable power management unit supplies regulated 5V power to all system components, with Chinese text indicating battery charging specifications and protection circuitry. The green PCB features multiple power regulation stages with visible inductors (marked as 74Z), capacitors (both electrolytic and ceramic), and battery management ICs to ensure stable operation during mobile use and support lithium battery charging cycles.
+Central Processing Unit:
+The Orange Pi Zero 2W single-board computer occupies the central position in the architecture, acting as the main computational hub. It features the Allwinner H618 quad-core processor (visible as the large silver chip), USB ports for camera connectivity, a micro SD card slot for operating system and data storage, GPIO header pins for peripheral connections, and HDMI output. The board receives 5V power from the UPS module (indicated by red power lines) and ground connections (black lines), while managing bidirectional data communication with all sensors and actuators.
+Stereo Vision System:
+Two OV5640 USB Cameras are positioned at the top right of the diagram, each providing 5MP resolution at 160° field of view. These cameras are mounted with a precise 10 cm baseline separation (as noted in the physical prototype specifications) and connect to the Orange Pi Zero 2W via USB interfaces (shown by thick black connection lines). The stereo camera configuration enables depth perception through stereo disparity calculations, capturing simultaneous images from slightly different viewpoints to generate 3D point cloud data essential for environmental mapping and obstacle detection.
+Motion Sensing:
+The MPU6050 Inertial Measurement Unit (6-axis gyroscope and accelerometer) appears as a small blue module at the center-top of the diagram. It connects to the Orange Pi Zero 2W through I2C communication protocol (indicated by green connection lines labeled with I2C pins: SCL, SDA, VCC, GND). This sensor tracks head motion and orientation in real-time, providing critical data for aligning the virtual environment representation with the user's physical movements, preventing vestibular-visual conflicts that could cause disorientation or nausea.
+Cellular and GPS Communication:
+The SIM868 Development Board is prominently displayed on the left side, featuring the SIM868 module (white component with CE marking) that integrates GSM/GPRS cellular communication and GPS positioning capabilities. The micro SIM card slot (shown with dimensions 12mm × 15mm) accepts a standard cellular SIM card for mobile data connectivity. Connection lines (green for data, red for power, black for ground) link the SIM868 to the Orange Pi Zero 2W, enabling outdoor navigation through GPS coordinates and server communication via 2G/3G networks when Wi-Fi is unavailable. Two X-marked connectors on either side indicate antenna connection points for cellular and GPS signals.
+Audio Interface:
+The Onyehn TRRS audio module (small purple/red PCB) positioned at the top-center provides bidirectional audio functionality. It connects to the Orange Pi Zero 2W's audio pins and features a TRRS (Tip-Ring-Ring-Sleeve) 3.5mm jack supporting both audio output and microphone input through a single connector. The earphone illustration at the top shows standard earbud-style output for delivering spatial audio cues to the user, while the integrated microphone captures voice commands for hands-free device control through WhisperX voice recognition processing.
+Connection Architecture:
+Color-coded wiring illustrates the data flow and power distribution:
+
+Red lines: 5V power rails from UPS to all components
+\begin{enumerate}
+    \item Black lines: Ground connections ensuring common reference voltage
+    \item Green lines: I2C communication (MPU6050), UART serial data (SIM868), or other digital communication protocols
+    \item Thick black lines: USB data connections for high-bandwidth camera feeds
+    \item Blue/purple lines: Audio signal paths between Orange Pi and TRRS module
+\end{enumerate}
+
+Physical Integration:
+All components are designed to mount within the 3D-printed hat enclosure shown in previous wireframe diagrams, with the UPS module likely positioned at the rear for weight distribution, the Orange Pi Zero 2W and SIM868 board in the central crown area for protection, cameras mounted at the front brim for unobstructed field of view, and the IMU positioned near the cameras to accurately track head orientation relative to the visual input direction. The compact arrangement maintains the wearable form factor while ensuring proper thermal management through ventilation and component spacing.
+
+% Wireframe of the Prototype
 \begin{figure}[H]
-    \centering
+    \caption{Wireframe of the Prototype}
+    \includegraphics[width=\linewidth]{assets/wireframe.jpg}
+    \label{fig:wireframe}
+\end{figure}
+
+% Measurements of Prototype
+\begin{figure}[H]
+    \caption{Measurements of the Prototype}
+    \includegraphics[page=1, width=\textwidth]{assets/Measurement.pdf}
+    \label{fig:measurement}
+\end{figure}
+
+\begin{tabular}{ll}
+A: Hat top diameter & J: Strap handle inner length \\
+B: Total height & K: Wire clamp width \\
+C: Camera distance & L: Wire clamp inner length \\
+D: Hat Trim diameter & M: Camera height - from bottom of hat \\
+E: Hat Brim diameter & N: Total height - without strap handle \\
+F: Hat Sweatband diameter & O: Cover diameter \\
+G: Wire clamp outer length & P: Antenna hole position - relative to hat \\
+H: Strap handle outer length & Q: Antenna hole diameter \\
+I: Earphone wire channel radius & \\
+\end{tabular}
+
+% Pin Configuration to Microcontroller
+% \begin{table}[H]
+%     \centering
+%     \caption{Pin Configuration to Microcontroller}
+%     \begin{tabular}{|l|l|}
+%         \hline
+%         \textbf{Component} & \textbf{Pin} \\
+%         \hline
+%         \multicolumn{2}{|c|}{UPS Module} \\
+%         Pin 2 (5V) & +UPS \\
+%         Pin 6 (GND) & -UPS \\
+%         \hline
+%         \multicolumn{2}{|c|}{SIM 868} \\
+%         Pin 2 (5V) & VCC \\
+%         Pin 6 (GND) & GND \\
+%         \hline
+%     \end{tabular}
+%     \label{tab:pinrpi}
+% \end{table}
+
+% Complete Schematic Diagram of the System
+\begin{figure}[H]
     \caption{Complete Schematic Diagram of the System}
-    \begin{tikzpicture}[x=1cm,y=1cm]
-        % ---- RASPBERRY PI ZERO 2W ----- %
-        \newcommand{\xrpi}[1]{ 0.22+0.25*#1 }
-        \newcommand{\yrpi}[1]{ 0.86+0.25*#1 }
-        \begin{scope}[shift={(0,0)}]
-            \draw[thick] (0,0) rectangle (3,6.5);
-            \node[anchor=center] at (1.5,6.8) {\tiny Raspberry PI Zero 2W};
-            % SD CARD
-            \draw[black!50,thick] (0.71,0.16) -- (0.71,1.27) -- (1.91,1.27) -- (1.91,0.16) -- (1.69,0.16) -- (1.69,0.29) -- (0.82,0.29) -- (0.82,0.16)  -- (0.71,0.16);
-            % ICS
-            \draw[black!50,thick] (0.84,2) rectangle (2.35,3.5);
-            \draw[black!50,thick] (1.03,3.83) rectangle (2.25,5);
-            % PORTS
-            \filldraw[black!50,thick,fill=white] (2.3,0.7) rectangle (3.13,1.81);
-            \filldraw[black!50,thick,fill=white] (2.6,3.83) rectangle (3.13,4.53);
-            \filldraw[black!50,thick,fill=white] (2.6,5) rectangle (3.13,5.8);
-            \filldraw[black!50,thick,fill=white] (0.71,6.2) rectangle (2.28,6.62);
-            % PINS
-            \foreach \x in {0,1} { \foreach \y in {0,...,19} {
-                \draw[thick] (0.22+0.25*\x, 0.86+0.25*\y) circle (0.08);
-            }}
-            % RASPBERRY PI LOGO
-            \draw[black!50, fill=black!50, yscale=-1, shift={(1,-3.3)}] svg {M21.479 23.12c-1.14 1.317-1.776 3.719-0.943 4.495 0.792 0.593 2.933 0.521 4.511-1.641 1.151-1.443 0.76-3.859 0.109-4.5-0.973-0.739-2.369 0.22-3.677 1.663zM10.74 23.516c-1.213-1.385-2.787-2.209-3.803-1.599-0.683 0.509-0.807 2.249 0.161 3.957 1.437 2.032 3.464 2.24 4.297 1.745 0.88-0.651 0.401-2.855-0.656-4.104zM16.213 27.708c-1.473-0.031-3.735 0.589-3.703 1.38-0.027 0.537 1.776 2.095 3.609 2.016 1.765 0.041 3.593-1.52 3.573-2.197-0.005-0.699-1.996-1.235-3.475-1.177zM16.115 9.12c-1.703-0.041-3.339 1.244-3.339 1.989-0.005 0.907 1.344 1.833 3.349 1.86 2.057 0.009 3.353-0.745 3.375-1.683 0.021-1.057-1.86-2.183-3.36-2.167zM12.016 9.828c-2.844-0.459-5.213 1.199-5.12 4.255 0.093 1.177 6.172-4.052 5.125-4.233zM25.016 14.161c0.093-3.036-2.276-4.692-5.125-4.235-1.047 0.183 5.031 5.417 5.125 4.235zM25.5 15.26c-1.651-0.437-0.557 6.735 0.787 6.156 1.479-1.161 1.953-4.599-0.787-6.135zM5.636 21.495c1.343 0.599 2.437-6.573 0.785-6.135-2.733 1.541-2.265 4.973-0.785 6.156zM18.193 13.563c-1.532 1-1.808 3.24-0.615 4.995 1.187 1.76 3.391 2.416 4.916 1.437 1.532-0.973 1.808-3.213 0.62-4.995-1.193-1.776-3.396-2.416-4.921-1.416zM14.063 13.745c-1.527-0.98-3.735-0.339-4.917 1.416-1.192 1.781-0.916 4.016 0.615 5.016 1.527 1 3.729 0.359 4.923-1.417 1.177-1.76 0.896-4-0.62-4.995zM19.885 23.292c-0.011-1.855-1.667-3.355-3.703-3.333-2.037 0.020-3.683 1.515-3.672 3.375v0.036c0.011 1.86 1.672 3.36 3.708 3.339 2.036 0 3.677-1.515 3.656-3.353v-0.043zM24.167 3.115c-3.079 1.579-4.869 2.839-5.855 3.916 0.505 2 3.125 2.079 4.089 2.016-0.199-0.077-0.365-0.197-0.423-0.353 0.24-0.163 1.095-0.021 1.693-0.344-0.229-0.037-0.339-0.079-0.443-0.261 0.563-0.176 1.167-0.317 1.52-0.619-0.187 0-0.369 0.041-0.619-0.12 0.5-0.256 1.036-0.48 1.457-0.876-0.26 0-0.541 0-0.619-0.099 0.457-0.281 0.843-0.583 1.167-0.943-0.36 0.063-0.516 0.027-0.605-0.036 0.349-0.344 0.792-0.641 1-1.084-0.271 0.104-0.52 0.12-0.697 0 0.125-0.255 0.631-0.416 0.921-1.036-0.285 0.041-0.588 0.063-0.651 0 0.136-0.521 0.36-0.817 0.584-1.14-0.609 0-1.537 0-1.491-0.037l0.376-0.38c-0.595-0.161-1.204 0.021-1.647 0.161-0.197-0.14 0-0.344 0.245-0.541-0.521 0.083-0.975 0.183-1.375 0.344-0.219-0.204 0.135-0.38 0.317-0.584-0.797 0.161-1.12 0.36-1.459 0.557-0.24-0.219-0.020-0.416 0.141-0.593-0.6 0.219-0.901 0.495-1.219 0.755-0.12-0.14-0.281-0.239-0.084-0.599-0.416 0.24-0.74 0.521-0.979 0.839-0.256-0.177-0.156-0.401-0.156-0.599-0.443 0.359-0.72 0.719-1.057 1.083-0.084-0.041-0.141-0.203-0.183-0.463-1.037 1-2.521 3.5-0.38 4.473 1.796-1.459 3.973-2.536 6.375-3.339zM7.823 3.115c2.396 0.803 4.557 1.88 6.371 3.359 2.124-1 0.656-3.5-0.381-4.473-0.052 0.255-0.109 0.437-0.176 0.479-0.339-0.359-0.615-0.724-1.052-1.083 0 0.203 0.104 0.443-0.157 0.599-0.233-0.317-0.547-0.599-0.963-0.839 0.197 0.344 0.031 0.443-0.079 0.599-0.317-0.296-0.62-0.577-1.197-0.796 0.161 0.197 0.4 0.401 0.161 0.62-0.319-0.199-0.661-0.401-1.437-0.563 0.176 0.197 0.536 0.4 0.317 0.604-0.423-0.167-0.88-0.287-1.38-0.349 0.239 0.203 0.453 0.385 0.255 0.541-0.459-0.161-1.073-0.339-1.672-0.176l0.375 0.375c0.043 0.052-0.875 0.041-1.495 0.047 0.224 0.303 0.453 0.599 0.584 1.14-0.063 0.057-0.36 0.021-0.645 0 0.301 0.6 0.796 0.761 0.916 1.021-0.177 0.125-0.417 0.099-0.697 0 0.219 0.417 0.661 0.719 1 1.079-0.1 0.057-0.24 0.099-0.62 0.052 0.317 0.344 0.697 0.656 1.161 0.937-0.084 0.093-0.365 0.088-0.641 0.099 0.417 0.407 0.959 0.62 1.459 0.885-0.26 0.183-0.443 0.141-0.62 0.141 0.339 0.296 0.959 0.437 1.521 0.615-0.125 0.181-0.219 0.224-0.464 0.26 0.599 0.339 1.437 0.183 1.683 0.359-0.063 0.161-0.219 0.281-0.421 0.365 0.957 0.057 3.599-0.021 4.099-2.021-0.985-1.077-2.781-2.339-5.86-3.896zM10.136 0.136c0.312-0.005 0.577 0.181 0.869 0.271 0.703-0.229 0.864 0.083 1.208 0.213 0.771-0.161 1.005 0.187 1.375 0.557l0.428-0.016c1.161 0.677 1.739 2.052 1.943 2.756 0.203-0.704 0.781-2.079 1.943-2.756l0.427 0.011c0.369-0.375 0.604-0.719 1.375-0.557 0.349-0.141 0.505-0.437 1.215-0.219 0.443-0.141 0.828-0.5 1.411-0.063 0.489-0.197 0.969-0.26 1.391 0.12 0.661-0.079 0.869 0.083 1.031 0.281 0.147 0 1.079-0.141 1.511 0.479 1.084-0.12 1.423 0.62 1.032 1.317 0.224 0.339 0.453 0.663-0.063 1.303 0.197 0.36 0.077 0.735-0.365 1.213 0.125 0.5-0.099 0.844-0.495 1.12 0.079 0.683-0.64 1.084-0.839 1.219-0.083 0.401-0.244 0.781-1.061 0.979-0.12 0.6-0.62 0.699-1.1 0.819 1.584 0.9 2.917 2.077 2.917 4.973l0.244 0.401c1.797 1.079 3.417 4.536 0.896 7.355-0.156 0.875-0.437 1.495-0.681 2.192-0.36 2.817-2.776 4.136-3.412 4.297-0.921 0.697-1.917 1.359-3.255 1.817-1.261 1.281-2.636 1.781-3.996 1.781h-0.119c-1.38 0-2.756-0.5-4.016-1.781-1.344-0.459-2.344-1.115-3.265-1.817-0.641-0.156-3.043-1.475-3.417-4.292-0.249-0.697-0.525-1.339-0.687-2.219-2.527-2.817-0.912-6.271 0.885-7.355l0.229-0.396c0-2.895 1.337-4.077 2.916-4.973-0.479-0.12-0.959-0.219-1.093-0.823-0.823-0.199-0.985-0.579-1.063-0.98-0.199-0.135-0.917-0.536-0.839-1.233-0.401-0.281-0.62-0.62-0.5-1.141-0.417-0.459-0.536-0.859-0.36-1.219-0.52-0.64-0.281-0.979-0.061-1.297-0.381-0.703-0.037-1.457 1.041-1.337 0.416-0.62 1.359-0.48 1.495-0.48 0.161-0.203 0.38-0.38 1.041-0.301 0.417-0.381 0.901-0.319 1.396-0.136 0.203-0.161 0.38-0.219 0.541-0.219z};
-        \end{scope}
+    % \begin{tikzpicture}[x=1cm,y=1cm]
+    %     % ---- RASPBERRY PI ZERO 2W ----- %
+    %     \newcommand{\xrpi}[1]{ 0.22+0.25*#1 }
+    %     \newcommand{\yrpi}[1]{ 0.86+0.25*#1 }
+    %     \begin{scope}[shift={(0,0)}]
+    %         \draw[thick] (0,0) rectangle (3,6.5);
+    %         \node[anchor=center] at (1.5,6.8) {\tiny Raspberry PI Zero 2W};
+    %         % SD CARD
+    %         \draw[black!50,thick] (0.71,0.16) -- (0.71,1.27) -- (1.91,1.27) -- (1.91,0.16) -- (1.69,0.16) -- (1.69,0.29) -- (0.82,0.29) -- (0.82,0.16)  -- (0.71,0.16);
+    %         % ICS
+    %         \draw[black!50,thick] (0.84,2) rectangle (2.35,3.5);
+    %         \draw[black!50,thick] (1.03,3.83) rectangle (2.25,5);
+    %         % PORTS
+    %         \filldraw[black!50,thick,fill=white] (2.3,0.7) rectangle (3.13,1.81);
+    %         \filldraw[black!50,thick,fill=white] (2.6,3.83) rectangle (3.13,4.53);
+    %         \filldraw[black!50,thick,fill=white] (2.6,5) rectangle (3.13,5.8);
+    %         \filldraw[black!50,thick,fill=white] (0.71,6.2) rectangle (2.28,6.62);
+    %         % PINS
+    %         \foreach \x in {0,1} { \foreach \y in {0,...,19} {
+    %             \draw[thick] (0.22+0.25*\x, 0.86+0.25*\y) circle (0.08);
+    %         }}
+    %         % RASPBERRY PI LOGO
+    %         \draw[black!50, fill=black!50, yscale=-1, shift={(1,-3.3)}] svg {M21.479 23.12c-1.14 1.317-1.776 3.719-0.943 4.495 0.792 0.593 2.933 0.521 4.511-1.641 1.151-1.443 0.76-3.859 0.109-4.5-0.973-0.739-2.369 0.22-3.677 1.663zM10.74 23.516c-1.213-1.385-2.787-2.209-3.803-1.599-0.683 0.509-0.807 2.249 0.161 3.957 1.437 2.032 3.464 2.24 4.297 1.745 0.88-0.651 0.401-2.855-0.656-4.104zM16.213 27.708c-1.473-0.031-3.735 0.589-3.703 1.38-0.027 0.537 1.776 2.095 3.609 2.016 1.765 0.041 3.593-1.52 3.573-2.197-0.005-0.699-1.996-1.235-3.475-1.177zM16.115 9.12c-1.703-0.041-3.339 1.244-3.339 1.989-0.005 0.907 1.344 1.833 3.349 1.86 2.057 0.009 3.353-0.745 3.375-1.683 0.021-1.057-1.86-2.183-3.36-2.167zM12.016 9.828c-2.844-0.459-5.213 1.199-5.12 4.255 0.093 1.177 6.172-4.052 5.125-4.233zM25.016 14.161c0.093-3.036-2.276-4.692-5.125-4.235-1.047 0.183 5.031 5.417 5.125 4.235zM25.5 15.26c-1.651-0.437-0.557 6.735 0.787 6.156 1.479-1.161 1.953-4.599-0.787-6.135zM5.636 21.495c1.343 0.599 2.437-6.573 0.785-6.135-2.733 1.541-2.265 4.973-0.785 6.156zM18.193 13.563c-1.532 1-1.808 3.24-0.615 4.995 1.187 1.76 3.391 2.416 4.916 1.437 1.532-0.973 1.808-3.213 0.62-4.995-1.193-1.776-3.396-2.416-4.921-1.416zM14.063 13.745c-1.527-0.98-3.735-0.339-4.917 1.416-1.192 1.781-0.916 4.016 0.615 5.016 1.527 1 3.729 0.359 4.923-1.417 1.177-1.76 0.896-4-0.62-4.995zM19.885 23.292c-0.011-1.855-1.667-3.355-3.703-3.333-2.037 0.020-3.683 1.515-3.672 3.375v0.036c0.011 1.86 1.672 3.36 3.708 3.339 2.036 0 3.677-1.515 3.656-3.353v-0.043zM24.167 3.115c-3.079 1.579-4.869 2.839-5.855 3.916 0.505 2 3.125 2.079 4.089 2.016-0.199-0.077-0.365-0.197-0.423-0.353 0.24-0.163 1.095-0.021 1.693-0.344-0.229-0.037-0.339-0.079-0.443-0.261 0.563-0.176 1.167-0.317 1.52-0.619-0.187 0-0.369 0.041-0.619-0.12 0.5-0.256 1.036-0.48 1.457-0.876-0.26 0-0.541 0-0.619-0.099 0.457-0.281 0.843-0.583 1.167-0.943-0.36 0.063-0.516 0.027-0.605-0.036 0.349-0.344 0.792-0.641 1-1.084-0.271 0.104-0.52 0.12-0.697 0 0.125-0.255 0.631-0.416 0.921-1.036-0.285 0.041-0.588 0.063-0.651 0 0.136-0.521 0.36-0.817 0.584-1.14-0.609 0-1.537 0-1.491-0.037l0.376-0.38c-0.595-0.161-1.204 0.021-1.647 0.161-0.197-0.14 0-0.344 0.245-0.541-0.521 0.083-0.975 0.183-1.375 0.344-0.219-0.204 0.135-0.38 0.317-0.584-0.797 0.161-1.12 0.36-1.459 0.557-0.24-0.219-0.020-0.416 0.141-0.593-0.6 0.219-0.901 0.495-1.219 0.755-0.12-0.14-0.281-0.239-0.084-0.599-0.416 0.24-0.74 0.521-0.979 0.839-0.256-0.177-0.156-0.401-0.156-0.599-0.443 0.359-0.72 0.719-1.057 1.083-0.084-0.041-0.141-0.203-0.183-0.463-1.037 1-2.521 3.5-0.38 4.473 1.796-1.459 3.973-2.536 6.375-3.339zM7.823 3.115c2.396 0.803 4.557 1.88 6.371 3.359 2.124-1 0.656-3.5-0.381-4.473-0.052 0.255-0.109 0.437-0.176 0.479-0.339-0.359-0.615-0.724-1.052-1.083 0 0.203 0.104 0.443-0.157 0.599-0.233-0.317-0.547-0.599-0.963-0.839 0.197 0.344 0.031 0.443-0.079 0.599-0.317-0.296-0.62-0.577-1.197-0.796 0.161 0.197 0.4 0.401 0.161 0.62-0.319-0.199-0.661-0.401-1.437-0.563 0.176 0.197 0.536 0.4 0.317 0.604-0.423-0.167-0.88-0.287-1.38-0.349 0.239 0.203 0.453 0.385 0.255 0.541-0.459-0.161-1.073-0.339-1.672-0.176l0.375 0.375c0.043 0.052-0.875 0.041-1.495 0.047 0.224 0.303 0.453 0.599 0.584 1.14-0.063 0.057-0.36 0.021-0.645 0 0.301 0.6 0.796 0.761 0.916 1.021-0.177 0.125-0.417 0.099-0.697 0 0.219 0.417 0.661 0.719 1 1.079-0.1 0.057-0.24 0.099-0.62 0.052 0.317 0.344 0.697 0.656 1.161 0.937-0.084 0.093-0.365 0.088-0.641 0.099 0.417 0.407 0.959 0.62 1.459 0.885-0.26 0.183-0.443 0.141-0.62 0.141 0.339 0.296 0.959 0.437 1.521 0.615-0.125 0.181-0.219 0.224-0.464 0.26 0.599 0.339 1.437 0.183 1.683 0.359-0.063 0.161-0.219 0.281-0.421 0.365 0.957 0.057 3.599-0.021 4.099-2.021-0.985-1.077-2.781-2.339-5.86-3.896zM10.136 0.136c0.312-0.005 0.577 0.181 0.869 0.271 0.703-0.229 0.864 0.083 1.208 0.213 0.771-0.161 1.005 0.187 1.375 0.557l0.428-0.016c1.161 0.677 1.739 2.052 1.943 2.756 0.203-0.704 0.781-2.079 1.943-2.756l0.427 0.011c0.369-0.375 0.604-0.719 1.375-0.557 0.349-0.141 0.505-0.437 1.215-0.219 0.443-0.141 0.828-0.5 1.411-0.063 0.489-0.197 0.969-0.26 1.391 0.12 0.661-0.079 0.869 0.083 1.031 0.281 0.147 0 1.079-0.141 1.511 0.479 1.084-0.12 1.423 0.62 1.032 1.317 0.224 0.339 0.453 0.663-0.063 1.303 0.197 0.36 0.077 0.735-0.365 1.213 0.125 0.5-0.099 0.844-0.495 1.12 0.079 0.683-0.64 1.084-0.839 1.219-0.083 0.401-0.244 0.781-1.061 0.979-0.12 0.6-0.62 0.699-1.1 0.819 1.584 0.9 2.917 2.077 2.917 4.973l0.244 0.401c1.797 1.079 3.417 4.536 0.896 7.355-0.156 0.875-0.437 1.495-0.681 2.192-0.36 2.817-2.776 4.136-3.412 4.297-0.921 0.697-1.917 1.359-3.255 1.817-1.261 1.281-2.636 1.781-3.996 1.781h-0.119c-1.38 0-2.756-0.5-4.016-1.781-1.344-0.459-2.344-1.115-3.265-1.817-0.641-0.156-3.043-1.475-3.417-4.292-0.249-0.697-0.525-1.339-0.687-2.219-2.527-2.817-0.912-6.271 0.885-7.355l0.229-0.396c0-2.895 1.337-4.077 2.916-4.973-0.479-0.12-0.959-0.219-1.093-0.823-0.823-0.199-0.985-0.579-1.063-0.98-0.199-0.135-0.917-0.536-0.839-1.233-0.401-0.281-0.62-0.62-0.5-1.141-0.417-0.459-0.536-0.859-0.36-1.219-0.52-0.64-0.281-0.979-0.061-1.297-0.381-0.703-0.037-1.457 1.041-1.337 0.416-0.62 1.359-0.48 1.495-0.48 0.161-0.203 0.38-0.38 1.041-0.301 0.417-0.381 0.901-0.319 1.396-0.136 0.203-0.161 0.38-0.219 0.541-0.219z};
+    %     \end{scope}
 
-        % ----- SIM868 ----- %
-        \newcommand{\xsim}[1]{ 0.25*#1-1.07 }
-        \newcommand{\ysim}[1]{ 0.25*#1+1.29 }
-        \begin{scope}[shift={(-6,0)}]
-            \draw[thick] (0,0) rectangle (5.1,4);
-            \node[anchor=center] at (2.55,-0.2) {\tiny SIM868 Development Board};
-            % PINS
-            \foreach \label [count=\i from 0] in {VCC, TXD, GND, RXD, PWREN, NET, VDD, ADC} {
-                \node[anchor=east] at (4.9, 1.29 + 0.25*\i) {\tiny \label};
-            }
-            \foreach \y in {0,...,7} {
-                \draw[thick] (4.93,1.29+0.25*\y) circle (0.08);
-            }
-            % SIM CARD
-            \draw[black!50,thick] (1.67,3.93) -- (1.67,2.41) -- (0.58,2.41) -- (0.58,2.24) -- (0.17,2.24) -- (0.17,3.93) -- (0.58,3.93) .. controls (1,3.75) .. (1.43,3.93) -- (1.67,3.93);
-            \draw[black!50,thick] (3.75,1.31) rectangle (1.96,2.91);
-            \draw[black!50,thick] (0.58,0.96) rectangle (0,1.69);
-            % OTHER PINS
-            \foreach \y in {0,...,2} {
-                \draw[thick] (3.09,3.27+0.25*\y) circle (0.08);
-            }
-            \foreach \x in {0,...,2} {
-                \draw[thick] (2.74-0.25*\x,0.15) circle (0.08);
-            }
-        \end{scope}
+    %     % ----- SIM868 ----- %
+    %     \newcommand{\xsim}[1]{ 0.25*#1-1.07 }
+    %     \newcommand{\ysim}[1]{ 0.25*#1+1.29 }
+    %     \begin{scope}[shift={(-6,0)}]
+    %         \draw[thick] (0,0) rectangle (5.1,4);
+    %         \node[anchor=center] at (2.55,-0.2) {\tiny SIM868 Development Board};
+    %         % PINS
+    %         \foreach \label [count=\i from 0] in {VCC, TXD, GND, RXD, PWREN, NET, VDD, ADC} {
+    %             \node[anchor=east] at (4.9, 1.29 + 0.25*\i) {\tiny \label};
+    %         }
+    %         \foreach \y in {0,...,7} {
+    %             \draw[thick] (4.93,1.29+0.25*\y) circle (0.08);
+    %         }
+    %         % SIM CARD
+    %         \draw[black!50,thick] (1.67,3.93) -- (1.67,2.41) -- (0.58,2.41) -- (0.58,2.24) -- (0.17,2.24) -- (0.17,3.93) -- (0.58,3.93) .. controls (1,3.75) .. (1.43,3.93) -- (1.67,3.93);
+    %         \draw[black!50,thick] (3.75,1.31) rectangle (1.96,2.91);
+    %         \draw[black!50,thick] (0.58,0.96) rectangle (0,1.69);
+    %         % OTHER PINS
+    %         \foreach \y in {0,...,2} {
+    %             \draw[thick] (3.09,3.27+0.25*\y) circle (0.08);
+    %         }
+    %         \foreach \x in {0,...,2} {
+    %             \draw[thick] (2.74-0.25*\x,0.15) circle (0.08);
+    %         }
+    %     \end{scope}
 
-        % ----- MPU 6050 ----- %
-        \newcommand{\xmpu}[1]{ 0.25*#1-1.02 }
-        \newcommand{\ympu}[1]{ 0.25*#1+4.62 }
-        \begin{scope}[shift={(-2.46,4.47)}]
-            \draw[thick] (0,0) rectangle (1.56,2.03);
-            \node[anchor=center] at (0.78,4.49) {\tiny MPU 6050};
-            % IC
-            \draw[black!50,thick] (0.37,0.85) rectangle (0.78,1.23);
-        \end{scope}
-        % PINS
-        \foreach \label [count=\i from 0] in {VCC, GND, SCL, SDA, XDA, XCL, ADO, INT} {
-            \node[anchor=east] at (\xmpu{-0.125},\ympu{\i}) {\tiny \label};
-        }
-        \foreach \y in {0,...,7} {
-            \draw[thick] (\xmpu{0},\ympu{\y}) circle (0.08);
-        }
+    %     % ----- MPU 6050 ----- %
+    %     \newcommand{\xmpu}[1]{ 0.25*#1-1.02 }
+    %     \newcommand{\ympu}[1]{ 0.25*#1+4.62 }
+    %     \begin{scope}[shift={(-2.46,4.47)}]
+    %         \draw[thick] (0,0) rectangle (1.56,2.03);
+    %         \node[anchor=center] at (0.78,4.49) {\tiny MPU 6050};
+    %         % IC
+    %         \draw[black!50,thick] (0.37,0.85) rectangle (0.78,1.23);
+    %     \end{scope}
+    %     % PINS
+    %     \foreach \label [count=\i from 0] in {VCC, GND, SCL, SDA, XDA, XCL, ADO, INT} {
+    %         \node[anchor=east] at (\xmpu{-0.125},\ympu{\i}) {\tiny \label};
+    %     }
+    %     \foreach \y in {0,...,7} {
+    %         \draw[thick] (\xmpu{0},\ympu{\y}) circle (0.08);
+    %     }
 
-        % ----- JACK BREAKOUT ----- %
-        \begin{scope}[shift={(0,0)}]
-            \draw[thick] (0,0) rectangle (1.85,1.48);
+    %     % ----- JACK BREAKOUT ----- %
+    %     \begin{scope}[shift={(0,0)}]
+    %         \draw[thick] (0,0) rectangle (1.85,1.48);
 
-        \end{scope}
+    %     \end{scope}
 
-        % ----- CONNECTIONS ----- %
-            % VCC
-            \draw[thick,color=red] (\xrpi{0},\yrpi{0})
-                -- (\xsim{1.25},\yrpi{0}) -- (\xsim{1.25},\ysim{0})
-                -- (\xsim{0},\ysim{0});
-            \draw[thick,color=red] (\xrpi{1},\yrpi{0})
-                -- (\xrpi{4},\yrpi{0}) -- (\xrpi{4},\ympu{0})
-                -- (\xmpu{0},\ympu{0});
-            % GND
-            \draw[thick] (\xrpi{0},\yrpi{2})
-                -- (\xrpi{-3},\yrpi{2}) -- (\xrpi{-3},\ysim{2})
-                -- (\xsim{0},\ysim{2});
-            \draw[thick] (\xrpi{-3},\yrpi{2}) -- (\xrpi{-3},\ympu{1})
-                -- (\xmpu{0},\ympu{1});
-            % TXD
-            \draw[thick,color=violet] (\xrpi{0},\yrpi{4})
-                -- (\xsim{3},\yrpi{4}) -- (\xsim{3},\ysim{1})
-                -- (\xsim{0},\ysim{1});
-            % RXD
-            \draw[thick,color=cyan] (\xrpi{0},\yrpi{3})
-                -- (\xsim{3.75},\yrpi{3}) -- (\xsim{3.75},\ysim{3})
-                -- (\xsim{0},\ysim{3});
-            % PWREN
-            \draw[thick,color=green] (\xrpi{0},\yrpi{5})
-                -- (\xsim{3},\yrpi{5}) -- (\xsim{3},\ysim{4})
-                -- (\xsim{0},\ysim{4});
-            % SCL
-            \draw[thick,color=orange] (\xrpi{1},\yrpi{2})
-                -- (\xrpi{2},\yrpi{2}) -- (\xrpi{2},\ympu{2})
-                -- (\xmpu{0},\ympu{2});
-            % SDA
-            \draw[thick,color=yellow] (\xrpi{1},\yrpi{1})
-                -- (\xrpi{3},\yrpi{1}) -- (\xrpi{3},\ympu{3})
-                -- (\xmpu{0},\ympu{3});
+    %     % ----- CONNECTIONS ----- %
+    %         % VCC
+    %         \draw[thick,color=red] (\xrpi{0},\yrpi{0})
+    %             -- (\xsim{1.25},\yrpi{0}) -- (\xsim{1.25},\ysim{0})
+    %             -- (\xsim{0},\ysim{0});
+    %         \draw[thick,color=red] (\xrpi{1},\yrpi{0})
+    %             -- (\xrpi{4},\yrpi{0}) -- (\xrpi{4},\ympu{0})
+    %             -- (\xmpu{0},\ympu{0});
+    %         % GND
+    %         \draw[thick] (\xrpi{0},\yrpi{2})
+    %             -- (\xrpi{-3},\yrpi{2}) -- (\xrpi{-3},\ysim{2})
+    %             -- (\xsim{0},\ysim{2});
+    %         \draw[thick] (\xrpi{-3},\yrpi{2}) -- (\xrpi{-3},\ympu{1})
+    %             -- (\xmpu{0},\ympu{1});
+    %         % TXD
+    %         \draw[thick,color=violet] (\xrpi{0},\yrpi{4})
+    %             -- (\xsim{3},\yrpi{4}) -- (\xsim{3},\ysim{1})
+    %             -- (\xsim{0},\ysim{1});
+    %         % RXD
+    %         \draw[thick,color=cyan] (\xrpi{0},\yrpi{3})
+    %             -- (\xsim{3.75},\yrpi{3}) -- (\xsim{3.75},\ysim{3})
+    %             -- (\xsim{0},\ysim{3});
+    %         % PWREN
+    %         \draw[thick,color=green] (\xrpi{0},\yrpi{5})
+    %             -- (\xsim{3},\yrpi{5}) -- (\xsim{3},\ysim{4})
+    %             -- (\xsim{0},\ysim{4});
+    %         % SCL
+    %         \draw[thick,color=orange] (\xrpi{1},\yrpi{2})
+    %             -- (\xrpi{2},\yrpi{2}) -- (\xrpi{2},\ympu{2})
+    %             -- (\xmpu{0},\ympu{2});
+    %         % SDA
+    %         \draw[thick,color=yellow] (\xrpi{1},\yrpi{1})
+    %             -- (\xrpi{3},\yrpi{1}) -- (\xrpi{3},\ympu{3})
+    %             -- (\xmpu{0},\ympu{3});
         
-    \end{tikzpicture}
+    % \end{tikzpicture}
+    \includegraphics[page=1, angle=90, width=\linewidth]{assets/Schematic.pdf}
     \label{fig:schematic}
 \end{figure}
 
-\begin{table}[H]
-    \centering
-    \caption{Pin Configuration of Raspberry PI Zero 2W}
-    \begin{tabular}{|l|l|}
-        \hline
-        \textbf{Component} & \textbf{Pin} \\
-        \hline
-        \multicolumn{2}{|c|}{UPS Module} \\
-        Pin 2 (5V) & +UPS \\
-        Pin 6 (GND) & -UPS \\
-        \hline
-        \multicolumn{2}{|c|}{SIM 868} \\
-        Pin 2 (5V) & VCC \\
-        Pin 6 (GND) & GND \\
-        \hline
-    \end{tabular}
-    \label{tab:pinrpi}
-\end{table}
-        
+% Camera 1 Schematic Diagram
+\begin{figure}[H]
+    \caption{Camera 1 Schematic Diagram}
+    \includegraphics[page=2, angle=90, width=\textwidth]{assets/Schematic.pdf}
+    \label{fig:schematic1_camera}
+\end{figure}
 
+% Camera 2 Schematic Diagram
+\begin{figure}[H]
+    \caption{Camera 2 Schematic Diagram}
+    \includegraphics[page=2, angle=90, width=\textwidth]{assets/Schematic.pdf}
+    \label{fig:schematic2_camera}
+\end{figure}
+
+% Table of pin connections
+\begin{longtblr}[
+    caption = {Table of pin connections},
+    label   = {tab:connections},
+]{
+    colspec = {|X[2,l]|X[1,c]|X[2,l]|},
+    rowhead = 1,
+    width   = \textwidth,
+    hlines, vlines,
+    row{1} = {font=\bfseries},
+    row{2-Z} = {ht=12pt},
+}
+    \textbf{Net Name} & \textbf{Code} & \textbf{Connections} \\
+
+    % === Power & Ground ===
+    \SetCell[c=3]{l}{\textit{\textbf{Power and Ground Nets}}} & & \\
+    /B1 & 2 & Orange-Pi-Zero-2W1(2:5v) $\to$ SIM1(VCC) $\to$ UPS1(1:UPS+) \\
+    /B2 & 3 & Orange-Pi-Zero-2W1(6:GND) $\to$ UPS1(2:UPS-) \\
+    Earth & 71 & BT1(2:-) $\to$ J1(5:GND) $\to$ LS1(1:-) $\to$ UPS1(GND) \\
+    Net-(BT1-+) & 73 & BT1(1:+) $\to$ UPS1(VCC) \\
+    /Z1 & 67 & Onyehn-TRRS1(2:RING2) $\to$ Orange-Pi-Zero-2W1(17:3v3) \\
+    /M1 & 58 & Orange-Pi-Zero-2W1(1:3v3) $\to$ U1(8:VLOGIC) \\
+
+    \SetCell[c=3]{l}{\textit{\textbf{SIM868 Module – UART \& Control}}} & & \\
+    /F2 & 54 & Orange-Pi-Zero-2W1(8:PH0/UART0\_TX) $\to$ SIM1(2:UART1\_RXD) \\
+    /F3 & 55 & Orange-Pi-Zero-2W1(10:PH1/UART0\_RX) $\to$ SIM1(1:UART1\_TXD) \\
+    /F4 & 56 & Orange-Pi-Zero-2W1(12:PI1) $\to$ SIM1(39:PWRKEY) \\
+    /F5 & 57 & Orange-Pi-Zero-2W1(14:GND) $\to$ SIM1(8:GND) \\
+
+    \SetCell[c=3]{l}{\textit{\textbf{SIM Card Interface}}} & & \\
+    /T1 & 62 & J1(1:VCC) $\to$ SIM1(18:SIM1\_VDD) \\
+    /T2 & 63 & J1(7:I/O) $\to$ R1(1) \\
+    /T3 & 64 & J1(3:CLK) $\to$ R2(1) \\
+    /T4 & 65 & J1(2:RST) $\to$ R3(1) \\
+    /T5 & 66 & J1(6:VPP) $\to$ R4(1) \\
+    Net-(SIM1-SIM1\_DATA) & 78 & R1(2) $\to$ SIM1(15:SIM1\_DATA) \\
+    Net-(SIM1-SIM1\_CLK) & 77 & R2(2) $\to$ SIM1(16:SIM1\_CLK) \\
+    Net-(SIM1-SIM1\_RST) & 80 & R3(2) $\to$ SIM1(17:SIM1\_RST) \\
+    Net-(SIM1-SIM1\_DET) & 79 & R4(2) $\to$ SIM1(14:SIM1\_DET) \\
+
+    \SetCell[c=3]{l}{\textit{\textbf{MPU-6050 (IMU)}}} & & \\
+    /M2 & 59 & Orange-Pi-Zero-2W1(3:PI8/TWI1\_SDA) $\to$ U1(24:SDA) \\
+    /M3 & 60 & Orange-Pi-Zero-2W1(5:PI7/TWI1\_SCL) $\to$ U1(23:SCL) \\
+    /M4 & 61 & Orange-Pi-Zero-2W1(9:GND) $\to$ U1(18:GND) \\
+
+    \SetCell[c=3]{l}{\textit{\textbf{Audio Output (TRRS)}}} & & \\
+    Net-(LS1-+) & 74 & LS1(2:+) $\to$ Onyehn-TRRS1(AUDIO) \\
+    /Z2 & 68 & Orange-Pi-Zero-2W1(32:PI11/PWM1) $\to$ R5(1) \\
+    /Z3 & 69 & Orange-Pi-Zero-2W1(33:PI12/PWM2) $\to$ R6(1) \\
+    Net-(Onyehn-TRRS1-RING1) & 75 & Onyehn-TRRS1(3:RING1) $\to$ R5(2) \\
+    Net-(Onyehn-TRRS1-TIP) & 76 & Onyehn-TRRS1(4:TIP) $\to$ R6(2) \\
+    /Z4 & 70 & Onyehn-TRRS1(1:SLEEVE) $\to$ Orange-Pi-Zero-2W1(25:GND) \\
+
+    \SetCell[c=3]{l}{\textit{\textbf{Camera 1 (/Camera1/)}}} & & \\
+    /Camera1/Camera-USB & 4 & Orange-Pi-Zero-2W1(USB-MicroB-2.0-1) \\
+    /Camera1/P1 & 5 & DVP-USB1(1:Y0) $\to$ OV5640-DVP1(1:Y0) \\
+    /Camera1/P2 & 6 & DVP-USB1(2:Y1) $\to$ OV5640-DVP1(2:Y1) \\
+    /Camera1/P3 & 7 & DVP-USB1(6:Y2) $\to$ OV5640-DVP1(6:Y2) \\
+    /Camera1/P4 & 8 & DVP-USB1(4:Y3) $\to$ OV5640-DVP1(4:Y3) \\
+    /Camera1/P5 & 9 & DVP-USB1(3:Y4) $\to$ OV5640-DVP1(3:Y4) \\
+    /Camera1/P6 & 10 & DVP-USB1(5:Y5) $\to$ OV5640-DVP1(5:Y5) \\
+    /Camera1/P7 & 11 & DVP-USB1(7:Y6) $\to$ OV5640-DVP1(7:Y6) \\
+    /Camera1/P8 & 12 & DVP-USB1(9:Y7) $\to$ OV5640-DVP1(9:Y7) \\
+    /Camera1/P9 & 13 & DVP-USB1(11:Y8) $\to$ OV5640-DVP1(11:Y8) \\
+    /Camera1/P10 & 14 & DVP-USB1(13:Y9) $\to$ OV5640-DVP1(13:Y9) \\
+    /Camera1/P11 & 15 & DVP-USB1(8:PCLK) $\to$ OV5640-DVP1(8:PCLK) \\
+    /Camera1/P12 & 16 & DVP-USB1(18:VSYNC) $\to$ OV5640-DVP1(18:VSYNC) \\
+    /Camera1/P13 & 17 & DVP-USB1(16:HERF) $\to$ OV5640-DVP1(16:HERF) \\
+    /Camera1/P14 & 18 & DVP-USB1(12:XCLK) $\to$ OV5640-DVP1(12:XCLK) \\
+    /Camera1/P15 & 19 & DVP-USB1(20:SIO\_CLK) $\to$ OV5640-DVP1(20:SIO\_CLK) \\
+    /Camera1/P16 & 20 & DVP-USB1(22:SIO\_DAT) $\to$ OV5640-DVP1(22:SIO\_DAT) \\
+    /Camera1/P17 & 21 & DVP-USB1(17:PWDN) $\to$ OV5640-DVP1(17:PWDN) \\
+    /Camera1/P18 & 22 & DVP-USB1(19:RESET) $\to$ OV5640-DVP1(19:RESET) \\
+    /Camera1/P19 & 23 & DVP-USB1(23:AGND) $\to$ OV5640-DVP1(23:AGND) \\
+    /Camera1/P20 & 24 & DVP-USB1(10:DGND) $\to$ OV5640-DVP1(10:DGND) \\
+    /Camera1/P21 & 25 & DVP-USB1(21:AVDD) $\to$ OV5640-DVP1(21:AVDD) \\
+    /Camera1/P22 & 26 & DVP-USB1(15:DVDD) $\to$ OV5640-DVP1(15:DVDD) \\
+    /Camera1/P23 & 27 & DVP-USB1(14:DOVDD) $\to$ OV5640-DVP1(14:DOVDD) \\
+    /Camera1/P24 & 28 & DVP-USB1(24:NC/OV\_STROBE) $\to$ OV5640-DVP1(24:NC/OV\_STROBE) \\
+
+    \SetCell[c=3]{l}{\textit{\textbf{Camera 2 (/Camera2/)}}} & & \\
+    /Camera2/Camera-USB & 29 & Orange-Pi-Zero-2W1(USB-MicroB-2.0-2) \\
+    /Camera2/P1 & 30 & DVP-USB2(1:Y0) $\to$ OV5640-DVP2(1:Y0) \\
+    /Camera2/P2 & 31 & DVP-USB2(2:Y1) $\to$ OV5640-DVP2(2:Y1) \\
+    /Camera2/P3 & 32 & DVP-USB2(6:Y2) $\to$ OV5640-DVP2(6:Y2) \\
+    /Camera2/P4 & 33 & DVP-USB2(4:Y3) $\to$ OV5640-DVP2(4:Y3) \\
+    /Camera2/P5 & 34 & DVP-USB2(3:Y4) $\to$ OV5640-DVP2(3:Y4) \\
+    /Camera2/P6 & 35 & DVP-USB2(5:Y5) $\to$ OV5640-DVP2(5:Y5) \\
+    /Camera2/P7 & 36 & DVP-USB2(7:Y6) $\to$ OV5640-DVP2(7:Y6) \\
+    /Camera2/P8 & 37 & DVP-USB2(9:Y7) $\to$ OV5640-DVP2(9:Y7) \\
+    /Camera2/P9 & 38 & DVP-USB2(11:Y8) $\to$ OV5640-DVP2(11:Y8) \\
+    /Camera2/P10 & 39 & DVP-USB2(13:Y9) $\to$ OV5640-DVP2(13:Y9) \\
+    /Camera2/P11 & 40 & DVP-USB2(8:PCLK) $\to$ OV5640-DVP2(8:PCLK) \\
+    /Camera2/P12 & 41 & DVP-USB2(18:VSYNC) $\to$ OV5640-DVP2(18:VSYNC) \\
+    /Camera2/P13 & 42 & DVP-USB2(16:HERF) $\to$ OV5640-DVP2(16:HERF) \\
+    /Camera2/P14 & 43 & DVP-USB2(12:XCLK) $\to$ OV5640-DVP2(12:XCLK) \\
+    /Camera2/P15 & 44 & DVP-USB2(20:SIO\_CLK) $\to$ OV5640-DVP2(20:SIO\_CLK) \\
+    /Camera2/P16 & 45 & DVP-USB2(22:SIO\_DAT) $\to$ OV5640-DVP2(22:SIO\_DAT) \\
+    /Camera2/P17 & 46 & DVP-USB2(17:PWDN) $\to$ OV5640-DVP2(17:PWDN) \\
+    /Camera2/P18 & 47 & DVP-USB2(19:RESET) $\to$ OV5640-DVP2(19:RESET) \\
+    /Camera2/P19 & 48 & DVP-USB2(23:AGND) $\to$ OV5640-DVP2(23:AGND) \\
+    /Camera2/P20 & 49 & DVP-USB2(10:DGND) $\to$ OV5640-DVP2(10:DGND) \\
+    /Camera2/P21 & 50 & DVP-USB2(21:AVDD) $\to$ OV5640-DVP2(21:AVDD) \\
+    /Camera2/P22 & 51 & DVP-USB2(15:DVDD) $\to$ OV5640-DVP2(15:DVDD) \\
+    /Camera2/P23 & 52 & DVP-USB2(14:DOVDD) $\to$ OV5640-DVP2(14:DOVDD) \\
+    /Camera2/P24 & 53 & DVP-USB2(24:NC/OV\_STROBE) $\to$ OV5640-DVP2(24:NC/OV\_STROBE) \\
+\end{longtblr}
+
+% Flowchart of pipelines
+\begin{figure}[H]
+    \caption{Flowchart of the three major pipelines}
+    \begin{plantuml}
+        @startuml
+
+        | Main Pipeline |
+        start
+        :Two images from
+        stereo cameras; <<load>>
+        if () then ( )
+            :Generate point cloud;
+            :Record to virtual
+            environment;
+        else
+            | Guesture Pipeline |
+            :Scan for hand guesture;
+            if (Guesture matches
+                an instruction?) then (yes)
+                :Update mode
+                of expression;
+                if (Instruction requires
+                    Services?) then (yes)
+                    | Server Pipeline |
+                    :Process instruction
+                    server-sided;
+                    :Read response; <<load>>
+                    :Add to output audio;
+                endif
+            endif
+        endif
+
+        | Main Pipeline |
+        :Generate audio based
+        on mode of expression;
+        :Output audio
+        to earphones; <<load>>
+
+        @enduml
+    \end{plantuml}
+    \label{fig:pipeflow}
+\end{figure}
+
+The flowchart at figure \ref{fig:pipeflow} illustrates the modular software architecture of the World Navigation Hat, organized into three concurrent processing pipelines that work together to provide comprehensive assistive navigation through sensory substitution. The Main Pipeline forms the core sensory substitution system, beginning with "Two images from stereo cameras" captured simultaneously from the dual OV5640 cameras positioned 10 cm apart, which undergo photogrammetry processing to "Generate point cloud" by applying stereo disparity calculations (Z = f·B/d) that create a three-dimensional representation of the environment where each pixel's depth is computed and transformed into 3D spatial coordinates; this point cloud data is then used to "Record to virtual environment," creating a persistent spatial map integrated with IMU-tracked head movements to form a coherent representation of the user's surroundings. The Guesture Pipeline runs in parallel, providing touchless user control through "Scan for hand guesture" using MediaPipe AI models that continuously analyze camera frames to detect hand landmarks—when a gesture is detected, the system evaluates "Guesture matches an instruction?" and if true, proceeds to "Update mode of expression," modifying parameters that affect how the Main Pipeline generates audio output (allowing users to switch between obstacle detection, text reading, or face recognition modes), then checks "Instruction requires Services?" to determine whether the command needs server-side processing, branching to the Server Pipeline if yes or merging directly back to the Main Pipeline if no. The Server Pipeline handles computationally intensive tasks, where requests are transmitted via the SIM868 module to "Process instruction server-sided" on the NodeJS platform, which may invoke Ollama large language models for natural language understanding, execute YOLO object detection for detailed scene analysis, query Google Maps APIs for navigation routes, or access social media platforms, then proceeds to "Read response" to collect and format results before "Add to output audio" packages the server-processed information and transmits it back to merge with the Guesture Pipeline. All three pipelines converge through diamond-shaped merge points before the final stage where the system "Generate audio based on mode of expression," transforming consolidated environmental data, user control inputs, and cloud-enhanced intelligence into spatial audio cues through algorithms that emulate human visual processing—implementing foveation (focus-based detail levels), selective attention (filtering salient features), scene gist extraction (background/foreground separation), and temporal dynamics (progressive audio updates)—before finally proceeding to "Output audio to earphones," delivering intuitive sonic representations that respect cognitive load limitations while maximizing navigational utility, embodying the research's core innovation of solving the bandwidth mismatch between high-detail visual information and lower-bandwidth auditory perception.
+
+% Flowchart Server sided
+\begin{figure}[H]
+    \caption{Flowchart of Server-sided Interface}
+    \begin{plantuml}
+        @startuml
+
+        start
+
+        :Enter device code and password;
+
+        if (Credentials valid?) then (yes)
+        :Authenticate and load session;
+        
+        :Display Dashboard;
+        note right
+            - Device location (GPS)
+            - Map with markers
+            - Device status
+        end note
+        
+        :Manage External APIs;
+        'partition "Manage External APIs" {
+        '    :Select API to configure;
+            
+            'if (API Type?) then (Facebook)
+            '    :Enter Facebook credentials;
+            '    :Store in SQL database;
+            'elseif (Google Maps)
+            '    :Enter API key;
+            '    :Store in SQL database;
+            'elseif (Local AI Models)
+            '    :Configure Agent/Custom model;
+            '    :Store settings in SQL database;
+            'else (Other)
+        '        :Enter API credentials;
+        '        :Store in SQL database;
+            'endif
+            
+        '    :Update API status;
+        '}
+        
+        if (Change password?) then (yes)
+            :Update password in SQL database;
+        endif
+        
+        :Sync configurations to device;
+        
+        else (no)
+        :Display error message;
+        stop
+        endif
+
+        :Logout;
+
+        stop
+
+        @enduml
+    \end{plantuml}
+    \label{fig:flowserver}
+\end{figure}
+
+This flowchart at figure \ref{fig:flowserver} illustrates the server-side user management and configuration system for the World Navigation Hat, enabling caregivers or visually impaired users (with assistance) to remotely manage device settings and integrate external services through a web-based dashboard. The process begins when a user enters their unique device code and password for authentication—if credentials are valid, the system authenticates and loads the user session, displaying a comprehensive dashboard that shows real-time device location via GPS data from the SIM868 module, a map visualization with saved markers indicating important places and items the user has tagged during navigation, and current device status information. The dashboard provides access to the "Manage External APIs" partition where users can configure various third-party service integrations: selecting Facebook allows entry of social media credentials that are encrypted and stored in the SQL database, enabling the device to initiate hands-free voice or video calls without requiring the visually impaired user to navigate login interfaces; selecting Google Maps enables entry of API keys for enhanced navigation features; selecting Local AI Models allows configuration of Agent Models (like Ollama GPT for conversational assistance) or Custom Models (user-uploaded machine learning models for specialized tasks like recognizing specific objects or faces), with all parameters and endpoints stored in the SQL database; and selecting Other APIs accommodates additional services with credential storage. After API configuration, the system updates the API status on the dashboard to reflect active integrations, then offers users the option to change their password (which updates the SQL database upon confirmation), and finally syncs all configuration changes to the physical device via the SIM868 cellular/Wi-Fi connection, ensuring the wearable hat has updated credentials and settings for seamless operation. If authentication fails at any point, the system displays an error message and prompts re-entry of credentials, while successful sessions conclude with a logout action that securely terminates the user's access—this server-side infrastructure thus acts as the central management hub that bridges the gap between complex digital services and the simplified, accessible interface needed by visually impaired users, handling credential management, data persistence, and device synchronization to enable features like social connectivity and AI-enhanced navigation without overwhelming the user with technical complexity.
+
+% FLowchart Server API
+\begin{figure}[H]
+    \caption{Flowchart of Server's API}
+    \begin{plantuml}
+        @startuml
+
+        start
+
+        :Receive HTTP API request from client device;
+
+        :Extract device code and authentication token;
+
+        if (Verify device authentication?) then (valid)
+        :Parse request payload;
+        
+        :Identify request type;
+        
+        :Route to appropriate external API;
+        :Process request;
+        :Return API response;
+        
+        :Format response as JSON;
+        :Send HTTP response to client device;
+        
+        else (invalid)
+        :Generate authentication error;
+        :Send HTTP 401 Unauthorized response;
+        stop
+        endif
+
+        :Log request and response;
+
+        stop
+
+        @enduml
+    \end{plantuml}
+    \label{fig:flowapi}
+\end{figure}
+
+This flowchart at figure \ref{fig:flowapi} illustrates the server-side API processing system that handles HTTP requests from the World Navigation Hat client device, acting as an intelligent intermediary between the embedded system and various external services. The process begins when the server receives an HTTP API request from the client device, immediately extracting the device code and authentication token to verify device authentication—if the credentials are invalid, the server generates an authentication error and sends an HTTP 401 Unauthorized response to prevent unauthorized access. Upon successful authentication, the server parses the request payload to identify the request type and routes it to the appropriate processing pipeline: for Facebook Call requests, the server retrieves stored Facebook credentials from the SQL database, launches Puppeteer browser automation to navigate to Facebook's web interface, authenticates using the stored credentials (eliminating the need for the visually impaired user to manually log in), initiates a call to the specified contact, and returns the call status response; for Navigation Requests (such as "take me home"), the server parses the natural language command, queries the Local Agent LLM (Ollama) which interprets user intent and determines the destination (retrieving the home address from the SQL database), calls the Google Maps API to calculate the optimal route with turn-by-turn directions, formats the navigation instructions into audio-friendly text, and returns the route response that the client device converts into spatial audio cues; for YOLO Object Detection requests, the server receives image data from the client cameras, loads the YOLO model to process the image for comprehensive object detection beyond the client's computational capacity, generates detailed object labels with spatial positions, and returns the detection results for integration into the audio feedback system; for Custom AI Model requests, the server identifies the requested model from SQL configuration data, loads and executes the model with provided input parameters, generates the model output (which could be face recognition, text reading, or specialized tasks), and returns the AI response. After processing any request type, the server formats the response as JSON for consistent parsing, sends the HTTP response back to the client device via the SIM868 module's cellular or Wi-Fi connection, and logs both the request and response for debugging, analytics, and system monitoring purposes—this architecture offloads computationally expensive operations from the battery-constrained wearable device to cloud infrastructure while maintaining a simple HTTP-based communication protocol that ensures reliability and compatibility across different network conditions.
+
+% Formulas
 \subsubsection{Formula References}
+\begin{enumerate}
+    \item \textbf{Percentage Error Formula} - Expresses the error between a measured value and the true value (e.g., predicted vs. actual direction or depth). \\
+        \begin{equation}
+            \text{Percentage Error} = \left| \frac{\text{Measured Value} - \text{True Value}}{\text{True Value}} \right| \times 100\%
+            \label{eq:percentage_error}
+        \end{equation} \pagebreak[3]
+
+    \item \textbf{Success Percentage Formula} - Measures the proportion of successful trials (e.g., correct predictions by user or device). \\
+        \begin{equation}
+            \text{Success Percentage} = \frac{\text{Successful Trials}}{\text{Total Trials}} \times 100\%
+            \label{eq:success_percentage}
+        \end{equation} \pagebreak[3]
+
+    \item \textbf{Stereo Camera Matrices} - Intrinsic and extrinsic representation of left ($C_1$) and right ($C_2$) cameras, where $f$ is focal length in pixels, $c_x, c_y$ are principal point coordinates, and $T_x$ is the baseline. \\
+        \begin{equation}
+            C_1 = \begin{bmatrix}
+                f & 0 & c_{x_1} & 0 \\
+                0 & f & c_y & 0 \\
+                0 & 0 & 1 & 0
+            \end{bmatrix}, \quad
+            C_2 = \begin{bmatrix}
+                f & 0 & c_{x_2} & T_x f \\
+                0 & f & c_y & 0 \\
+                0 & 0 & 1 & 0
+            \end{bmatrix}
+            \label{eq:stereo_cameras}
+        \end{equation} \pagebreak[3]
+
+    \item \textbf{Stereo Reprojection Matrix ($Q$)} - Used to compute 3D points from disparity: converts $(x, y, \text{disparity})$ into 3D coordinates. \\
+        \begin{equation}
+            Q = \begin{bmatrix}
+                1 & 0 & 0 & -c_{x_1} \\
+                0 & 1 & 0 & -c_y \\
+                0 & 0 & 0 & f \\
+                0 & 0 & -T_x^{-1} & T_x^{-1}(c_{x_1} - c_{x_2})
+            \end{bmatrix}
+            \label{eq:stereo_reprojection}
+        \end{equation} \pagebreak[3]
+
+    \item \textbf{Point Cloud Projection Formula} - Reprojects a pixel with disparity into 3D space using the $Q$ matrix. \\
+        \begin{equation}
+            \begin{bmatrix}
+                X \\ Y \\ Z \\ W
+            \end{bmatrix} = Q \begin{bmatrix}
+                x \\ y \\ \text{disparity}(x,y) \\ 1
+            \end{bmatrix}
+            \label{eq:point_cloud_projection}
+        \end{equation} \pagebreak[3]
+
+    % \item \textbf{True Positive (TP)} - Number of photos where the hand gesture was correctly classified as the target gesture. \\
+    %     \begin{equation}
+    %         \text{TP} = \text{\# correctly identified target gestures}
+    %         \label{eq:tp}
+    %     \end{equation} \pagebreak[3]
+
+    % \item \textbf{False Positive (FP)} - Number of photos where a different gesture (or no gesture) was incorrectly classified as the target gesture. \\
+    %     \begin{equation}
+    %         \text{FP} = \text{\# incorrectly labeled as target gesture}
+    %         \label{eq:fp}
+    %     \end{equation} \pagebreak[3]
+
+    % \item \textbf{False Negative (FN)} - Number of photos where the target gesture was present but not detected or misclassified. \\
+    %     \begin{equation}
+    %         \text{FN} = \text{\# missed target gestures}
+    %         \label{eq:fn}
+    %     \end{equation} \pagebreak[3]
+
+    % \item \textbf{True Negative (TN)} - Number of photos that do not contain the target gesture and were correctly excluded. \\
+    %     \begin{equation}
+    %         \text{TN} = \text{\# correctly identified non-target gestures}
+    %         \label{eq:tn}
+    %     \end{equation} \pagebreak[3]
+
+    % \item \textbf{Precision} - Proportion of predicted target gestures that are actually correct. \\
+    %     \begin{equation}
+    %         \text{Precision} = \frac{\text{TP}}{\text{TP} + \text{FP}}
+    %         \label{eq:precision}
+    %     \end{equation} \pagebreak[3]
+
+    % \item \textbf{Recall (Sensitivity)} - Proportion of actual target gestures that were correctly identified. \\
+    %     \begin{equation}
+    %         \text{Recall} = \frac{\text{TP}}{\text{TP} + \text{FN}}
+    %         \label{eq:recall}
+    %     \end{equation} \pagebreak[3]
+
+    % \item \textbf{Accuracy} - Overall proportion of correct classifications (positive and negative). \\
+    %     \begin{equation}
+    %         \text{Accuracy} = \frac{\text{TP} + \text{TN}}{\text{TP} + \text{TN} + \text{FP} + \text{FN}}
+    %         \label{eq:accuracy}
+    %     \end{equation} \pagebreak[3]
+\end{enumerate}

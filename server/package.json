@@ -1,0 +1,17 @@
+{
+  "name": "thesis_server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "main": "electron build/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "electron": "^39.2.0",
+    "typescript": "^5.9.3"
+  }
+}

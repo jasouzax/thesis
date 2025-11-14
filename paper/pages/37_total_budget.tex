@@ -1,1 +1,32 @@
-\subsection{Total Budget}
+\fancyhead[C]{
+    {\setmainfont[Path=./]{old_english.ttf} \Large University of San Agustin}\\[3pt]
+    {\small General Luna St., 5000 Iloilo City, Philippines \\[-5pt]
+        www.usa.edu.ph } \\ [5pt]
+    \textbf{COLLEGE OF TECHNOLOGY} \\[5pt]
+    \textbf{Appendices - Total Budget}
+}
+\addcontentsline{toc}{subsection}{Total Budget}
+
+\begin{longtblr}[
+        caption = {Total budget},
+        label   = {tab:totalbudget},
+    ]{
+        colspec = {|X[l]|X[l]|X[l]|X[l]|},
+        rowhead = 1,
+        width   = \textwidth,
+        hlines, vlines,
+        row{1} = {font=\bfseries},
+        row{2-Z} = {ht=12pt},
+    }
+    \textbf{Description} & \textbf{Quantity} & \textbf{Price} & \textbf{Supplier and Manufacture} \\
+    Orange PI Zero 2W & 1 & ₱1,560.00 & Orange Pi Official Store \\
+    OV5640 USB Camera 5MP and 160° FOV & 2 & ₱1,200.00 & DigiKey Philippines \\
+    TRRS 3.5 Jack Breakout & 1 & ₱25.00 & MCXK-E Philippines \\
+    Type-C 5V/3A 18650 Lithium Battery UPS & 1 & ₱121.00 & SAMIORE Philippines \\
+    Stereo Earphone & 1 & ₱101.00 & Zeus Philippines \\
+    MPU6050 & 1 & ₱102.00 & BBModule Philippies \\
+    SIM868 GSM GPRS GPS & 1 & ₱660.00 & BBModule Philippines \\
+    18650 Lithium Battery & 2 & ₱70.00 & BBModule Philippines \\
+    Filament & 1 & ₱715.00 & Makerlab \\
+    \SetCell[c=2]{c} Total & & ₱5,824 \\
+\end{longtblr}
