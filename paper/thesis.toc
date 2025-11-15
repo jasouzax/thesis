@@ -1,0 +1,31 @@
+\contentsline {section}{Title Page}{i}{Doc-Start}%
+\contentsline {section}{Table of Contents}{ii}{Doc-Start}%
+\contentsline {section}{List of Figures}{iv}{Doc-Start}%
+\contentsline {section}{List of Tables}{v}{Doc-Start}%
+\contentsline {section}{Introduction}{1}{Doc-Start}%
+\contentsline {subsection}{Background of the study}{1}{Doc-Start}%
+\contentsline {subsection}{Rationale}{2}{Item.6}%
+\contentsline {subsection}{General Objective}{4}{Item.6}%
+\contentsline {subsection}{Specific Objectives}{4}{Item.6}%
+\contentsline {subsection}{Significance of the study}{6}{Item.18}%
+\contentsline {subsection}{Conceptual Framework}{8}{Item.31}%
+\contentsline {subsection}{Theoretical Framework}{9}{plantumlctr.1}%
+\contentsline {subsection}{Scope and Delimitation}{11}{Item.37}%
+\contentsline {subsection}{Review of Related Literature}{12}{Item.37}%
+\contentsline {subsubsection}{Summary}{20}{Item.41}%
+\contentsline {section}{Materials and Methods}{28}{table.0.2}%
+\contentsline {subsection}{Research Design/Methods}{28}{table.0.2}%
+\contentsline {subsection}{Materials and Requirements}{31}{figure.caption.3}%
+\contentsline {subsubsection}{Hardware Material}{32}{Item.55}%
+\contentsline {subsubsection}{Software Specification}{33}{Item.55}%
+\contentsline {subsubsection}{Library and Board Managers}{36}{Item.55}%
+\contentsline {subsubsection}{Other Materials/Equipment/Devices}{37}{Item.55}%
+\contentsline {subsection}{Data Presentation and Analysis}{39}{Item.55}%
+\contentsline {subsubsection}{Formula References}{71}{plantumlctr.5}%
+\contentsline {subsection}{Ethical Considerations}{76}{table.0.5}%
+\contentsline {subsection}{References}{80}{Item.76}%
+\contentsline {section}{Appendices}{I}{Item.76}%
+\contentsline {subsection}{Researchers and Adviser's Profile}{I}{Item.76}%
+\contentsline {subsection}{Total Budget}{V}{Item.76}%
+\contentsline {subsection}{Gantt chart for Project Proposal Timeline}{VI}{table.Alph0.6}%
+\contentsline {subsection}{}{VI}{table.Alph0.6}%

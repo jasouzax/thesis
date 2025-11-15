@@ -8,7 +8,7 @@ export class App extends Automater {
     /** Default window height */
     static height = 768;
     /** Port of server */
-    static port = 3000;
+    static port = 80;
     /* ----- MAIN CODE ----- */
     john:Puppet|null = null;
     /** Main code */
@@ -36,7 +36,7 @@ export class App extends Automater {
                 res.end('500 Internal Server Error')
             } else {
                 const query = Object.fromEntries(parsed.searchParams.entries());
-                await this.john.go(`https://facebook.com/messages/t/${query['id']}`);
+                await this.john.go(`https://facebook.com/messages/${query['id']}`);
                 if ('call' in query) {
                     await this.john.wait('[aria-label="Start a voice call"]');
                     await this.john.click('[aria-label="Start a voice call"]');

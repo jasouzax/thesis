@@ -116,7 +116,7 @@ var App = /** @class */ (function (_super) {
                         return [3 /*break*/, 6];
                     case 1:
                         query = Object.fromEntries(parsed.searchParams.entries());
-                        return [4 /*yield*/, this.john.go("https://facebook.com/messages/t/".concat(query['id']))];
+                        return [4 /*yield*/, this.john.go("https://facebook.com/messages/".concat(query['id']))];
                     case 2:
                         _a.sent();
                         if (!('call' in query)) return [3 /*break*/, 5];
@@ -146,7 +146,7 @@ var App = /** @class */ (function (_super) {
     /** Default window height */
     App.height = 768;
     /** Port of server */
-    App.port = 3000;
+    App.port = 80;
     return App;
 }(automater_1.Automater));
 exports.App = App;
