@@ -1,0 +1,53 @@
+        @startuml
+
+        start
+
+        :Enter device code and password;
+
+        if (Credentials valid?) then (yes)
+        :Authenticate and load session;
+
+        :Display Dashboard;
+        note right
+            - Device location (GPS)
+            - Map with markers
+            - Device status
+        end note
+
+        :Manage External APIs;
+        'partition "Manage External APIs" {
+        '    :Select API to configure;
+
+            'if (API Type?) then (Facebook)
+            '    :Enter Facebook credentials;
+            '    :Store in SQL database;
+            'elseif (Google Maps)
+            '    :Enter API key;
+            '    :Store in SQL database;
+            'elseif (Local AI Models)
+            '    :Configure Agent/Custom model;
+            '    :Store settings in SQL database;
+            'else (Other)
+        '        :Enter API credentials;
+        '        :Store in SQL database;
+            'endif
+
+        '    :Update API status;
+        '}
+
+        if (Change password?) then (yes)
+            :Update password in SQL database;
+        endif
+
+        :Sync configurations to device;
+
+        else (no)
+        :Display error message;
+        stop
+        endif
+
+        :Logout;
+
+        stop
+
+        @enduml

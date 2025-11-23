@@ -17,7 +17,7 @@ from dataclasses import dataclass                                           # Da
 # Configuration Variables
 board:tuple[int,int]    = (9,6)                                             # Inner corners of checkerboard
 square_size:int         = 19                                                # Size of square in mm
-cam_id:tuple[int,int]   = (0,2)                                             # Camera ID for /dev/video{n}
+cam_id:tuple[int,int]   = (2,1)                                             # Camera ID for /dev/video{n}
 scale:float             = 0.5                                               # Scale ratio for faster processing (reduced for wide FOV)
 baseline:float          = 60.0                                              # Distance between cameras in mm
 

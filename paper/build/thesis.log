@@ -1,8 +1,8 @@
-This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.11.12)  14 NOV 2025 17:14
+This is LuaHBTeX, Version 1.22.0 (MiKTeX 25.4) (format=lualatex 2025.11.12)  22 NOV 2025 09:33
  system commands enabled.
  file:line:error style messages enabled.
-**../thesis.tex
-(../thesis.tex
+**thesis.tex
+(./thesis.tex
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
 Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
@@ -40,7 +40,7 @@ Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
 Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
 Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'.
-Inserting `tracingstacklevels' in `input_level_string'. (../preference.tex
+Inserting `tracingstacklevels' in `input_level_string'. (./preference.tex
 (C:/Users/jason/AppData/Local/Programs/MiKTeX/tex/latex/base/book.cls
 Document Class: book 2025/01/22 v1.4n Standard LaTeX document class
 (C:/Users/jason/AppData/Local/Programs/MiKTeX/tex/latex/base/bk12.clo
@@ -1605,7 +1605,8 @@ Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
 ))
 \@quotelevel=\count563
 \@quotereset=\count564
-(./thesis.aux (./pages/00_title.aux))
+(C:/Users/jason/Desktop/thesis/paper/build/thesis.aux
+(C:/Users/jason/Desktop/thesis/paper/build/pages/00_title.aux))
 \openout1 = thesis.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
@@ -1823,13 +1824,13 @@ Package biblatex Info: Automatic encoding selection.
 
 \openout4 = thesis.bcf
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file 'thesis.bbl' not found.
-
-No file thesis.bbl.
+Package biblatex Info: ... file 'thesis.bbl' found.
+ (./thesis.bbl)
 Package biblatex Info: Reference section=0 on input line 19.
 Package biblatex Info: Reference segment=0 on input line 19.
 LaTeX Info: Redefining \celsius on input line 19.
 Package gensymb Info: Faking symbols for \degree and \celsius on input line 19.
+
 
 
 Package gensymb Warning: Not defining \perthousand.
@@ -1850,31 +1851,2690 @@ Package svg Warning: No version of Inkscape was detected by invoking
 
 
 \openout2 = pages/00_title.aux
-No file pages/00_title.tex.
-(./thesis.aux (./pages/00_title.aux))
+(./pages/00_title.tex
+<assets/logo_sanag.png, id=6, 74.1972pt x 77.8107pt>
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 28.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+
+Package fontspec Info: 
+(fontspec)             Font family 'old_english.ttf(0)' created for font
+(fontspec)             'old_english.ttf' with options [Ligatures=TeX,Path=./].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"[./old_english.ttf]:mode=node;script=latn;language=d
+flt;+tlig;"
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `old_english.ttf' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+<assets/logo_cot.png, id=7, 150.5625pt x 150.5625pt>
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 28.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[1{C:/Users/jason/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
+
+
+
+<./assets/logo_sanag.png><./assets/logo_cot.png>]) (./thesis.toc
+LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
+
+(C:/Users/jason/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(C:/Users/jason/AppData/Local/Programs/MiKTeX/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
+
+(C:/Users/jason/AppData/Local/Programs/MiKTeX/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(C:/Users/jason/AppData/Local/Programs/MiKTeX/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+(C:/Users/jason/AppData/Local/Programs/MiKTeX/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+)
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 26.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 26.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[2
+
+
+
+])
+\tf@toc=\write6
+
+\openout6 = thesis.toc
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 33.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 33.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[3] (./thesis.lof)
+\tf@lof=\write7
+
+\openout7 = thesis.lof
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 36.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 36.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[4
+
+] (./thesis.lot)
+\tf@lot=\write8
+
+\openout8 = thesis.lot
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 39.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 39.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[5
+
+] (./pages/05_background.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 21.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 21.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[1
+
+
+
+]) (./pages/06_rationale.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 9.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 9.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[2]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 11.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 11.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[3]) (./pages/07_objectives.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 20.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 20.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[4]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 63.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 63.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[5]) (./pages/08_significance.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 20.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 20.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[6]) (./pages/09_conceptual.tex
+\openout5 = build/uml-1.puml
+
+<assets/uml-1.png, id=179, 593.21625pt x 465.74pt>
+File: assets/uml-1.png Graphic file (type png)
+<use assets/uml-1.png>
+Package luatex.def Info: assets/uml-1.png  used on input line 28.
+(luatex.def)             Requested size: 416.83315pt x 327.27365pt.
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 31.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 31.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[7]
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 35.
+
+
+LaTeX Warning: Reference `fig:ipo' on page 8 undefined on input line 36.
+
+) (./pages/10_theoretical.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 2.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 2.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[8<./assets/uml-1.png>]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 9.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 9.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[9]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 12.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 12.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[10]) (./pages/11_scope.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 2.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 2.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[11]) (./pages/13_related_literature.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 6.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 6.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[12
+
+]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 9.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 9.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[13]
+./pages/13_related_literature.tex:9: Undefined control sequence.
+l.9 ...duction audio cues. The device is called \0
+                                                  . The device employs the R...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 13.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 13.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[14]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 19.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 19.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[15]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 21.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 21.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[16]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 25.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 25.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[17]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 27.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 27.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[18]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 29.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 29.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[19]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 31.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 31.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[20]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 35.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 35.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 80--80
+[]|\TU/TimesNewRoman(0)/m/n/12 Im-age Recog-ni-
+ []
+
+
+Overfull \hbox (37.48535pt too wide) in paragraph at lines 54--88
+ [][] 
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 89.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 89.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[22]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 96.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 96.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Pub-li-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 ca-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Stereo Vision-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Based Sen-sory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Sub-sti-tu-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Si-mona
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Caraiman,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Ovidiu
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 IMU in-te-gra-tion,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 depth com-pu-ta-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 to-audio/hap-tic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 June 20,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Eval-u-a-tion of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Short-Range
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Depth Soni-fi-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 to-Auditory
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Sen-sory Sub-sti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Louis Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Li-DAR depth
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 sens-ing, LiDAR-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 to-repetition rate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 tem-po-ral den-sity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 April 11,
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Au-ral Vi-sion --
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Dual cam-eras, IMU
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 sen-sors, re-in-force-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 ment learn-ing,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 visual-to-audio
+ []
+
+
+Underfull \hbox (badness 1303) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Sound-Sight: A
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 vice That Soni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Giles
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Hamilton-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Fletcher, J.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 RGB-D cam-era,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 ther-mal sen-sor,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 multi-feature trans-
+ []
+
+
+Underfull \hbox (badness 3826) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 la-tion (color, depth,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 tem-per-a-ture), for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 July 2,
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Zaidao Han,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 A* pathfind-ing
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 3D oc-cu-pancy map-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 ping, audio-haptic
+ []
+
+
+Underfull \hbox (badness 4120) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Ef-fi-cacy of an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Func-tional ef-fi-cacy
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 eval-u-a-tion, ac-cu-racy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 ($[] \OMS/cmsy/m/n/12  \OT1/cmr/m/n/12 100$\TU/Tim
+esNewRoman(0)/m/n/12 ),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 er-ror rate, re-ac-tion
+ []
+
+
+Underfull \hbox (badness 3343) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 time, 5-trial test-ing,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 April 29,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 AI-Powered
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Smart Vi-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Glasses for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 the Vi-su-ally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Devi
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 S. Gopalakr-
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Li-DAR, RGB cam-
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 era, AI fu-sion, ges-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 May 30,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Multi-Faceted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Sen-sory Sub-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 sti-tu-tion Us-ing
+ []
+
+
+Underfull \hbox (badness 5064) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Wear-able Tech-
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Ligao Ruan,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Fernández-
+ []
+
+
+Underfull \hbox (badness 2213) in paragraph at lines 175--175
+[]$\TU/TimesNewRoman(0)/m/n/12 ), ul-tra-sonic sen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 De-tec-tion and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Voice-Assisted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Nav-i-ga-tion:
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 The Smart Hat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Mem-o-ona
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Sami, D.
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Rasp-berry Pi 4, ul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 De-cem-ber
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 NI-IRA: Non-
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Invasive Im-age
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Au-dio (Sonic
+ []
+
+
+Underfull \hbox (badness 7486) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Vi-sion for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Re-alSense
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 & Eye-synth
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 map-ping, SLAM,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 bone-conduction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 sound, ob-sta-cle
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Pub-li-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 ca-tion
+ []
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Stereo Vision-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Based Sen-sory
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Sub-sti-tu-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Si-mona
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Caraiman,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Ovidiu
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 IMU in-te-gra-tion,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 depth com-pu-ta-tion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 to-audio/hap-tic
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 June 20,
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 175.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 175.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[24]
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Eval-u-a-tion of
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Short-Range
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Depth Soni-fi-ca-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 to-Auditory
+ []
+
+
+Underfull \hbox (badness 2237) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Sen-sory Sub-sti-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Louis Com-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Li-DAR depth
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 sens-ing, LiDAR-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 to-repetition rate
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 tem-po-ral den-sity
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 April 11,
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Au-ral Vi-sion --
+ []
+
+
+Underfull \hbox (badness 1931) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Dual cam-eras, IMU
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 sen-sors, re-in-force-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 ment learn-ing,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 visual-to-audio
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 175.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 175.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[25]
+Underfull \hbox (badness 1303) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Sound-Sight: A
+ []
+
+
+Underfull \hbox (badness 1028) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 vice That Soni-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Giles
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Hamilton-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Fletcher, J.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 RGB-D cam-era,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 ther-mal sen-sor,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 multi-feature trans-
+ []
+
+
+Underfull \hbox (badness 3826) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 la-tion (color, depth,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 tem-per-a-ture), for-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 July 2,
+ []
+
+
+Underfull \hbox (badness 2781) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Zaidao Han,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 A* pathfind-ing
+ []
+
+
+Underfull \hbox (badness 3039) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 3D oc-cu-pancy map-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 ping, audio-haptic
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 175.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 175.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[26]
+Underfull \hbox (badness 4120) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Ef-fi-cacy of an
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Func-tional ef-fi-cacy
+ []
+
+
+Underfull \hbox (badness 2635) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 eval-u-a-tion, ac-cu-racy
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 ($[] \OMS/cmsy/m/n/12  \OT1/cmr/m/n/12 100$\TU/Tim
+esNewRoman(0)/m/n/12 ),
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 er-ror rate, re-ac-tion
+ []
+
+
+Underfull \hbox (badness 3343) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 time, 5-trial test-ing,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 April 29,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 AI-Powered
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Smart Vi-sion
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Glasses for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 the Vi-su-ally
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Devi
+ []
+
+
+Underfull \hbox (badness 1009) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 S. Gopalakr-
+ []
+
+
+Underfull \hbox (badness 7047) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Li-DAR, RGB cam-
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 era, AI fu-sion, ges-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 May 30,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Multi-Faceted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Sen-sory Sub-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 sti-tu-tion Us-ing
+ []
+
+
+Underfull \hbox (badness 5064) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Wear-able Tech-
+ []
+
+
+Underfull \hbox (badness 2753) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Ligao Ruan,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Fernández-
+ []
+
+
+Underfull \hbox (badness 2213) in paragraph at lines 175--175
+[]$\TU/TimesNewRoman(0)/m/n/12 ), ul-tra-sonic sen-
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 175.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 175.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[27]
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 De-tec-tion and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Voice-Assisted
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Nav-i-ga-tion:
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 The Smart Hat
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Mem-o-ona
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Sami, D.
+ []
+
+
+Underfull \hbox (badness 3219) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Rasp-berry Pi 4, ul-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 De-cem-ber
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 NI-IRA: Non-
+ []
+
+
+Underfull \hbox (badness 2359) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Invasive Im-age
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Au-dio (Sonic
+ []
+
+
+Underfull \hbox (badness 7486) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 Vi-sion for the
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+[]\TU/TimesNewRoman(0)/m/n/12 Re-alSense
+ []
+
+
+Underfull \hbox (badness 4673) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 & Eye-synth
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 map-ping, SLAM,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 bone-conduction
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 175--175
+\TU/TimesNewRoman(0)/m/n/12 sound, ob-sta-cle
+ []
+
+)
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 57.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 57.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[28] (./pages/14_research_design.tex
+Overfull \hbox (12.0856pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.95 ing/statis- 
+ []
+
+
+Overfull \hbox (9.08847pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.95 tics/anal- 
+ []
+
+
+Overfull \hbox (12.0856pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.95 ing/statis- 
+ []
+
+
+Overfull \hbox (9.08847pt too wide) in paragraph at lines 17--17
+\TU/TimesNewRoman(0)/m/n/10.95 tics/anal- 
+ []
+
+<assets/edp.png, id=361, 367.3725pt x 362.10281pt>
+File: assets/edp.png Graphic file (type png)
+<use assets/edp.png>
+Package luatex.def Info: assets/edp.png  used on input line 22.
+(luatex.def)             Requested size: 416.83315pt x 410.88422pt.
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 26.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 26.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[29
+
+]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 29.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 29.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[30<./assets/edp.png>]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 38.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 38.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[31]) (./pages/15_materials.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 10.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 10.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[32]
+Overfull \hbox (0.2363pt too wide) in paragraph at lines 13--14
+[]\TU/TimesNewRoman(0)/m/n/12 mod-u-lar frame-work al-low-ing cus-tom ap-pli-ca-
+tions to in-te-grate into the main pipeline
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 19.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 19.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[33]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 23.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 23.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[34]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 23.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 23.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[35]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 23.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 23.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[36]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 26.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 26.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[37]) (./pages/17_data_presentation.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 1.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 1.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[38]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 1.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 1.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[39]
+\openout5 = build/uml-2.puml
+
+<assets/uml-2.png, id=415, 836.12375pt x 368.37625pt>
+File: assets/uml-2.png Graphic file (type png)
+<use assets/uml-2.png>
+Package luatex.def Info: assets/uml-2.png  used on input line 32.
+(luatex.def)             Requested size: 416.83315pt x 183.64804pt.
+
+
+LaTeX Warning: Reference `fig:block' on page 40 undefined on input line 36.
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 37.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 37.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[40<./assets/uml-2.png>]
+<assets/architecture.png, id=421, 543.9522pt x 542.025pt>
+File: assets/architecture.png Graphic file (type png)
+<use assets/architecture.png>
+Package luatex.def Info: assets/architecture.png  used on input line 41.
+(luatex.def)             Requested size: 416.83315pt x 415.35904pt.
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 44.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 44.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[41]
+
+LaTeX Warning: Reference `fig:architecture' on page 42 undefined on input line 
+45.
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 46.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 46.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[42<./assets/architecture.png>]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 46.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 46.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[43]
+<assets/3d.png, id=435, 1178.4025pt x 1228.59pt>
+File: assets/3d.png Graphic file (type png)
+<use assets/3d.png>
+Package luatex.def Info: assets/3d.png  used on input line 50.
+(luatex.def)             Requested size: 416.83315pt x 434.58714pt.
+
+
+LaTeX Warning: Reference `fig:3d' on page 44 undefined on input line 54.
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 55.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 55.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[44<./assets/3d.png>]
+<assets/circuit.png, id=440, 549.252pt x 446.6286pt>
+File: assets/circuit.png Graphic file (type png)
+<use assets/circuit.png>
+Package luatex.def Info: assets/circuit.png  used on input line 59.
+(luatex.def)             Requested size: 416.83315pt x 338.95058pt.
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 62.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 62.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[45]
+
+LaTeX Warning: Reference `fig:circuit' on page 46 undefined on input line 63.
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 78.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 78.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[46<./assets/circuit.png>]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 78.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 78.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[47]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 89.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 89.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[48]
+<assets/wireframe.jpg, id=463, 2055.68pt x 1514.65875pt>
+File: assets/wireframe.jpg Graphic file (type jpg)
+<use assets/wireframe.jpg>
+Package luatex.def Info: assets/wireframe.jpg  used on input line 93.
+(luatex.def)             Requested size: 416.83315pt x 307.10962pt.
+<assets/Measurement.pdf, id=464, page=1, 1195.01456pt x 845.04709pt>
+File: assets/Measurement.pdf Graphic file (type pdf)
+<use assets/Measurement.pdf, page 1>
+Package luatex.def Info: assets/Measurement.pdf , page1 used on input line 100.
+
+(luatex.def)             Requested size: 416.83315pt x 294.75226pt.
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 103.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 103.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[49<./assets/wireframe.jpg>]
+<assets/Schematic.pdf, id=469, page=1, 845.04689pt x 597.50789pt>
+File: assets/Schematic.pdf Graphic file (type pdf)
+<use assets/Schematic.pdf, page 1>
+Package luatex.def Info: assets/Schematic.pdf , page1 used on input line 249.
+(luatex.def)             Requested size: 845.04483pt x 597.50642pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 249--251
+[][]
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 252.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 252.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[50<./assets/Measurement.pdf>]
+<assets/Schematic.pdf, id=506, page=2, 845.04689pt x 597.50789pt>
+File: assets/Schematic.pdf Graphic file (type pdf)
+<use assets/Schematic.pdf, page 2>
+Package luatex.def Info: assets/Schematic.pdf , page2 used on input line 256.
+(luatex.def)             Requested size: 845.04483pt x 597.50642pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--258
+[][]
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 259.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 259.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[51<./assets/Schematic.pdf>]
+File: assets/Schematic.pdf Graphic file (type pdf)
+<use assets/Schematic.pdf, page 2>
+Package luatex.def Info: assets/Schematic.pdf , page2 used on input line 263.
+(luatex.def)             Requested size: 845.04483pt x 597.50642pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 263--265
+[][]
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 266.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 266.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[52<./assets/Schematic.pdf>]
+\g__cctab_tmpiii_cctab=\catcodetable14
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 373.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 373.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[53]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 373.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 373.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[54]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 373.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 373.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[55]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 373.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 373.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[56]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 373.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 373.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[57]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 373.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 373.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[58]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 373.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 373.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[59]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 373.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 373.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[60]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 373.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 373.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[61]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 373.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 373.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[62]
+\openout5 = build/uml-3.puml
+
+<assets/uml-3.png, id=559, 592.2125pt x 861.2175pt>
+File: assets/uml-3.png Graphic file (type png)
+<use assets/uml-3.png>
+Package luatex.def Info: assets/uml-3.png  used on input line 414.
+(luatex.def)             Requested size: 416.83315pt x 606.18597pt.
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 417.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 417.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[63]
+
+LaTeX Warning: Reference `fig:pipeflow' on page 64 undefined on input line 418.
+
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 419.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 419.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[64<./assets/uml-3.png>]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 419.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 419.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[65]
+\openout5 = build/uml-4.puml
+
+<assets/uml-4.png, id=573, 533.995pt x 620.3175pt>
+File: assets/uml-4.png Graphic file (type png)
+<use assets/uml-4.png>
+Package luatex.def Info: assets/uml-4.png  used on input line 477.
+(luatex.def)             Requested size: 416.83315pt x 484.23378pt.
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 480.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 480.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[66]
+
+LaTeX Warning: Reference `fig:flowserver' on page 67 undefined on input line 48
+1.
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 482.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 482.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[67<./assets/uml-4.png>]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 482.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 482.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[68]
+\openout5 = build/uml-5.puml
+
+<assets/uml-5.png, id=588, 503.8825pt x 668.4975pt>
+File: assets/uml-5.png Graphic file (type png)
+<use assets/uml-5.png>
+Package luatex.def Info: assets/uml-5.png  used on input line 518.
+(luatex.def)             Requested size: 416.83315pt x 553.0065pt.
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 521.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 521.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[69]
+
+LaTeX Warning: Reference `fig:flowapi' on page 70 undefined on input line 522.
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 523.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 523.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[70<./assets/uml-5.png>]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 523.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 523.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[71]
+Underfull \hbox (badness 10000) in paragraph at lines 527--528
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 533--534
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 539--540
+
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 540.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 540.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[72]
+Underfull \hbox (badness 10000) in paragraph at lines 554--555
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 565--566
+
+ []
+
+) (./pages/26_summary_of_findings.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 139.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 139.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[73]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 176.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 176.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[74]
+
+LaTeX Warning: Reference `tab:confusion_matrix_gesture' on page 75 undefined on
+ input line 178.
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 198.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 198.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[75]
+
+LaTeX Warning: Reference `tab:performance_gesture' on page 76 undefined on inpu
+t line 200.
+
+) (./pages/18_ethical_considerations.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 6.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 6.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[76]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 8.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 8.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[77]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 12.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 12.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[78]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 18.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 18.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[79])
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 78.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 78.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[80]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 80.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 80.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[81
+
+]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 80.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 80.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[82]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 81.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 81.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[83] (./pages/36_researchers_profile.tex
+<assets/dsouza.jpg, id=675, 144.54pt x 144.54pt>
+File: assets/dsouza.jpg Graphic file (type jpg)
+<use assets/dsouza.jpg>
+Package luatex.def Info: assets/dsouza.jpg  used on input line 18.
+(luatex.def)             Requested size: 116.71277pt x 116.71283pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 18--18
+ []|[]| 
+ []
+
+
+Overfull \vbox (12.81291pt too high) detected at line 18
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 38.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 38.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[1
+
+
+<./assets/dsouza.jpg>]
+<assets/wang.jpg, id=680, 123.46124pt x 176.91093pt>
+File: assets/wang.jpg Graphic file (type jpg)
+<use assets/wang.jpg>
+Package luatex.def Info: assets/wang.jpg  used on input line 46.
+(luatex.def)             Requested size: 116.71277pt x 167.24919pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 46--46
+ []|[]| 
+ []
+
+
+Overfull \vbox (63.34927pt too high) detected at line 46
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 69.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 69.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[2
+
+<./assets/wang.jpg>]
+<assets/pabito.png, id=685, 94.10156pt x 114.4275pt>
+File: assets/pabito.png Graphic file (type png)
+<use assets/pabito.png>
+Package luatex.def Info: assets/pabito.png  used on input line 77.
+(luatex.def)             Requested size: 116.71277pt x 141.93402pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 77--77
+ []|[]| 
+ []
+
+
+Overfull \vbox (38.0341pt too high) detected at line 77
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 100.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 100.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[3
+
+<./assets/pabito.png>]
+<assets/daywan.png, id=692, 149.05687pt x 149.8097pt>
+File: assets/daywan.png Graphic file (type png)
+<use assets/daywan.png>
+Package luatex.def Info: assets/daywan.png  used on input line 108.
+(luatex.def)             Requested size: 116.71277pt x 117.30139pt.
+
+Overfull \hbox (6.79999pt too wide) in paragraph at lines 108--108
+ []|[] 
+ []
+
+
+Overfull \vbox (42.40147pt too high) detected at line 108
+ []
+
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 128.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 128.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[4
+
+<./assets/daywan.png>]) (./pages/37_total_budget.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 32.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 32.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[5
+
+]) (./pages/38_gantt_chart.tex
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 59.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 59.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[6]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 59.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 59.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[7]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 59.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 59.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[8]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 104.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 104.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[9]
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 104.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 104.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[10])
+File: assets/logo_sanag.png Graphic file (type png)
+<use assets/logo_sanag.png>
+Package luatex.def Info: assets/logo_sanag.png  used on input line 96.
+(luatex.def)             Requested size: 65.11937pt x 68.28644pt.
+File: assets/logo_cot.png Graphic file (type png)
+<use assets/logo_cot.png>
+Package luatex.def Info: assets/logo_cot.png  used on input line 96.
+(luatex.def)             Requested size: 68.28778pt x 68.28644pt.
+
+
+Package fancyhdr Warning: \footskip is too small (2.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\footskip}{14.49998pt}.
+
+[11] (C:/Users/jason/Desktop/thesis/paper/build/thesis.aux
+(C:/Users/jason/Desktop/thesis/paper/build/pages/00_title.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                thesis
+(biblatex)                and rerun LaTeX afterwards.
+
 Package logreq Info: Writing requests to 'thesis.run.xml'.
 
 \openout1 = thesis.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 60238 strings out of 476081
- 125165,2848258 words of node,token memory allocated
- 835 words of node memory still in use:
-   6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 15 attribute, 107 glue_spe
-c, 15 attribute_list, 7 write, 2 pdf_dest, 1 pdf_colorstack nodes
-   avail lists: 1:1,2:45,3:1,4:5,5:4,6:1,7:19,8:2,9:1
- 81623 multiletter control sequences out of 65536+600000
- 28 fonts using 8676831 bytes
- 104i,1n,118p,1185b,5184s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 69532 strings out of 476081
+ 305629,2848258 words of node,token memory allocated
+ 7965 words of node memory still in use:
+   148 hlist, 14 vlist, 2 rule, 15 disc, 9 local_par, 212 glue, 5 kern, 23 penal
+ty, 17 margin_kern, 181 glyph, 464 attribute, 109 glue_spec, 464 attribute_list,
+ 10 write, 8 save_pos, 268 pdf_literal, 8 pdf_colorstack nodes
+   avail lists: 1:6,2:15278,3:554,4:138,5:208,6:489,7:16413,8:48,9:12317,10:52,1
+1:1037
+ 89867 multiletter control sequences out of 65536+600000
+ 58 fonts using 14444103 bytes
+ 104i,16n,119p,5234b,6292s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/WINDOWS/Fonts/timesi.ttf><C:/WINDOWS/Fonts/timesbi.ttf><C:/WINDOWS/Fonts/tim
+esbd.ttf><C:/WINDOWS/Fonts/times.ttf><./assets/old_english.ttf><C:/Users/jason/A
+ppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users
+/jason/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
+C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi
+6.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/
+cm/cmmi8.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
+sfonts/cm/cmr12.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr6.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/ty
+pe1/public/amsfonts/cm/cmr8.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/jason/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/jason/AppData/Local/Pro
+grams/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on thesis.pdf (99 pages, 4375399 bytes).
 
-warning  (pdf backend): no pages of output.
-
-PDF statistics: 9 PDF objects out of 1000 (max. 8388607)
- 1 named destinations out of 1000 (max. 131072)
- 24 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 877 PDF objects out of 1000 (max. 8388607)
+ 237 named destinations out of 1000 (max. 131072)
+ 224 words of extra memory for PDF output out of 10000 (max. 100000000)
 

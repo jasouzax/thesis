@@ -2,13 +2,13 @@
 
 
 
-\textcite{zvori_teanu_2021} presented the \textbf{Sound of Vision (SoV) system}. It is a wearable SSD designed to aid VIPs in spatial cognition and navigation, using stereo-vision-based 3D reconstruction to interpret the environment and translate spatial data into audio and haptic cues. The device integrates a stereo camera, an infrared depth sensor, and an inertial measurement unit (IMU) to track the motion of the user’s head and the installed camera mounted on the headgear, using these as its inputs. Furthermore, the output audio and haptic feedback are delivered via headphones and a haptic belt. The device processes visual data in real time using GPU-accelerated computation to reconstruct the 3D Environment and identify obstacles via segmentation algorithms based on disparity and histogram analysis. The depth of each pixel is determined by the stereo disparity formula $Z=\frac{f\cdot B}{d}$, where $Z$ is the depth, $B$ is the baseline, $f$ is the focal length, and $d$ is the disparity. The SoV converts environmental data into audio-haptic cues, allowing users to detect obstacles, open spaces, and open areas. In testing the device's performance with the visually impaired participants, it showed a $10\%$ improvement in depth accuracy and an $88.5\%$ task success rate compared to standard stereo vision methods. The results highlight the device's effectiveness in real-world navigation and its potential to enhance mobility and spatial awareness compared to traditional aids such as white canes.
+\textcite{zvori_teanu_2021} presented the Sound of Vision (SoV) system. It is a wearable SSD designed to aid VIPs in spatial cognition and navigation, using stereo-vision-based 3D reconstruction to interpret the environment and translate spatial data into audio and haptic cues. The device integrates a stereo camera, an infrared depth sensor, and an inertial measurement unit (IMU) to track the motion of the user’s head and the installed camera mounted on the headgear, using these as its inputs. Furthermore, the output audio and haptic feedback are delivered via headphones and a haptic belt. The device processes visual data in real time using GPU-accelerated computation to reconstruct the 3D Environment and identify obstacles via segmentation algorithms based on disparity and histogram analysis. The depth of each pixel is determined by the stereo disparity formula $Z=\frac{f\cdot B}{d}$, where $Z$ is the depth, $B$ is the baseline, $f$ is the focal length, and $d$ is the disparity. The SoV converts environmental data into audio-haptic cues, allowing users to detect obstacles, open spaces, and open areas. In testing the device's performance with the visually impaired participants, it showed a $10\%$ improvement in depth accuracy and an $88.5\%$ task success rate compared to standard stereo vision methods. The results highlight the device's effectiveness in real-world navigation and its potential to enhance mobility and spatial awareness compared to traditional aids such as white canes.
 
-\textcite{sami_2025} developed a \textbf{smart wearable (hat) assistive device} that integrates object detection with voice-assisted navigation to support VIP in real-time spatial awareness. The device uses an ESP32-CAM module to capture live video and transmit it via Wi-FI to a mobile application that employs a TensorFlow-based deep learning model for efficient object recognition. The camera-detected objects are then processed into audio prompts that send alerts to the user when there are nearby obstacles and provide navigation directions. The programmed system produced a seamless object-detection-to-voice pipeline. The Smart Hat's system architecture demonstrates the integration of an IoT processing method to enable wireless communication between the smart hat and the user interface for remote processing and real-time updates for the user. Testing results show an object detection accuracy of over $91\%$, highlighting the reliability in dynamic environments. In addition, the Smart Hat device offers compact, low-cost, and user-friendly features. It demonstrates how IoT-enabled computer vision can transform traditional assistive technologies into intelligent, voice-guided navigation tools for the visually impaired.
+\textcite{sami_2025} developed a smart wearable (hat) assistive device that integrates object detection with voice-assisted navigation to support VIP in real-time spatial awareness. The device uses an ESP32-CAM module to capture live video and transmit it via Wi-FI to a mobile application that employs a TensorFlow-based deep learning model for efficient object recognition. The camera-detected objects are then processed into audio prompts that send alerts to the user when there are nearby obstacles and provide navigation directions. The programmed system produced a seamless object-detection-to-voice pipeline. The Smart Hat's system architecture demonstrates the integration of an IoT processing method to enable wireless communication between the smart hat and the user interface for remote processing and real-time updates for the user. Testing results show an object detection accuracy of over $91\%$, highlighting the reliability in dynamic environments. In addition, the Smart Hat device offers compact, low-cost, and user-friendly features. It demonstrates how IoT-enabled computer vision can transform traditional assistive technologies into intelligent, voice-guided navigation tools for the visually impaired.
 
-\textcite{realsense2025}, in collaboration with Eyesynth, developed a wearable sensory-substitution device designed to enhance spatial awareness and independent navigation for visually impaired users by converting real-time 3D spatial data into bone-conduction audio cues. The device is called \textbf{Non-Invasive Image Resynthesis into Audio (NIIRA)}. The device employs the RealSense D415 depth camera to capture real-time 3D depth data calculated using the stereo disparity formula $Z=\frac{f\cdot B}{d}$. Then it is processed to generate a point cloud representation of the surroundings, where each depth pixel being mapped to 3D coordinates using the equation $X=(u-c_x)\frac{z}{f_x},\;Y=(v-Cy)\frac{Z}{f_y},\;Z=Z$ to provide a complete spatial surrounding rather than a 2D view. The point-cloud data conjoint with the inertial and head motion tracking, is then processed through an onboard ASIC and Simultaneous Localization and Mapping (SLAM) modules to identify object orientation, translating them into audio signals such as pitch (height), volume (distance), and stereo panning (lateral position), allowing users to perceive objects and obstacles up to 5 meters away without external infrastructure. In testing NIIRA, it demonstrated improved independence and navigation in both indoor and outdoor environments, adapting to users’ preferences, and displayed high obstacle-detection accuracy, minimal processing latency, and enhanced independent navigation. The participants reported that the bone-conduction audio feedback provided a clear environmental awareness without blocking external sounds.
+\textcite{realsense2025}, in collaboration with Eyesynth, developed a wearable sensory-substitution device designed to enhance spatial awareness and independent navigation for visually impaired users by converting real-time 3D spatial data into bone-conduction audio cues. The device is called \0. The device employs the RealSense D415 depth camera to capture real-time 3D depth data calculated using the stereo disparity formula $Z=\frac{f\cdot B}{d}$. Then it is processed to generate a point cloud representation of the surroundings, where each depth pixel being mapped to 3D coordinates using the equation $X=(u-c_x)\frac{z}{f_x},\;Y=(v-Cy)\frac{Z}{f_y},\;Z=Z$ to provide a complete spatial surrounding rather than a 2D view. The point-cloud data conjoint with the inertial and head motion tracking, is then processed through an onboard ASIC and Simultaneous Localization and Mapping (SLAM) modules to identify object orientation, translating them into audio signals such as pitch (height), volume (distance), and stereo panning (lateral position), allowing users to perceive objects and obstacles up to 5 meters away without external infrastructure. In testing NIIRA, it demonstrated improved independence and navigation in both indoor and outdoor environments, adapting to users’ preferences, and displayed high obstacle-detection accuracy, minimal processing latency, and enhanced independent navigation. The participants reported that the bone-conduction audio feedback provided a clear environmental awareness without blocking external sounds.
 
-\textcite{udayakumar_2025} designed a \textbf{Smart Vision Glasses (SVG)} that processes environmental input data using AI, LiDAR depth mapping, and computer vision algorithms. The device’s front-facing camera captures visual data, while the LiDAR sensor measures real-time depth information using the principle of Time-of-Flight (ToF) – where the distance (D) is calculated using the formula $D=\frac{c\cdot t}{2}$, where $c$ represents the speed of light and $t$ the time taken for emitted light to return after reflection. These depth and image data are then processed through an AI-based recognition model that uses Convolutional Neural Networks (CNNs) to classify objects, text, and faces within the user's field of view. The recognized elements are subsequently analyzed and prioritized based on proximity and relevance using the LiDAR-assisted spatial mapping, which produces a semantic understanding of the scene; implementing Volume of Interest (VOI), a controllable spatial region or focus radius that limits feedback, to prevent sensory overload, enhancing user focus in dynamic environment. This processed information is then transmitted to a smartphone-based application converting the recognized data into voice audio cues through text-to-speech (TTS) engine. The device applies natural language processing (NLP) principles to ensure that the audio output is contextually meaningful and user-friendly. The input-output process follows a sequential pipeline:
+\textcite{udayakumar_2025} designed a Smart Vision Glasses (SVG) that processes environmental input data using AI, LiDAR depth mapping, and computer vision algorithms. The device’s front-facing camera captures visual data, while the LiDAR sensor measures real-time depth information using the principle of Time-of-Flight (ToF) – where the distance (D) is calculated using the formula $D=\frac{c\cdot t}{2}$, where $c$ represents the speed of light and $t$ the time taken for emitted light to return after reflection. These depth and image data are then processed through an AI-based recognition model that uses Convolutional Neural Networks (CNNs) to classify objects, text, and faces within the user's field of view. The recognized elements are subsequently analyzed and prioritized based on proximity and relevance using the LiDAR-assisted spatial mapping, which produces a semantic understanding of the scene; implementing Volume of Interest (VOI), a controllable spatial region or focus radius that limits feedback, to prevent sensory overload, enhancing user focus in dynamic environment. This processed information is then transmitted to a smartphone-based application converting the recognized data into voice audio cues through text-to-speech (TTS) engine. The device applies natural language processing (NLP) principles to ensure that the audio output is contextually meaningful and user-friendly. The input-output process follows a sequential pipeline:
 \begin{enumerate}
     \item capture of the image depth data
     \item AI-driven detection and classification
@@ -33,13 +33,13 @@ The SVG through hearing supports the four primary modes – “Thighs Around You
 
 Recent studies (2019–2025) on assistive technologies for the VIP highlight wearable and mobile devices utilizing a sensory substitution approach to convert visual/spatial data into audio, haptic, or multimodal cues, applying stereo vision (e.g., disparity formula $Z=\frac{f\cdot B}{d}$), depth sensors like LiDAR/ToF (e.g., $D=\frac{c\cdot t}{2}$), AI-driven computer vision (e.g., CNNs, TensorFlow), and IMUs. This approach expresses the outcome produced by the device such as real-time obstacle detection, object recognition, and navigation, similar to the Caraiman et al.'s Sound of Vision (SoV), which addresses sensory overloading via a controllable focus radius (VOI) and modular components for partial generalizability; Sami et al.'s Smart Hat for cost-effective voice output; RealSense's NIIRA point-cloud processing to semantic audio; Commère and Rouat's LiDAR sonification for rhythmic depth cues; Hamilton-Fletcher et al.'s SoundSight for mobile timbre/volume mappings; Ruan et al.'s curb detector for $94.3\%$ accuracy; Han and Li's Multi-Path Sensory Substitution Device (MSSD) for $91\%$ path accuracy; Zhao et al.'s electronic navigation aid (ENA); and Udayakumar and Gopalakrishnan's Smart Vision Glasses (SVG) for AI-LiDAR voice modes. However, systems like AuralVision that utilizes ToF lasers for bone-conduction stereo sound, lab-effective but range-limited, Eyesynth’s NIIRA object recognition process prone to overload without human emulation, Depth Sonification repetition rates for intuitiveness, SoundSight LiDAR/thermal to audio hwich is app-constrained, Smart Hat that is non-modular, and multi-faceted SSDs with $85\%$ curb accuracy often face issues like sensory overload, training demands, limited real-world adaptability, and lack of digital-physical navigation. These studies proposes an idea that work closely aligns with SoV by tackling sensory overloading through VOI and modular components but advances it by explicitly mimicking human perception via a modes system and a modular IoT pipeline that applications can embed for navigation in both physical and digital worlds, addressing SoV's training needs and real-world performance gaps while incorporating brain emulation for superior overload reduction and versatility, building on these predecessors to offer a more intuitive, scalable solution for VIP independence. In addition, evaluations across studies ranging from 12 to 90 participants showcase $85\%$ to $95\%$ accuracies and qualitative benefits like reduced errors (e.g., $38\%$ in MSSD). These studies introduce an innovative and improved SSD by adding brain emulation, AI, and IoT for advanced overload reduction and versatility. 
 
-% \textbf{Differentiation table of Related Literature}
+% Differentiation table of Related Literature
 % \begin{table}[H]
 %     \centering
 %     \caption{Differentiation table in Related Literature in Relation to the Study}
 %     \begin{tabularx}{\textwidth}{|l|*{10}{>{\centering\arraybackslash}X|}}
 %         \hline
-%         \textbf{Components} & \textbf{\textcite{zvori_teanu_2021}} & \textbf{\textcite{realsense2025}} & \textbf{\textcite{udayakumar_2025}} & \textbf{\textcite{ruan_2025}} & \textbf{\textcite{viancy_2024}} & \textbf{\textcite{hamilton_fletcher_2021}} & \textbf{Han \& Li (2025)} & \textbf{\textcite{commere_2023}} & \textbf{\textcite{zhao_2025}} & \textbf{World Navigation Hat} \\
+%         Components & \textcite{zvori_teanu_2021} & \textcite{realsense2025} & \textcite{udayakumar_2025} & \textcite{ruan_2025} & \textcite{viancy_2024} & \textcite{hamilton_fletcher_2021} & Han \& Li (2025) & \textcite{commere_2023} & \textcite{zhao_2025} & World Navigation Hat \\
 %         \hline
 %         Raspberry PI / Jetson & \CheckmarkBold \\
 %         \hline
@@ -53,17 +53,17 @@ Recent studies (2019–2025) on assistive technologies for the VIP highlight wea
     \label{tab:relsum}
     \begin{tabular}{|p{3cm}|c|c|c|c|c|c|c|c|c|c|}
         \hline
-        \textbf{Component} &
-        \textbf{R1} &
-        \textbf{R2} &
-        \textbf{R3} &
-        \textbf{R4} &
-        \textbf{R5} &
-        \textbf{R6} &
-        \textbf{R7} &
-        \textbf{R8} &
-        \textbf{R9} &
-        \textbf{Ours} \\
+        Component &
+        R1 &
+        R2 &
+        R3 &
+        R4 &
+        R5 &
+        R6 &
+        R7 &
+        R8 &
+        R9 &
+        World Navigation Hat \\
         \hline
         Zero form factor SBCs & & & & & & \checkmark & \checkmark & & & \checkmark \\
         \hline
@@ -87,6 +87,7 @@ Recent studies (2019–2025) on assistive technologies for the VIP highlight wea
     \end{tabular}
 \end{table}
 
+\todo{please turn this into table}
 \begin{enumerate}
     \item \textcite{zvori_teanu_2021}
     \item \textcite{realsense2025}
@@ -99,7 +100,7 @@ Recent studies (2019–2025) on assistive technologies for the VIP highlight wea
     \item \textcite{zhao_2025}
 \end{enumerate}
 
-% \textbf{Prior Arts}
+% Prior Arts
 % \begin{table}[H]
 %     \centering
 %     \caption{Existing publication from 2019-2025}
@@ -107,7 +108,7 @@ Recent studies (2019–2025) on assistive technologies for the VIP highlight wea
 %         \renewcommand{\arraystretch}{1.3}
 %         \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|}
 %             \hline
-%             \textbf{Components} & \textbf{\textcite{zvori_teanu_2021}} & \textbf{\textcite{realsense2025}} & \textbf{\textcite{udayakumar_2025}} & \textbf{\textcite{ruan_2025}} & \textbf{\textcite{viancy_2024}} & \textbf{\textcite{hamilton_fletcher_2021}} & \textbf{Han \& Li (2025)} & \textbf{\textcite{commere_2023}} & \textbf{\textcite{zhao_2025}} & \textbf{World Navigation Hat} \\
+%             Components & \textcite{zvori_teanu_2021} & \textcite{realsense2025} & \textcite{udayakumar_2025} & \textcite{ruan_2025} & \textcite{viancy_2024} & \textcite{hamilton_fletcher_2021} & Han \& Li (2025) & \textcite{commere_2023} & \textcite{zhao_2025} & World Navigation Hat \\
 %             \hline
 %             Raspberry PI / Jetson & \CheckmarkBold
 %             \hline
@@ -123,30 +124,33 @@ Recent studies (2019–2025) on assistive technologies for the VIP highlight wea
 %     \label{tab:priorarts}
 %     \begin{tabularx}{\textwidth}{|X|X|X|X|X|}
 %         \hline
-%         \textbf{Patent Title} & \textbf{Authors} & \textbf{Parameters} & \textbf{Publication No.} & \textbf{Publication Date} \\
+%         Patent Title & Authors & Parameters & Publication No. & Publication Date \\
 %         \hline
-%         \textbf{Stereo Vision-Based Sensory Substitution for the Visually Impaired} & Simona Caraiman, Ovidiu Zagan & Stereo vision cameras, IMU integration, depth computation ($Z=\frac{f\cdot B}{d}$), obstacle-to-audio/haptic mapping & PMC6630569 & June 20, 2019 \\
+%         Stereo Vision-Based Sensory Substitution for the Visually Impaired & Simona Caraiman, Ovidiu Zagan & Stereo vision cameras, IMU integration, depth computation ($Z=\frac{f\cdot B}{d}$), obstacle-to-audio/haptic mapping & PMC6630569 & June 20, 2019 \\
 %         \hline
-%         \textbf{Evaluation of Short-Range Depth Sonifications for Visual-to-Auditory Sensory Substitution} & Louis Commère, Jérôme Rouat & LiDAR depth sensing, LiDAR-to-repetition rate mapping ($R=\frac{k}{D}$), temporal density sonification & arXiv:2304.05462 & April 11, 2023 \\
+%         Evaluation of Short-Range Depth Sonifications for Visual-to-Auditory Sensory Substitution & Louis Commère, Jérôme Rouat & LiDAR depth sensing, LiDAR-to-repetition rate mapping ($R=\frac{k}{D}$), temporal density sonification & arXiv:2304.05462 & April 11, 2023 \\
 %         \hline
-%         \textbf{Aural Vision – Envisioning the Independence of the Visually Impaired} & V. V., N. R. C. Mouli, M. M., S. S. & Dual cameras, IMU sensors, reinforcement learning, ObjectNet3D dataset, visual-to-audio translation & IEEE DOI: 10.1109/ICICT60155.2024.10545004 & April 2024 \\
+%         Aural Vision – Envisioning the Independence of the Visually Impaired & V. V., N. R. C. Mouli, M. M., S. S. & Dual cameras, IMU sensors, reinforcement learning, ObjectNet3D dataset, visual-to-audio translation & IEEE DOI: 10.1109/ICICT60155.2024.10545004 & April 2024 \\
 %         \hline
-%         \textbf{SoundSight: A Mobile Sensory Substitution Device That Sonifies Colour, Distance, and Temperature} & Giles Hamilton-Fletcher, J. Arias & RGB-D camera, thermal sensor, multi-feature translation (color, depth, temperature), formulas ($f_c=k_cH$), ($A_t=k_tT$) & DOI: 10.1007/s12193-021-00376-w & July 2, 2021 \\
+%         SoundSight: A Mobile Sensory Substitution Device That Sonifies Colour, Distance, and Temperature & Giles Hamilton-Fletcher, J. Arias & RGB-D camera, thermal sensor, multi-feature translation (color, depth, temperature), formulas ($f_c=k_cH$), ($A_t=k_tT$) & DOI: 10.1007/s12193-021-00376-w & July 2, 2021 \\
 %         \hline
-%         \textbf{Multi-Path Sensory Substitution Device for Navigation} & Zaidao Han, S. Li & Depth camera, IMU, A* pathfinding ($f(n)=g(n)+h(n)$), 3D occupancy mapping, audio-haptic feedback & ScienceDirect S0141938225002379 & August 27, 2025 \\
+%         Multi-Path Sensory Substitution Device for Navigation & Zaidao Han, S. Li & Depth camera, IMU, A* pathfinding ($f(n)=g(n)+h(n)$), 3D occupancy mapping, audio-haptic feedback & ScienceDirect S0141938225002379 & August 27, 2025 \\
 %         \hline
-%         \textbf{Evaluation of the Efficacy of an Assistive Device for Blind People} & Yiming Zhao, S. Y. & Functional efficacy evaluation, accuracy ($\frac{Successful}{Total}\times100$), error rate, reaction time, 5-trial testing, 30 participants & Taylor \& Francis Online DOI: 10.1080/02713683.2025.2495212 & April 29, 2025 \\
+%         Evaluation of the Efficacy of an Assistive Device for Blind People & Yiming Zhao, S. Y. & Functional efficacy evaluation, accuracy ($\frac{Successful}{Total}\times100$), error rate, reaction time, 5-trial testing, 30 participants & Taylor \& Francis Online DOI: 10.1080/02713683.2025.2495212 & April 29, 2025 \\
 %         \hline
-%         \textbf{AI-Powered Smart Vision Glasses for the Visually Impaired} & Devi Udayakumar, S. Gopalakrishnan & LiDAR, RGB camera, AI fusion, gesture/voice control, mobile app integration & PMC12178407 & May 30, 2025 \\
+%         AI-Powered Smart Vision Glasses for the Visually Impaired & Devi Udayakumar, S. Gopalakrishnan & LiDAR, RGB camera, AI fusion, gesture/voice control, mobile app integration & PMC12178407 & May 30, 2025 \\
 %         \hline
-%         \textbf{Multi-Faceted Sensory Substitution Using Wearable Technology for Curb Alerting} & Ligao Ruan, G. Hong, R. Fernández-Robles & Stereo disparity ($Z=\frac{f\cdot B}{d}$), ultrasonic sensors, audio-based curb detection, $94.3\%$ accuracy & DOI: 10.1080/17483107.2025.2463541 & February 1, 2025 \\
+%         Multi-Faceted Sensory Substitution Using Wearable Technology for Curb Alerting & Ligao Ruan, G. Hong, R. Fernández-Robles & Stereo disparity ($Z=\frac{f\cdot B}{d}$), ultrasonic sensors, audio-based curb detection, $94.3\%$ accuracy & DOI: 10.1080/17483107.2025.2463541 & February 1, 2025 \\
 %         \hline
-%         \textbf{Efficient Object Detection and Voice-Assisted Navigation: The Smart Hat Approach} & Memoona Sami, D. Abro & Raspberry Pi 4, ultrasonic sensor, camera, object detection-to-voice IoT system & Sukkur IBA Journal, SJ-CMS & December 2024 \\
+%         Efficient Object Detection and Voice-Assisted Navigation: The Smart Hat Approach & Memoona Sami, D. Abro & Raspberry Pi 4, ultrasonic sensor, camera, object detection-to-voice IoT system & Sukkur IBA Journal, SJ-CMS & December 2024 \\
 %         \hline
-%         \textbf{NIIRA: Non-Invasive Image Resynthesis into Audio (Sonic Vision for the Blind)} & RealSense \& Eyesynth Team & RealSense D415 camera, point-cloud depth mapping, SLAM, bone-conduction sound, obstacle detection up to 5 m & Intel RealSense Case Study & May 2025 \\
+%         NIIRA: Non-Invasive Image Resynthesis into Audio (Sonic Vision for the Blind) & RealSense \& Eyesynth Team & RealSense D415 camera, point-cloud depth mapping, SLAM, bone-conduction sound, obstacle detection up to 5 m & Intel RealSense Case Study & May 2025 \\
 %         \hline
 %     \end{tabularx}
 % \end{table}
+
+
+\todo{Connect this table to the previous content}
 \begin{longtblr}[
     caption = {Existing Publications from 2019--2025},
     label   = {tab:priorarts},
@@ -157,15 +161,15 @@ Recent studies (2019–2025) on assistive technologies for the VIP highlight wea
     width   = \textwidth,
     hlines, vlines
 }
-\textbf{Patent Title} & \textbf{Authors} & \textbf{Parameters} & \textbf{Publication No.} & \textbf{Publication Date} \\
-\textbf{Stereo Vision-Based Sensory Substitution for the Visually Impaired} & Simona Caraiman, Ovidiu Zagan & Stereo vision cameras, IMU integration, depth computation ($Z=\frac{f\cdot B}{d}$), obstacle-to-audio/haptic mapping & \seqsplit{PMC6630569} & June 20, 2019 \\
-\textbf{Evaluation of Short-Range Depth Sonifications for Visual-to-Auditory Sensory Substitution} & Louis Commère, Jérôme Rouat & LiDAR depth sensing, LiDAR-to-repetition rate mapping ($R=\frac{k}{D}$), temporal density sonification & \seqsplit{arXiv:2304.05462} & April 11, 2023 \\
-\textbf{Aural Vision -- Envisioning the Independence of the Visually Impaired} & V. V., N. R. C. Mouli, M. M., S. S. & Dual cameras, IMU sensors, reinforcement learning, ObjectNet3D dataset, visual-to-audio translation & \seqsplit{IEEE DOI: 10.1109/ICICT60155.2024.10545004} & April 2024 \\
-\textbf{SoundSight: A Mobile Sensory Substitution Device That Sonifies Colour, Distance, and Temperature} & Giles Hamilton-Fletcher, J. Arias & RGB-D camera, thermal sensor, multi-feature translation (color, depth, temperature), formulas ($f_c=k_cH$), ($A_t=k_tT$) & \seqsplit{DOI: 10.1007/s12193-021-00376-w} & July 2, 2021 \\
-\textbf{Multi-Path Sensory Substitution Device for Navigation} & Zaidao Han, S. Li & Depth camera, IMU, A* pathfinding ($f(n)=g(n)+h(n)$), 3D occupancy mapping, audio-haptic feedback & \seqsplit{ScienceDirect S0141938225002379} & August 27, 2025 \\
-\textbf{Evaluation of the Efficacy of an Assistive Device for Blind People} & Yiming Zhao, S. Y. & Functional efficacy evaluation, accuracy ($\frac{Successful}{Total}\times100$), error rate, reaction time, 5-trial testing, 30 participants & \seqsplit{Taylor \& Francis Online DOI: 10.1080/02713683.2025.2495212} & April 29, 2025 \\
-\textbf{AI-Powered Smart Vision Glasses for the Visually Impaired} & Devi Udayakumar, S. Gopalakrishnan & LiDAR, RGB camera, AI fusion, gesture/voice control, mobile app integration & \seqsplit{PMC12178407} & May 30, 2025 \\
-\textbf{Multi-Faceted Sensory Substitution Using Wearable Technology for Curb Alerting} & Ligao Ruan, G. Hong, R. Fernández-Robles & Stereo disparity ($Z=\frac{f\cdot B}{d}$), ultrasonic sensors, audio-based curb detection, $94.3\%$ accuracy & \seqsplit{DOI: 10.1080/17483107.2025.2463541} & February 1, 2025 \\
-\textbf{Efficient Object Detection and Voice-Assisted Navigation: The Smart Hat Approach} & Memoona Sami, D. Abro & Raspberry Pi 4, ultrasonic sensor, camera, object detection-to-voice IoT system & \seqsplit{Sukkur IBA Journal, SJ-CMS} & December 2024 \\
-\textbf{NIIRA: Non-Invasive Image Resynthesis into Audio (Sonic Vision for the Blind)} & RealSense \& Eyesynth Team & RealSense D415 camera, point-cloud depth mapping, SLAM, bone-conduction sound, obstacle detection up to 5 m & \seqsplit{Intel RealSense Case Study} & May 2025 \\
+Patent Title & Authors & Parameters & Publication No. & Publication Date \\
+Stereo Vision-Based Sensory Substitution for the Visually Impaired & Simona Caraiman, Ovidiu Zagan & Stereo vision cameras, IMU integration, depth computation ($Z=\frac{f\cdot B}{d}$), obstacle-to-audio/haptic mapping & \seqsplit{PMC6630569} & June 20, 2019 \\
+Evaluation of Short-Range Depth Sonifications for Visual-to-Auditory Sensory Substitution & Louis Commère, Jérôme Rouat & LiDAR depth sensing, LiDAR-to-repetition rate mapping ($R=\frac{k}{D}$), temporal density sonification & \seqsplit{arXiv:2304.05462} & April 11, 2023 \\
+Aural Vision -- Envisioning the Independence of the Visually Impaired & V. V., N. R. C. Mouli, M. M., S. S. & Dual cameras, IMU sensors, reinforcement learning, ObjectNet3D dataset, visual-to-audio translation & \seqsplit{IEEE DOI: 10.1109/ICICT60155.2024.10545004} & April 2024 \\
+SoundSight: A Mobile Sensory Substitution Device That Sonifies Colour, Distance, and Temperature & Giles Hamilton-Fletcher, J. Arias & RGB-D camera, thermal sensor, multi-feature translation (color, depth, temperature), formulas ($f_c=k_cH$), ($A_t=k_tT$) & \seqsplit{DOI: 10.1007/s12193-021-00376-w} & July 2, 2021 \\
+Multi-Path Sensory Substitution Device for Navigation & Zaidao Han, S. Li & Depth camera, IMU, A* pathfinding ($f(n)=g(n)+h(n)$), 3D occupancy mapping, audio-haptic feedback & \seqsplit{ScienceDirect S0141938225002379} & August 27, 2025 \\
+Evaluation of the Efficacy of an Assistive Device for Blind People & Yiming Zhao, S. Y. & Functional efficacy evaluation, accuracy ($\frac{Successful}{Total}\times100$), error rate, reaction time, 5-trial testing, 30 participants & \seqsplit{Taylor \& Francis Online DOI: 10.1080/02713683.2025.2495212} & April 29, 2025 \\
+AI-Powered Smart Vision Glasses for the Visually Impaired & Devi Udayakumar, S. Gopalakrishnan & LiDAR, RGB camera, AI fusion, gesture/voice control, mobile app integration & \seqsplit{PMC12178407} & May 30, 2025 \\
+Multi-Faceted Sensory Substitution Using Wearable Technology for Curb Alerting & Ligao Ruan, G. Hong, R. Fernández-Robles & Stereo disparity ($Z=\frac{f\cdot B}{d}$), ultrasonic sensors, audio-based curb detection, $94.3\%$ accuracy & \seqsplit{DOI: 10.1080/17483107.2025.2463541} & February 1, 2025 \\
+Efficient Object Detection and Voice-Assisted Navigation: The Smart Hat Approach & Memoona Sami, D. Abro & Raspberry Pi 4, ultrasonic sensor, camera, object detection-to-voice IoT system & \seqsplit{Sukkur IBA Journal, SJ-CMS} & December 2024 \\
+NIIRA: Non-Invasive Image Resynthesis into Audio (Sonic Vision for the Blind) & RealSense \& Eyesynth Team & RealSense D415 camera, point-cloud depth mapping, SLAM, bone-conduction sound, obstacle detection up to 5 m & \seqsplit{Intel RealSense Case Study} & May 2025 \\
 \end{longtblr}
