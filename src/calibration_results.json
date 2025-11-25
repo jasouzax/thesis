@@ -1,26 +1,44 @@
 [
   {
-    "baseline_cm": 7.5,
-    "reprojection_error": 12.7161426723849,
-    "valid_points": 540,
-    "depth_accuracy_score": 7.2906794853725785
+    "baseline_cm": 19.5,
+    "reprojection_error": 3.541151426014977,
+    "valid_points": 648,
+    "depth_accuracy_score": 22.020846833498695
   },
   {
-    "baseline_cm": 6.0,
-    "reprojection_error": 6.7489050641322175,
-    "valid_points": 540,
-    "depth_accuracy_score": 12.905049058205075
+    "baseline_cm": 17.0,
+    "reprojection_error": 3.2146934871075055,
+    "valid_points": 648,
+    "depth_accuracy_score": 23.726517789702623
   },
   {
-    "baseline_cm": 4.5,
-    "reprojection_error": 7.517740553130448,
-    "valid_points": 432,
-    "depth_accuracy_score": 11.740202624890694
+    "baseline_cm": 14.5,
+    "reprojection_error": 2.877226624642995,
+    "valid_points": 648,
+    "depth_accuracy_score": 25.791631411075368
   },
   {
-    "baseline_cm": 3.0,
-    "reprojection_error": 7.782071298653077,
-    "valid_points": 540,
-    "depth_accuracy_score": 11.386835360279665
+    "baseline_cm": 12.0,
+    "reprojection_error": 3.7573825581833162,
+    "valid_points": 648,
+    "depth_accuracy_score": 21.01996187546175
+  },
+  {
+    "baseline_cm": 13.25,
+    "reprojection_error": 3.3956237202540334,
+    "valid_points": 648,
+    "depth_accuracy_score": 22.74989998329993
+  },
+  {
+    "baseline_cm": 13.25,
+    "reprojection_error": 3.542451603036182,
+    "valid_points": 648,
+    "depth_accuracy_score": 22.014543849660352
+  },
+  {
+    "baseline_cm": 15.75,
+    "reprojection_error": 3.5104924668263333,
+    "valid_points": 648,
+    "depth_accuracy_score": 22.170528104298523
   }
 ]

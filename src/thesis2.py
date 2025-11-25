@@ -23,9 +23,9 @@ from numpy.typing import NDArray                                            # ND
 from typing import cast, NamedTuple, Optional, List, Any                    # General Python Types
 
 # Configuration Variables
-cam_id: tuple[int, int] = (1, 2)                                            # Camera ID for /dev/video{n}
+cam_id: tuple[int, int] = (2,0)                                            # Camera ID for /dev/video{n}
 scale: float = 1                                                          # Scale ratio for faster processing
-baseline_cm: float = 7.5                                                    # Physical distance between cameras in cm
+baseline_cm: float = 15.75                                                   # Physical distance between cameras in cm
 chessboard_size: tuple[int, int] = (9, 6)                                   # Chessboard inner corners (cols, rows)
 square_size_mm: float = 20.0                                                # Chessboard square size in mm
 
@@ -522,7 +522,10 @@ while True:
         if ret_l and ret_r:
             calibration_frames_left.append(frame_left.copy())
             calibration_frames_right.append(frame_right.copy())
+            cv2.imwrite(f"captures/L{len(calibration_frames_left):02d}.png", frame_left)
+            cv2.imwrite(f"captures/R{len(calibration_frames_left):02d}.png", frame_right)
             success(f"Captured frame {len(calibration_frames_left)}")
+
         else:
             info("Pattern not detected in both cameras")
     

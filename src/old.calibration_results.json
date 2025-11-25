@@ -1,0 +1,26 @@
+[
+  {
+    "baseline_cm": 7.5,
+    "reprojection_error": 12.7161426723849,
+    "valid_points": 540,
+    "depth_accuracy_score": 7.2906794853725785
+  },
+  {
+    "baseline_cm": 6.0,
+    "reprojection_error": 6.7489050641322175,
+    "valid_points": 540,
+    "depth_accuracy_score": 12.905049058205075
+  },
+  {
+    "baseline_cm": 4.5,
+    "reprojection_error": 7.517740553130448,
+    "valid_points": 432,
+    "depth_accuracy_score": 11.740202624890694
+  },
+  {
+    "baseline_cm": 3.0,
+    "reprojection_error": 7.782071298653077,
+    "valid_points": 540,
+    "depth_accuracy_score": 11.386835360279665
+  }
+]
