@@ -1,0 +1,17 @@
+A: Hat top diameter
+B: Total height
+C: Camera distance
+D: Hat Trim diameter
+E: Hat Brim diameter
+F: Hat Sweatband diameter
+G: Wire clamp outer length
+H: Strap handle outer length
+I: Earphone wire channel radius
+J: Strap handle inner length
+K: Wire clamp width
+L: Wire clamp inner length
+M: Camera height - from bottom of hat
+N: Total height - without strap handle
+O: Cover diameter
+P: Antenna hole position - relative to hat
+Q: Antenna hole diameter
