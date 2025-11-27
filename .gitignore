@@ -5,6 +5,7 @@ test
 server2
 node_modules
 src/captures*
+calib*/
 
 # Linux
 *~
