@@ -2,8 +2,8 @@ The power system's primary design is a Battery-Centric Uninterruptible Power Sup
 
 The Orange Pi Zero 2W receives its 5V operating voltage from the UPS Module's power output terminals (labeled 5V+ and 5V-), which are connected to the Orange Pi's 5V and GND pins on its GPIO header:
 
-Positive Connection: The 5V+ terminal (Red wire) on the UPS Module connects to the 5V supply pin on the Orange Pi's GPIO header.
+1. Positive Connection: The 5V+ terminal (Red wire) on the UPS Module connects to the 5V supply pin on the Orange Pi's GPIO header.
 
-Negative/Ground Connection: The 5V- terminal (Black wire) on the UPS Module connects to the GND (Ground) pin on the Orange Pi's GPIO header.
+2. Negative/Ground Connection: The 5V- terminal (Black wire) on the UPS Module connects to the GND (Ground) pin on the Orange Pi's GPIO header.
 
 The critical function of this UPS Module is to draw power from the installed 18650 battery, regulate it to a stable 5V, and deliver it to the Orange Pi Zero 2W. This ensures that the device maintains continuous operation, directly powered by the battery, even if the main external power source is interrupted, thereby fulfilling the uninterruptible power supply function.
