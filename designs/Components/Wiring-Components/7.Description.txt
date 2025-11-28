@@ -1,0 +1,5 @@
+The audio output capability of the system is realized by connecting standard earphones directly to the Orange Pi Expansion Board.
+
+1.  Connection Point: The earphones utilize a standard 3.5mm audio jack which plugs into the corresponding 3.5mm Audio Jack located on the edge of the Orange Pi Expansion Board.
+2.  Signal Path: The audio signal originates from the main Orange Pi Zero 2W board, travels through the 24-pin FPC interface to the Expansion Board, and is routed to the audio jack circuitry.
+3.  Functionality: This connection allows the user to listen to audio playback directly from the Orange Pi Zero 2W system, providing the necessary human-machine interface for audio data output.

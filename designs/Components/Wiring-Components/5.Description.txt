@@ -1,0 +1,8 @@
+The connection between the Orange Pi Zero 2W and the Orange Pi Expansion Board is established via a single flexible ribbon cable, connecting their respective 24-pin interfaces.
+
+The Orange Pi Zero 2W is connected to the Expansion Board using a 24-pin Flexible Printed Circuit (FPC) ribbon cable. This cable interfaces directly with the corresponding 24-Pin receptacles on both devices.
+
+Functionality
+
+1. Signal Extension: The 24-pin connection relays all critical signals, including power lines, GPIO control signals, I2C, SPI, and UART buses, from the Orange Pi Zero 2W's central processor to the Expansion Board.
+2. Peripheral Access: The Expansion Board extends the functionality of the compact Orange Pi Zero 2W by providing access to standard external interfaces such as full-sized USB ports, an RJ45 Ethernet jack, and an audio jack.
