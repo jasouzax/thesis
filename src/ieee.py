@@ -452,6 +452,14 @@ try:
     
     print("System running. Press 'q' to quit.")
     
+    # FPS and gesture tracking
+    fps_times = []
+    fps_values = []
+    gesture_events = []  # list of (time_from_start, gesture)
+    loop_start_time = time.time()
+    last_loop_time = loop_start_time
+    last_gesture = None
+    
     while running[0]:
         # Check for key press
         if plt.get_fignums():  # Check if window still exists
@@ -488,6 +496,25 @@ try:
         # Refresh display
         plt.pause(0.016)  # ~60 fps target
         
+        # Track FPS
+        current_loop_time = time.time()
+        delta = current_loop_time - last_loop_time
+        if delta > 0:
+            fps = 1 / delta
+        else:
+            fps = 0
+        time_from_start = current_loop_time - loop_start_time
+        fps_times.append(time_from_start)
+        fps_values.append(fps)
+        last_loop_time = current_loop_time
+        
+        # Track gesture changes
+        current_gesture = hand_gesture[0]
+        if current_gesture != last_gesture:
+            if current_gesture is not None:
+                gesture_events.append((time_from_start, current_gesture))
+            last_gesture = current_gesture
+        
 except KeyboardInterrupt:
     print("\nShutting down...")
 except Exception as e:
@@ -503,5 +530,24 @@ finally:
     hands.close()
     print("Closing plots...")
     plt.close('all')
+    # Generate FPS graph if data exists
+    if fps_times:
+        fig_fps = plt.figure(figsize=(10, 5))
+        ax = fig_fps.add_subplot(111)
+        ax.plot(fps_times, fps_values, label='FPS')
+        ax.set_xlabel('Time (seconds)')
+        ax.set_ylabel('FPS')
+        ax.set_title('FPS over Time')
+        # Add gesture markers
+        colors = {'open': 'green', 'closed': 'red', 'call': 'blue'}
+        for t, g in gesture_events:
+            ax.axvline(x=t, color=colors.get(g, 'black'), linestyle='--', label=g)
+        # Remove duplicate labels
+        handles, labels = ax.get_legend_handles_labels()
+        by_label = dict(zip(labels, handles))
+        ax.legend(by_label.values(), by_label.keys())
+        plt.savefig('fps.png')
+        plt.close(fig_fps)
+        print("Saved FPS graph to fps.png")
     print("Cleanup complete. Exiting.")
     sys.exit(0)

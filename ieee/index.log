@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.12)  30 NOV 2025 22:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.4) (preloaded format=pdflatex 2025.11.12)  1 DEC 2025 05:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -258,45 +258,60 @@ Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
 Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+) (C:\Users\jason\AppData\Local\Programs\MiKTeX\tex/latex/makecell\makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+(C:\Users\jason\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen183
+\ar@mcellbox=\box57
+\extrarowheight=\dimen184
+\NC@list=\toks24
+\extratabsurround=\skip57
+\backup@length=\skip58
+\ar@cellbox=\box58
+)
+\rotheadsize=\dimen185
+\c@nlinenum=\count306
+\TeXr@lab=\toks25
 )
 (C:\Users\jason\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdf
 tex.def
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count306
+\l__color_backend_stack_int=\count307
 ) (index.aux)
 \openout1 = `index.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 60.
-LaTeX Font Info:    ... okay on input line 60.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
 
 -- Lines per column: 56 (exact).
 
 (C:\Users\jason\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
 ii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count307
-\scratchdimen=\dimen183
-\scratchbox=\box57
-\nofMPsegments=\count308
-\nofMParguments=\count309
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count310
-\MPscratchDim=\dimen184
-\MPnumerator=\count311
-\makeMPintoPDFobject=\count312
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count308
+\scratchdimen=\dimen186
+\scratchbox=\box59
+\nofMPsegments=\count309
+\nofMParguments=\count310
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count311
+\MPscratchDim=\dimen187
+\MPnumerator=\count312
+\makeMPintoPDFobject=\count313
+\everyMPtoPDFconversion=\toks27
 )
 (C:\Users\jason\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
 ase.sty
@@ -315,149 +330,191 @@ ason/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}
 
 
 ] [2]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 185
+<edp.png, id=12, 367.3725pt x 362.10281pt>
+File: edp.png Graphic file (type png)
+<use edp.png>
+Package pdftex.def Info: edp.png  used on input line 185.
+(pdftex.def)             Requested size: 252.0pt x 248.39253pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 195
 .
 
 (C:\Users\jason\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 185
+LaTeX Font Info:    Trying to load font information for U+msb on input line 195
 .
 
 (C:\Users\jason\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Overfull \hbox (13.13063pt too wide) detected at line 188
+Overfull \hbox (13.13063pt too wide) detected at line 198
 []\OML/cmm/m/it/10 A[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 T; s\OT1/cmr/m/n/10 ) =
  [] [] \OMS/cmsy/m/n/10 ^^A \OML/cmm/m/it/10 G[]\OT1/cmr/m/n/10 (\OML/cmm/m/it/
 10 t\OT1/cmr/m/n/10 (\OML/cmm/m/it/10 T\OT1/cmr/m/n/10 )) \OMS/cmsy/m/n/10 ^^A 
 [] []
  []
 
-[3]
-Underfull \hbox (badness 1527) in paragraph at lines 276--277
+<architecture.jpg, id=14, 989.6975pt x 603.25375pt>
+File: architecture.jpg Graphic file (type jpg)
+<use architecture.jpg>
+Package pdftex.def Info: architecture.jpg  used on input line 232.
+(pdftex.def)             Requested size: 252.0pt x 153.60214pt.
+[3 <./edp.png>]
+<fps.png, id=29, 722.7pt x 361.35pt>
+File: fps.png Graphic file (type png)
+<use fps.png>
+Package pdftex.def Info: fps.png  used on input line 261.
+(pdftex.def)             Requested size: 252.0pt x 126.00021pt.
+
+Overfull \hbox (10.44695pt too wide) in paragraph at lines 272--287
+ [] 
+ []
+
+[4 <./architecture.jpg> <./fps.png>]
+Overfull \hbox (3.91875pt too wide) in paragraph at lines 295--310
+ [] 
+ []
+
+
+LaTeX Warning: Reference `gesture' on page 5 undefined on input line 339.
+
+[5]
+Underfull \hbox (badness 1527) in paragraph at lines 380--381
 []\OT1/ptm/m/n/8 Y. Hou, Q. Xie, N. Zhang, and J. Lv, ``Cog-ni-tive load clas-s
 i-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 []\OT1/ptm/m/n/8 United Na-tions, ``The Sus-tain-able De-vel-op-ment Goals Re-p
 ort
  []
 
 
-Underfull \hbox (badness 2302) in paragraph at lines 278--279
-\OT1/ptm/m/n/8 2025''. New York, NY, USA: United Na-tions, 2025. Avail-able:
+Underfull \hbox (badness 1953) in paragraph at lines 382--383
+\OT1/ptm/m/n/8 2025,''. New York, NY, USA: United Na-tions, 2025. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 278--279
+Underfull \hbox (badness 10000) in paragraph at lines 382--383
 \OT1/ptm/m/n/8 https://unstats.un.org/sdgs/report/2025/The-Sustainable-Developm
 ent-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 []\OT1/ptm/m/n/8 Eurostat, ``Em-ploy-ment gaps for women & peo-ple
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
-\OT1/ptm/m/n/8 with dis-abil-i-ties'' \OT1/ptm/m/it/8 Eu-ro-stat\OT1/ptm/m/n/8 
-, May 27, 2025. Avail-able:
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
+\OT1/ptm/m/n/8 with dis-abil-i-ties,'' \OT1/ptm/m/it/8 Eu-ro-stat\OT1/ptm/m/n/8
+ , May 27, 2025. Avail-able:
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 279--280
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 \OT1/ptm/m/n/8 https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/dd
 n-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
 \OT1/ptm/m/n/8 and-initiatives/employment/reviewing-disability-employment-resea
 rch-
  []
 
 
-Underfull \hbox (badness 4699) in paragraph at lines 288--289
+Underfull \hbox (badness 2302) in paragraph at lines 392--393
 []\OT1/ptm/m/n/8 K. C. MSEd, ``How we use se-lec-tive at-ten-tion to fil-ter in
--
+-for-
  []
 
 
-Underfull \hbox (badness 1852) in paragraph at lines 288--289
-\OT1/ptm/m/n/8 for-ma-tion and fo-cus'' \OT1/ptm/m/it/8 Very-well Mind\OT1/ptm/
-m/n/8 , Dec. 18, 2023. Avail-able:
+Underfull \hbox (badness 4168) in paragraph at lines 392--393
+\OT1/ptm/m/n/8 ma-tion and fo-cus,'' \OT1/ptm/m/it/8 Very-well Mind\OT1/ptm/m/n
+/8 , Dec. 18, 2023. Avail-able:
  []
 
 
-Underfull \hbox (badness 3179) in paragraph at lines 289--290
+Underfull \hbox (badness 3179) in paragraph at lines 393--394
 []\OT1/ptm/m/n/8 T. Lloyd-Esenkaya, V. Lloyd-Esenkaya, E. O'Neill, and M. J.
  []
 
 
-Underfull \hbox (badness 1762) in paragraph at lines 289--290
+Underfull \hbox (badness 1383) in paragraph at lines 393--394
 \OT1/ptm/m/n/8 Proulx, ``Mul-ti-sen-sory in-clu-sive de-sign with sen-sory sub-
-sti-tu-tion''
+sti-tu-tion,''
  []
 
 
-Underfull \hbox (badness 3029) in paragraph at lines 289--290
+Underfull \hbox (badness 3029) in paragraph at lines 393--394
 \OT1/ptm/m/it/8 Cog-ni-tive Re-search Prin-ci-ples and Im-pli-ca-tions\OT1/ptm/
 m/n/8 , vol. 5, no. 1,
  []
 
 
-Underfull \hbox (badness 4072) in paragraph at lines 289--290
+Underfull \hbox (badness 4072) in paragraph at lines 393--394
 \OT1/ptm/m/n/8 p. 37, Aug. 2020, doi: 10.1186/s41235-020-00240-7. Avail-able:
  []
 
 
-Underfull \hbox (badness 3088) in paragraph at lines 290--291
+Underfull \hbox (badness 3088) in paragraph at lines 394--395
 \OT1/ptm/m/n/8 and in com-bi-na-tion with Self-Motion for spa-tial nav-i-ga-tio
 n in
  []
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 290--291
-\OT1/ptm/m/n/8 sighted and vi-su-ally im-paired'' \OT1/ptm/m/it/8 Fron-tiers in
- Psy-chol-ogy\OT1/ptm/m/n/8 , vol. 11,
+Underfull \hbox (badness 6808) in paragraph at lines 394--395
+\OT1/ptm/m/n/8 sighted and vi-su-ally im-paired,'' \OT1/ptm/m/it/8 Fron-tiers i
+n Psy-chol-ogy\OT1/ptm/m/n/8 , vol.
  []
 
 
-Underfull \hbox (badness 7631) in paragraph at lines 290--291
-\OT1/ptm/m/n/8 p. 1443, Jul. 2020, doi: 10.3389/fp-syg.2020.01443. Avail-able:
- []
-
-
-Underfull \hbox (badness 3792) in paragraph at lines 291--292
+Underfull \hbox (badness 3792) in paragraph at lines 395--396
 []\OT1/ptm/m/n/8 J. M. Loomis, R. L. Klatzky, and N. A. Giu-dice, ``Sen-sory
  []
 
 
-Underfull \hbox (badness 4954) in paragraph at lines 291--292
+Underfull \hbox (badness 4954) in paragraph at lines 395--396
 \OT1/ptm/m/n/8 sub-sti-tu-tion of vi-sion: Im-por-tance of per-cep-tual and cog
 -ni-tive
  []
 
 
-Underfull \hbox (badness 3417) in paragraph at lines 291--292
+Underfull \hbox (badness 3417) in paragraph at lines 395--396
 \OT1/ptm/m/n/8 Press, 2013, pp. 162-191. Avail-able: https://umaine.edu/vemi/wp
 -
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 395--396
 \OT1/ptm/m/n/8 content/uploads/sites/220/2016/06/Loomis-Klatzky-Giudice-in-pres
 s-
  []
 
 
-Underfull \hbox (badness 2556) in paragraph at lines 293--294
+Underfull \hbox (badness 2556) in paragraph at lines 397--398
 \OT1/ptm/m/n/8 Oct. 03, 2025. Avail-able: https://inviocean.com/learn/best-assi
 stive-
+ []
+
+
+Underfull \hbox (badness 3281) in paragraph at lines 399--400
+[]\OT1/ptm/m/n/8 J. Krantz, ``The stim-u-lus and anatomy of the vi-sual sys-tem
+,''
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 399--400
+\OT1/ptm/m/it/8 Ex-pe-ri-enc-ing Sen-sa-tion and Per-cep-tion\OT1/ptm/m/n/8 . H
+ar-low, Eng-land:
+ []
+
+
+Underfull \hbox (badness 6493) in paragraph at lines 399--400
+\OT1/ptm/m/n/8 Pear-son Ed-u-ca-tion Lim-ited, 2012, ch. 3. [On-line]. Avail-ab
+le:
  []
 
 
@@ -471,20 +528,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] (index.aux)
+[6] (index.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-10-24>
  ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 4186 strings out of 467871
- 65643 string characters out of 5418375
- 493359 words of memory out of 5000000
- 33040 multiletter control sequences out of 15000+600000
- 661030 words of font info for 98 fonts, out of 8000000 for 9000
+ 4478 strings out of 467871
+ 69578 string characters out of 5418375
+ 505333 words of memory out of 5000000
+ 33317 multiletter control sequences out of 15000+600000
+ 665854 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 57i,8n,65p,1601b,278s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 57i,15n,65p,2045b,347s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/
 cmex10.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/public/ams
 fonts/cm/cmmi10.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/p
@@ -492,18 +556,19 @@ ublic/amsfonts/cm/cmmi5.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts
 /type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/jason/AppData/Local/Programs/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/jason/AppData/Local/Progr
 ams/MiKTeX/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Users/jason/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jason/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/ja
-son/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.pfb><C:/
-Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy7.
-pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.
-pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmbi8a
-.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a
-.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8
-a.pfb>
-Output written on index.pdf (4 pages, 185768 bytes).
+l/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/jason/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/jaso
+n/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/U
+sers/jason/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy5.p
+fb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
+/cmsy7.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
+utmb8a.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/
+utmbi8a.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
+/utmr8a.pfb><C:/Users/jason/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times
+/utmri8a.pfb>
+Output written on index.pdf (6 pages, 452539 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 103 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
