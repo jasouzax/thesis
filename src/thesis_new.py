@@ -1,3 +1,4 @@
+#!/usr/bin/env -S python
 #region - Setup
 #region -- Intialization
 #region --- Needed packages

@@ -2,6 +2,48 @@
 \documentclass[conference]{IEEEtran}
 \IEEEoverridecommandlockouts
 
+% ----- SUMMARY ----- %
+\iffalse
+    1. **Identifying a Problem**  
+    The thesis identifies a problem aligned with global frameworks, such as the Sustainable Development Goals (SDGs), to ensure relevance and real-world impact. Specifically, it focuses on **SDG 10: Reduced Inequalities**, which targets disparities based on factors like income, age, sex, disability, race, ethnicity, origin, religion, or economic status. To narrow the scope, the work concentrates on **disability inequalities, with an emphasis on visual impairments** (e.g., blindness or low vision, affecting over 2.2 billion people per WHO estimates).
+
+    2. **Identifying the Objective**  
+    Drawing from SDG 10, the primary objective is to **minimize inequalities faced by visually impaired individuals**. These fall into two major, often overlapping categories:  
+    - **Navigational inequalities**: Barriers in physical and digital infrastructure not designed for accessibility (e.g., buildings without tactile guides or websites lacking audio alternatives).  
+    - **Social inequalities**: Limitations in communication, societal status, or workforce participation (e.g., reduced job opportunities due to inaccessible tools or stigma in social interactions).  
+    Note that inequalities are not strictly binary; for instance, job opportunities can involve both navigational challenges (e.g., vision-dependent tasks) and social ramifications (e.g., financial limitations from restricted options), aligning with SDG targets like 10.1 (reducing income inequalities through broader employment access), 10.2 (promoting social, economic, and political inclusion), and 10.3 (ensuring equal opportunities despite barriers like discrimination).
+
+    3. **Identifying a Solution**  
+    Approaches to addressing these inequalities are not mutually exclusive and can blend elements, though they often prioritize one aspect:  
+    - **Assistive technologies**, which primarily extend existing capabilities (e.g., canes, guide dogs, or braille displays).  
+    - **Substitution technologies**, which primarily represent missing senses through alternatives (e.g., screen readers or sensory substitution devices that convert visual data to audio/tactile feedback).  
+    The thesis prioritizes the **substitution approach** due to its potential for comprehensive impact on the identified objectives, enabling more independent navigation and interaction, while acknowledging that hybrid solutions may incorporate assistive elements.
+
+    4. **Identifying the Issues**  
+    Substitution technologies, particularly sensory substitution devices (SSDs), encounter significant, interconnected challenges generalized as **sensory limitations**:  
+    - **Sensory overload**: When translated information exceeds the brain's processing capacity.  
+    - **Sensory fatigue**: Prolonged use leading to mental exhaustion.  
+    - **Sensory integration**: Difficulty in learning or subconsciously interpreting the substituted signals.  
+    These stem from the core limitation of representing one sense through another and must be addressed for effective adoption.
+
+    5. **Identifying our Hypothesis**  
+    Inspired by human psychology—where perception is **selective rather than raw data intake**—the hypothesis posits that SSDs can minimize sensory limitations by making the process **controllable**. This allows the brain to build subconscious patterns efficiently. For the prototype, users could control the "focus" of emulated vision via **silent, quick inputs like hand gestures**, mimicking eye muscle adjustments. However, the core focus is on controllability itself, with the method being modular (e.g., adaptable to voice, head tilts, or eye-tracking for users with varying abilities) to suit the hypothesis without restricting to one input type.
+
+    6. **Identifying the Tests**  
+    To validate the hypothesis, evaluate the device's efficiency in mitigating sensory limitations through a mix of quantitative and qualitative metrics:  
+    - **Sensory overload**: Measure user accuracy in interpreting generated audio cues (e.g., via task completion rates) and qualitative feedback on perceived overload.  
+    - **Sensory fatigue**: Assess usage duration before symptoms like headaches emerge (e.g., via self-reported scales, physiological monitoring, or user surveys).  
+    - **Sensory integration**: Track reaction times to environmental data, learning curves over sessions, and survey responses on ease of subconscious adaptation.  
+    - **Device performance**: Test accuracy in recognizing user controls (e.g., hand gestures) and generating relevant audio from environmental inputs.  
+    Evaluations will include comparisons to baselines from related literature on existing SSDs, incorporating user-centered qualitative insights (e.g., surveys) to account for individual experiences.
+
+    7. **Identifying the Impact**  
+    If successful, the device could substitute visual information as audio via a **modular pipeline**, enabling extensions for diverse needs (e.g., customizable adaptations for varying lifestyles or impairment levels). This would reduce navigational inequalities (e.g., accessible OS and environments for better job opportunities) and social inequalities (e.g., enhanced communication tools), contributing to SDG 10 targets such as 10.1 (income growth via expanded employment), 10.2 (empowerment through regained navigational and social inclusion), and 10.3 (equal opportunities in workforce and society). While not resolving all issues (e.g., medical treatments or systemic discrimination), it demonstrates the possibility of partially minimizing sensory limitations—evidenced by test results showing users can interpret data with reduced overload, fatigue, or integration challenges—paving the way for applications to other sensory disabilities.
+
+    8. **Identifying the Scope and Limitations**  
+    The thesis prioritizes proving the hypothesis—that sensory limitations can be partially addressed through selective, controllable substitution—rather than perfecting the device or developing all extensions. By completion, the output will be a prototype SSD that emulates visual perception as audio, minimizes limitations, and features a modular pipeline for future enhancements (e.g., alternative controls). Limitations include assumptions of basic user abilities for prototype inputs, focus on visual-to-audio substitution only, and recognition that tech complements broader efforts like policy changes for full inequality reduction.
+\fi
+
 % ----- PACKAGES ----- %
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
@@ -24,11 +66,38 @@
 \author{
     \IEEEauthorblockN{D'Souza, Jason C.}
     \IEEEauthorblockA{
-        \textit{COT BSCpE4A} \\
         \textit{University of San Agustin}\\
-        Iloilo City, Philippines \\
+        Balabag, Pavia, Iloilo, Philippines \\
         jasouzax@gmail.com \\
-        https://orcid.org/0009-0003-6062-7921
+        ORCID: 0009-0003-6062-7921
+    }
+    \and
+    \IEEEauthorblockN{Wang, ChenLin}
+    \IEEEauthorblockA{
+        \textit{University of San Agustin}\\
+        San Pedro, Molo, Iloilo, Philippines \\
+        cwang@usa.edu.ph
+    }
+    \and
+    \IEEEauthorblockN{Pabito, Ethel Herna C.}
+    \IEEEauthorblockA{
+        \textit{University of San Agustin}\\
+        Aurora Subd., Iloilo City, Philippines \\
+        ehpabito@gmail.com
+    }
+    \and
+    \IEEEauthorblockN{Daywan, Vince Ginno B.}
+    \IEEEauthorblockA{
+        \textit{University of San Agustin}\\
+        Sta. Justa, Tibiao, Antique, Philippines \\
+        vgbalitao-saan@usa.edu.ph
+    }
+    \and
+    \IEEEauthorblockN{Guanzon, Glenda}
+    \IEEEauthorblockA{
+        \textit{University of San Agustin}\\
+        Sta. Justa, Tibiao, Antique, Philippines \\
+        vgbalitao-saan@usa.edu.ph
     }
 }
 
@@ -37,4 +106,192 @@
 
 % ----- ABSTRACT ----- %
 \begin{abstract}
+    % 150–250 words. Summarize purpose, methods, results, and conclusions. No citations, math, symbols, or footnotes.
+    Our primary objective is aligned with Sustainable Development Goal (SDG) 10 on reducing inequalities, specifically to mitigate disparities faced by visually impaired individuals (VIP) by addressing a key challenge in sensory substitution devices (SSDs): sensory limitations. We hypothesize that enabling user-controlled selection of substituted sensory information via intuitive inputs like hand gestures could facilitate efficient subconscious pattern-building in the brain, thereby minimizing overload, fatigue, and integration issues.
+
+    To test this, we developed a wearable prototype using a Raspberry Pi 5 equipped with a UPS, IMU sensor, camera, and earphones, designed as a head-mounted "hat" to distribute weight away from sensitive facial areas. The system generates depth maps using MiDaS AI for environmental perception, recognizes hand gestures via MediaPipe AI for user control, and employs a novel algorithm to produce targeted audio channels representing selective visual data by emulating human sensory processes in psychology, plus a primitive connection to a server through NodeJS for future modular features.
+
+    Validation involved empirical assessments of sensory limitations through metrics including sensory overload (e.g., interpretation accuracy), fatigue (e.g., sustainable usage duration), integration (e.g., reaction times and learning curves), and overall device performance. Extensive optimizations were required, such as model downscaling, information chunking into digestible segments, and consideration of alternatives like stereo vision to enhance real-time efficiency.
+    Results indicate that users favored brief, intermittent audio outputs over prolonged sessions, demonstrated improved environmental perception, and experienced reduced sensory limitations. In conclusion, our approach partially resolves SSD challenges, validating the potential of controllable substitution, though further refinements and longitudinal studies are essential for broader applicability and impact on SDG 10 targets.
+    %Our primary goal is drawn from Sustainable Development Goals (SDG) 10 about disability, more specifically, to minimize inequalities faced by the Visual Impaired People (VIP), by solving an prominant issue called Sensory Limintation facing the development of Sensory Substitution Devices (SSD), through our hypothesis of allowing the selection of substituted information to be controlled directly by the user like from hand gestures to allow the brain to build subconscious patterns efficently. We used a raspberry pi 5 to store our program with a UPS, IMU, camera, and earphone as a wearable Hat to transfer load to the head rather than sensitive areas like eyes, ears, and nose. Our prgrogram generates a depth map through MiDAS and recognizes hand gesture through MediaPipe, and generates the audio channels based on our novel algorithm. To validate our hypothesis we evaluate the device's efficiency in mitigating core issues of Sensory Limitations through empirical metrics such as Sensory overload, Sensory fatigue, Sensory integration, and Device performance. During testing we had to heavily optimize our program by downscalling the models like even planned to switch to Stereo vision instead of MiDAS, or split the translated information into digestable bites. The results show that users prefer to use short periods of audio output rather than perlong use, are able to percive the environment, and show minimized effect of sensory limitation. In conclusion, we are partially able to solve the sensory limitation issue but more improvements and follow up studies are needed.
 \end{abstract}
+\begin{IEEEkeywords}
+    sensory substitution device, SDG 10, visual impairment, controllability, accessibility, assitive robotics, industrial automation
+\end{IEEEkeywords}
+
+% ----- INTRODUCTION ----- %
+\section{Introduction}
+% Introduce the problem (SDG 10 focus on disability inequalities, WHO stats on 2.2B visually impaired), objective (minimize navigational/social barriers), hypothesis (controllable substitution reduces sensory limitations), and paper outline. Tie to conference theme (Assistive Robotics and Accessibility).
+% Problem Source (SDG 10)
+Visual impairment is a global health problem that significantly affects individual's daily lives by impeding independent navigation, social interaction, and overall quality of life \cite{b1}. There is an estimation of 2.2 billion people globally who are identified as visually impaired and this number could still increase to 2.5 billion by 2050 as stated by the World Health Organization \cite{b2}. This thesis focuses on SDG 10, which aims to reduce inequalities within and among countries based on income, sex, age, disability, sexual orientation, race, class, ethnicity, religion, and oppotunity \cite{b3}. More specifically our thesis focuses on visual impared people or VIPs under disability, VIPs does not pertain to total blindness and can be identified and categorized based on presenting visual acuity \cite{b2}.
+
+% Solutions
+Navigation is one of the problems VIPs encounter; they often have difficulty crossing the road and tracking their location, as well as experiencing accidents, falls, and collisions \cite{b4}. In addition, VIPs experience social isolation and reduced access to information, limiting their educational and employment opportunities \cite{b5}. There are already existing solutions or aids for VIPs, for daily assistance, which include guide dogs, white canes, and electronic travel aids \cite{b4}. Additionally, one of the technologies VIPs depend on for navigation is assistive devices, which use sensory substitution to convert visual information into auditory or tactile cues to provide spatial awareness often incorporate IoT sensors to capture real-time environmental data, providing navigational assistance in complex environments \cite{b6}.
+
+% Issues with solutions
+Sensory substitution devices or SSDs are assistive wearable devices that can be eyewear, a vest, or a hat, allowing VIP users to perceive their surroundings by converting sensory information from one modality to another \cite{b7}. For our thesis we will focus on developing a SSD that is a hat. These SSDs are embedded with sensors that allow obstacle detection, navigation, and object recognition, enhancing VIPs' daily independence and reducing their reliance on traditional aids \cite{b8}. However, global adoption of these devices is limited due to cognitive overload performance, extensive training needs, ergonomic discomfort design, and the lower processing bandwidth of non-visual senses compared to vision \cite{b9}. This is what our thesis will focus on, to experiment to see if by implementing controllable selective substitution that we could overcome this sensory limitation.
+
+\subsection{Problem Identification}
+% Detail SDG 10 targets (10.1–10.3), focus on visual impairments, navigational (e.g., inaccessible infrastructure) vs. social inequalities (e.g., employment stigma).
+% Problem Source in summary
+This thesis addresses a global problem aligned with the United Nations Sustainable Development Goal (SDG) 10, which is to reduce inequalities within and among countries based on income, sex, age, disability, sexual orientation, race, class, ethnicity, religion, and oppotunity \cite{b3}. Specifically, our target problem is to make it possible for visually impaired persons (VIPs) to have approximately the same level of opportunities as the general population \cite{b10} by minimizing the major limitations currently faced by sensory substitution devices (SSDs), thereby contributing to the achievement of several SDG 10 targets.
+
+% Problem Source Tagets in detail
+SDG Target 10.1 aims to achieve and sustain income growth for the bottom 40\% of the population at a rate higher than the national average \cite{b11}. Improved sensory substitution devices (SSDs) can directly support this by expanding job opportunities for visually impaired individuals, thereby reducing income inequality \cite{b12}. Target 10.2 seeks to empower and promote the social, economic, and political inclusion of all irrespective of disability \cite{b11}; effective SSDs contribute by enabling visually impaired people to perform tasks and interact beyond their current sensory limitations \cite{b13}. Target 10.3 calls for ensuring equal opportunity and reducing inequalities of outcome through the elimination of discriminatory practices \cite{b11}; better SSDs help by providing practical capabilities that allow visually impaired individuals to access opportunities currently out of reach \cite{b14}. Target 10.4 encourages the adoption of fiscal, wage, and social protection policies to achieve greater equality \cite{b11}; when SSDs improve employability and workforce participation, they strengthen both the evidence and societal demand for such inclusive policies \cite{b15}. The remaining targets (10.5--10.b), which address global financial regulation, official development assistance, and migration policies, fall outside the direct scope of a technology-focused SSD intervention.
+%SDG Target 10.1 seeks to progressively achieve and sustain income growth of the bottom 40\% of the population at a rate higher than the national average \cite{b11}; this can be supported by providing visually impaired individuals with wider job opportunities through improved SSDs, which in turn reduces income inequality \cite{b12}. Target 10.2 aims to empower and promote the social, economic, and political inclusion of all, irrespective of disability \cite{b11}; this can be assisted if visually impaired people are enabled to perform tasks and interact beyond their current sensory limits \cite{b13}. Target 10.3 calls for ensuring equal opportunity and reducing inequalities of outcome by eliminating discriminatory laws, policies, and practices \cite{b11}; this is supported by giving visually impaired individuals practical capabilities (via better SSDs) to seize existing opportunities that are currently inaccessible \cite{b14}. Target 10.4 focuses on adopting policies, especially fiscal, wage, and social protection policies, to progressively achieve greater equality \cite{b11}; improved employability and workforce participation of visually impaired persons made possible by effective SSDs would strengthen the evidence base and societal pressure for such inclusive policies \cite{b15}. Targets 10.5 to 10.b (regulation of global financial markets, ODA, migration policies, etc.) lie outside the direct scope of an SSD-focused technological intervention.
+
+%Specifically our target problem is to make it possible for VIPs to have approximately the same level of opportunities with the general population though minimizng the issues that SSDs faced so that the SDG 10 targets could be assisted. SDG 10 Target like Target 10.1 about achieving and sustaining income growth of the bottom 40\% which could be assisted if the disabled have more job opporunities to earn income, or Target 10.2 to empower and promote inclusion for all which could be assisted if the disabled could do more beyond their initial limits, or Target 10.3 about ensuring equal opportunities by providing them the capabilities to act on those opportunities, or Target 10.4 to adopt policies and progressively achieve greater equality which could be assisted if the disabled have a larger impact in the workforce, while Target 10.5--10.b are more out of our scope in minimizing inequalities in the disabled. 
+
+% Inequality and problem
+The inequalities the VIPs faced we specifically focused on are two major but often overlapping categories: navigational and social \cite{b16}. Navigational inequalities which are barriers in physical and digital infrastructure not designed for accessibility such as building that lack tactile guides or website and software without audio alterantives \cite{b17}. Social inequalitities which are limitations in communication, societal status, or workforce participations, for instance only about 44\% of visually impaired individuals are employed compaired to 79\% of those without disabilities, often due to employer attitudes and lack of accommodations \cite{b18}. These two categories of inequalities could be minimized if the VIPs partially have the ability they lack, this could be achieved through Sensory Substitution Devices \cite{b19}.
+
+\subsection{Research Objectives and Contributions}
+% State primary goal: Reduce inequalities via substitution tech; highlight novelty in controllability for selective perception.
+% Development of SSD
+The primary objective of this research is to minimize inequalities for visually impaired individuals by developing and testing substitution technologies, specifically sensory substitution devices (SSDs) that convert visual information into accessible formats like audio, thereby enabling more independent navigation and social interaction \cite{b4}. This approach prioritizes substitution to address core sensory gaps holistically, while acknowledging potential hybrids with assistive elements, and aligns with SDG 10 by promoting economic inclusion through expanded job opportunities (Target 10.1), empowerment via regained access and participation (Target 10.2), and equal opportunities by reducing discriminatory barriers (Target 10.3) \cite{b3}.
+
+% Novel Idea
+The key novelty in solving the sensory limitation issues that SSDs face is through incorporating controllability for selective perception \cite{b20}. This idea is inspired by psychological principles where the human sense filters relevant information to avoid overload \cite{b21}. To accomplish this our device should allow the sensory translation to be controlled by the user like through hand gestures, allowing realtime customization of translation and addressing the Sensory limitation issue of SSDs like overload, fatigue, or integration \cite{b9}. By demonstrating that this is possible, it could pave the way for scalable applications to other sensory disabilities, enhanching the fields of assistive technology with user-centered, efficient substitution framework \cite{b22}.
+
+% ----- RELATED LITERATURE  ----- %
+\section{Related Work}
+% Review existing solutions: Assistive (e.g., canes, braille) vs. substitution tech (e.g., screen readers, SSDs converting visual to audio/tactile). Discuss issues (sensory overload/fatigue/integration) from literature. Compare to your approach (hybrid with controllability). Cite 5–10 sources.
+% Existing solutions
+There are existing solutions in providing VIPs a way to navigate the world, but from our research there are two major overlapping categories of these solutions which are Assistive and Substitution technologies \cite{b4}. Assistive technologies which primarily extend existing capabilities such as canes, guide dogs, or braille displays \cite{b26}. Substitution technology which primarily represent missing senses through alternatives such as screen readers and sensory substitution devices that convert visual data to audio feedback \cite{b20}. Since our thesis aims to minimize inequalities of the VIPs by providing them a way to navigate the physical and digital world so that they could have approximately the same opportunities as the general population, we focused on Substitution technology, more specifically visual substitution devices \cite{b27}.
+
+\subsection{Assistive and Substitution Technologies}
+% Overview of prior SSDs; pros/cons (e.g., overload in raw data conversion).
+% Designing sensory-substitution devices: Principles, pitfalls and potential
+Reference \cite{b20} designs their SSD for blindness using touch and audio, similarily following design princicples like task-focused information conveyance to avoid redundancies and match the sensory bandwidths, highlighting the issues faced by SSDs like sensory overload from exessive data so there must be a selective process of key environmental cues to mitigate it. The bandwidth mismatches does lead to persistent fatigue and high training requirements delay usability and integration.
+% Efficiency of Sensory Substitution Devices Alone and in Combination With Self-Motion for Spatial Navigation in Sighted and Visually Impaired
+%Reference \cite{b23} evaluates existing SSDs like vOICe which represents information as audio cues, and BrainPort which represents information as tactile for navigation in VIPs. It addresses sensory overload as a barrier in dual SSD due to high cognitive load, suggesting that longer training is needed for automatical or subconscious processing. Similar to our thesis, it suggested that selective processing is needed in the device designs with psychological principles. However inital dual-use increase fatigue without extended training, challenging for less experienced users.
+Reference \cite{b23} introduces a multi-device combination SSD, lowers overload by distributiong cognitive load, enchances integration through perceptual reweighting, and improving long-term navigation accuracy. The initial dual-use however, increases fatigue without extended training, highlighting integration challenges for less experienced users.
+% Sensory substitution of vision: Importance of perceptual and cognitive processing
+Reference \cite{b24} reviews vision substitution via hearing and touch, implements preprocessing filters to reduce overload by focusing on essential data, plasiticity aids long-term integration, and enables better nativation equity. The bandswith limits still causes persistent information loss and fautigue, often struggling with controllability and requires user adaption.
+% Design and Development of a Sensory Substitution System for the Visually Impaired
+Reference \cite{b25} device similarly is also a wearable portable smart hat, is low-cost, minimizes navigational inequalitiess, and provides real-time feedback to improve integration and learning. It lacks selective processing and can lead to sensory overloading in cluttered environments and can cause fautigue over prolonged use.
+
+
+
+\subsection{Gaps in Addressing Sensory Limitations}
+% Highlight how current SSDs lack user control, leading to fatigue; position your hypothesis as a solution.
+These SSDs highlights and face a common issue which we can generally call as Sensory Limitation, these include sensory overload where the translated information is just too much for the user to actually process either through auditory bandwidth limit or interferance, sensory fautigue where hearing audio repetively can cause discomfort and less sensory perception, and finally sensory integration where the translated audio representation cant be subconsciously integrated by the user's perception of their environment making learning harder and daily use tiring \cite{b20}. Our thesis aims to minimize sensory limitation through high controllable selective translation where specific environment cues can be selectively filtered by the user directly and for any period of time, minimizing overload, fautigue, and allowing more controllable integration like allowing modular learning when using it for the first time \cite{b23}.
+
+% ----- PROPOSED APPROACH ----- %
+\section{Proposed Approach / Methodology}
+% Describe the solution: Substitution-focused SSD with controllability (e.g., hand gestures for focus adjustment, mimicking eye movements). Explain modular pipeline (visual input → processing → audio output, adaptable inputs like voice/head tilts). Include equations if needed (e.g., for signal processing: $a + b = \gamma$ for simplified audio mapping).
+Our approach is to generate a depth map from a camera using MiDAS, the hand guesture is also captured from the same camera image using MediaPipe. The hand gesture specifically the back of the right hand determines what is to be exectuted by the command, for this instance it has a few pre-installed gestures:
+\begin{itemize}
+\item \textbf{Open hand gesture} which translates the depth map into audio by cycling between right and left side where each slice of the image is translated into audio with the vertical position representing frequency and depth/proximiting representing volume represented by the equation
+    \begin{equation}
+    A_c(T, s) = \sum_{n=0}^{B-1} \frac{D_{t(T)}\left[B-1-n\right]}{255\times 10} \cdot G_c(t(T)) \cdot \sin\left(2\pi f_n \frac{s}{R}\right) \label{out_open}
+    \end{equation}
+    Where:
+    \begin{itemize}
+        \item $c$ - Channel number, $0$ for right and $1$ for left
+        \item $A_c$ - Audio output for channel $c$
+        \item $T$ - Time in seconds
+        \item $C$ - Cycle duration in seconds \textit{(Configurable by ``-cd='', default $4.0$)}
+        \item $t(T)$ - Normalizes time $T$ to be between 0 and 1 occilating triangularly
+        \item $D_t[n]$ - Depth map vertical slice at horizonal position $t$, frequency index $n$ \textit{($0$ to $255$)}
+        \item $B$ - Number of frequency bins \textit{(Configurable by ``-nb='', default $64$)}
+        \item $n$ - Frequncy bin index \textit{($0$ to $B-1$)}
+        \item $G_c(t)$ - Channel gain factors $t-2ct+c$
+        \item $s$ - Sample index within the current audio block  \textit{($0$ to $S-1$)}
+        \item $S$ - Block size in samples \textit{(Configurable by ``-bs='', default $512$)}
+        \item $R$ - Sample rate in Hz \textit{(Configurable by ``-sr='', default $44100$)}
+        \item $f_n$ - Frequency in Hz for bin $n$, logarithmically spaced $f_n=100\cdot \left(\frac{8000}{100}\right)^\frac{n}{B-1}$
+    \end{itemize}
+\item \textbf{Closed hand gesture} which is similar to open hand gesture but only translate the middle section of the depth map allowing the user to control the scanning at their own control, represented by the forumula
+    \begin{equation}
+    K_c(T, s) = A_\frac{1}{2}(T, c) \label{out_closed}
+    \end{equation}
+    Where:
+    \begin{itemize}
+        \item $K_c$ - Audio output for channel $c$
+        \item $A_c$ - Original audio output \textit{(open hand gesture)} for channel $c$
+    \end{itemize}
+\item \textbf{Call me hand gesture} calls a specific user in facebook, just to test the server API and to ensure that future continuations would allow for modular or additional applications.
+\end{itemize}
+
+
+\subsection{System Architecture}
+% Diagram the pipeline (Fig. 1: Modular components for input control, data selection, substitution).
+
+
+\subsection{Hypothesis and Design Principles}
+% Draw from psychology (selective perception); detail controllability to build subconscious patterns, reducing overload/fatigue/integration issues.
+
+\subsection{Implementation Details}
+% Prototype specs: Hardware (e.g., camera for visual input, gesture sensors), software (e.g., algorithms for quick, silent inputs).
+
+% ----- EXPERIMENTATION ----- %
+\section{Experimental Evaluation}
+% Outline tests: Metrics for overload (task accuracy), fatigue (usage duration, surveys), integration (reaction times, learning curves), device performance (control recognition accuracy). Describe setup (e.g., simulated environments, user groups), baselines from literature.
+
+\subsection{Experimental Setup}
+% Participants (visually impaired volunteers), tools (physiological monitors, surveys), procedures (sessions with/without controllability).
+
+\subsection{Evaluation Metrics}
+% Quantitative: Accuracy rates, times; Qualitative: Self-reported scales (e.g., overload feedback).
+
+% ----- RESULTS ----- %
+\section{Results}
+% Present data: Tables/figures showing improvements (e.g., Table I: Comparison of overload metrics vs. baselines). Avoid deep interpretation here.
+
+\subsection{Quantitative Results}
+% e.g., Reduced fatigue (longer usage before headaches), faster integration (shorter learning curves).
+
+\subsection{Qualitative Insights}
+% User feedback on controllability ease and subconscious adaptation.
+
+% ----- DISCUSSION ----- %
+\section{Discussion}
+% Interpret results: How controllability mitigates issues; limitations (e.g., assumes basic motor abilities, visual-to-audio only); scope (prototype proof-of-concept, not full product); impact (reduces inequalities per SDG 10.1–10.3, extensible to other disabilities). Suggest future work (e.g., hybrid integrations).
+
+\subsection{Implications and Impact}
+% Link to navigational/social equality, modular extensions for industrial applications (e.g., accessible automation tools).
+
+\subsection{Limitation and Future Directions}
+% Acknowledge tech's complementary role to policy/medical solutions; plans for alternative inputs (eye-tracking).
+
+% ----- CONCLUSION ----- %
+\section{Conclusion}
+% Recap key findings (hypothesis validated via tests), contributions (controllable SSD prototype), and broader SDG alignment. No new info.
+
+% ----- ENDING ----- %
+\section*{Acknowledgment}
+% Thank advisors, funders, participants. e.g., "The authors thank [X] for support."
+
+\begin{thebibliography}{00} % IEEE (with URL)
+% 10–20 citations in IEEE style (numbered [1], [2]). Include SDG/WHO sources, SSD literature. Use BibTeX.
+\bibitem{b1} P. Theodorou, K. Tsiligkos, and A. Meliones, ``Multi-sensor data fusion solutions for blind and visually impaired: Research and commercial navigation applications for indoor and outdoor spaces'' \textit{Sensors}, vol. 23, no. 12, p. 5411, Jun. 2023, doi: 10.3390/s23125411. Available: https://doi.org/10.3390/s23125411
+\bibitem{b2} World Health Organization: WHO, ``Blindness and visual impairment'' Aug. 10, 2023. Available: https://www.who.int/news-room/fact-sheets/detail/blindness-and-visual-impairment
+\bibitem{b3} Martin ``Goal 10: Reduce inequality within and among countries'' \textit{United Nations Sustainable Development}, Nov. 25, 2025. Available: https://www.un.org/sustainabledevelopment/inequality
+\bibitem{b4} Z. J. Muhsin, R. Qahwaji, F. Ghanchi, and M. Al-Taee, ``Review of substitutive assistive tools and technologies for people with visual impairments: recent advancements and prospects'' \textit{Journal on Multimodal User Interfaces}, vol. 18, no. 1, pp. 135--156, Dec. 2023, doi: 10.1007/s12193-023-00427-4. Available: https://doi.org/10.1007/s12193-023-00427-4
+\bibitem{b5} A. Arvind, ``A deep neural architecture search Net-Based wearable object classification system for the visually impaired'' in \textit{Communications in computer and information science}, 2023, pp. 198--213. doi: 10.1007/978-3-031-46338-9\_15. Available: https://doi.org/10.1007/978-3-031-46338-9\_15
+\bibitem{b6} S. Maidenbaum, S. Abboud, and A. Amedi, ``“Sensory substitution: Closing the gap between basic research and widespread practical visual rehabilitation'' \textit{Neuroscience \& Biobehavioral Reviews}, vol. 41, pp. 3--15, Nov. 2013, doi: 10.1016/j.neubiorev.2013.11.007. Available: https://doi.org/10.1016/j.neubiorev.2013.11.007
+\bibitem{b7} A. Mishra, Y. Bai, P. Narayanasamy, N. Garg, and N. Roy, ``Spatial Audio Processing with Large Language Model on Wearable Devices'' \textit{arXiv.org}, Apr. 11, 2025. Available: https://arxiv.org/abs/2504.08907
+\bibitem{b8} I. Tokmurziyev, M. A. Cabrera, M. H. Khan, Y. Mahmoud, L. Moreno, and D. Tsetserukou, ``LLM-Glasses: GenAI-driven Glasses with Haptic Feedback for Navigation of Visually Impaired People'' \textit{arXiv.org}, Mar. 04, 2025. Available: https://arxiv.org/abs/2503.16475
+\bibitem{b9} Y. Hou, Q. Xie, N. Zhang, and J. Lv, ``Cognitive load classification of mixed reality human computer interaction tasks based on multimodal sensor signals'' \textit{Scientific Reports}, vol. 15, no. 1, p. 13732, Apr. 2025, doi: 10.1038/s41598-025-98891-3. Available: https://doi.org/10.1038/s41598-025-98891-3
+\bibitem{b10} J. D. Steinmetz et al., ``Causes of blindness and vision impairment in 2020 and trends over 30 years, and prevalence of avoidable blindness in relation to VISION 2020: the Right to Sight: an analysis for the Global Burden of Disease Study'' \textit{The Lancet Global Health}, vol. 9, no. 2, pp. e144--e160, Dec. 2020, doi: 10.1016/s2214-109x(20)30489-7. Available: https://pubmed.ncbi.nlm.nih.gov/33275949/
+\bibitem{b11} United Nations, ``The Sustainable Development Goals Report 2025''. New York, NY, USA: United Nations, 2025. Available: https://unstats.un.org/sdgs/report/2025/The-Sustainable-Development-Goals-Report-2025.pdf
+\bibitem{b12} Eurostat, ``Employment gaps for women \& people with disabilities'' \textit{Eurostat}, May 27, 2025. Available: https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20250527-1
+\bibitem{b13} V. Alcaraz-Rodríguez, D. Medina-Rebollo, A. Muñoz-Llerena, and J. Fernández-Gavira, ``Influence of Physical Activity and Sport on the Inclusion of People with Visual Impairment: A Systematic Review'' \textit{International Journal of Environmental Research and Public Health}, vol. 19, no. 1, p. 443, Dec. 2021, doi: 10.3390/ijerph19010443. Available: https://pmc.ncbi.nlm.nih.gov/articles/PMC8744778/
+\bibitem{b14} J. Shaw, M. Wickenden, S. Thompson, and P. Mader, ``Achieving disability inclusive employment -- Are the current approaches deep enough?'' \textit{Journal of International Development}, vol. 34, no. 5, pp. 942--963, Jul. 2022, doi: 10.1002/jid.3692. Available: https://doi.org/10.1002/jid.3692
+\bibitem{b15} U.S. Bureau of Labor Statistics, ``Labor force participation rate 24.2 percent for people with a disability in 2023'' \textit{The Economics Daily}, Oct. 2024. Available: https://www.bls.gov/opub/ted/2024/labor-force-participation-rate-24-2-percent-for-people-with-a-disability-in-2023.htm
+\bibitem{b16} ``Disability Employment Research: Key takeaways'' \textit{The American Foundation for the Blind}, 2021. Available: https://afb.org/research-and-initiatives/employment/reviewing-disability-employment-research-people-blind-visually
+\bibitem{b17} A. T. Parker, M. Swobodzinski, J. D. Wright, K. Hansen, B. Morton, and E. Schaller, ``Wayfinding tools for people with visual Impairments in Real-World Settings: A literature review of recent studies'' \textit{Frontiers in Education}, vol. 6, Oct. 2021, doi: 10.3389/feduc.2021.723816. Available: https://doi.org/10.3389/feduc.2021.723816
+\bibitem{b18} M. C. McDonnall and Z. Sui, ``Employment and Unemployment Rates of People Who Are Blind or Visually Impaired: Estimates from Multiple Sources'' \textit{Journal of Visual Impairment \& Blindness}, vol. 113, no. 6, pp. 481--492, Nov. 2019, doi: 10.1177/0145482x19887620. Available: https://doi.org/10.1177/0145482x19887620
+\bibitem{b19} M. M. Billah, Z. M. Yusof, K. Kadir, and A. M. M. Ali, ``Sensory substitution for Visual impairments: A Technological review'' \textit{IntechOpen eBooks}, Dec. 2019, doi: 10.5772/intechopen.89147. Available: https://www.intechopen.com/chapters/69033
+\bibitem{b20} Á. Kristjánsson et al., ``Designing sensory-substitution devices: Principles, pitfalls and potential1'' \textit{Restorative Neurology and Neuroscience}, vol. 34, no. 5, pp. 769--787, Aug. 2016, doi: 10.3233/rnn-160647. Available: https://pmc.ncbi.nlm.nih.gov/articles/PMC5044782/
+\bibitem{b21} K. C. MSEd, ``How we use selective attention to filter information and focus'' \textit{Verywell Mind}, Dec. 18, 2023. Available: https://www.verywellmind.com/what-is-selective-attention-2795022
+\bibitem{b22} T. Lloyd-Esenkaya, V. Lloyd-Esenkaya, E. O’Neill, and M. J. Proulx, ``Multisensory inclusive design with sensory substitution'' \textit{Cognitive Research Principles and Implications}, vol. 5, no. 1, p. 37, Aug. 2020, doi: 10.1186/s41235-020-00240-7. Available: https://doi.org/10.1186/s41235-020-00240-7
+\bibitem{b23} C. Jicol et al., ``Efficiency of sensory substitution devices alone and in combination with Self-Motion for spatial navigation in sighted and visually impaired'' \textit{Frontiers in Psychology}, vol. 11, p. 1443, Jul. 2020, doi: 10.3389/fpsyg.2020.01443. Available: https://doi.org/10.3389/fpsyg.2020.01443
+\bibitem{b24} J. M. Loomis, R. L. Klatzky, and N. A. Giudice, ``Sensory substitution of vision: Importance of perceptual and cognitive processing'' in \textit{Assistive Technology for Blindness and Low Vision}, R. Manduchi and S. Kurniawan, Eds. Boca Raton, FL, USA: CRC Press, 2013, pp. 162-191. Available: https://umaine.edu/vemi/wp-content/uploads/sites/220/2016/06/Loomis-Klatzky-Giudice-in-press-sensory-substitution-chapter.pdf
+\bibitem{b25} M. Sami, N. D. Agha, J. Baloch, A. Dewani, and K. D. Maheshwari, ``fficient object detection and Voice-Assisted navigation for the visually impaired: the Smart Hat approach'' \textit{Sukkur IBA Journal of Computing and Mathematical Sciences}, vol. 8, no. 2, pp. 1--12, Feb. 2025, doi: 10.30537/sjcms.v8i2.1535. Available: https://journal.iba-suk.edu.pk:8089/SIBAJournals/index.php/sjcms/article/view/1535
+\bibitem{b26} Moth, ``List of the best assistive devices for the blind'' \textit{InviOcean}, Oct. 03, 2025. Available: https://inviocean.com/learn/best-assistive-technologies-for-visually-impared/
+\bibitem{b27} E. Casanova, D. Guffanti, and L. Hidalgo, ``Technological Advancements in Human Navigation for the visually Impaired: A Systematic review'' \textit{Sensors}, vol. 25, no. 7, p. 2213, Apr. 2025, doi: 10.3390/s25072213. Available: https://doi.org/10.3390/s25072213
+\end{thebibliography}
+% ----- END ----- %
+\end{document}
