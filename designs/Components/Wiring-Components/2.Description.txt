@@ -1,0 +1,21 @@
+This diagram illustrates the wired connection between the SIM868 GSM/GPRS/GNSS module and the Orange Pi Zero 2W, utilizing the Universal Asynchronous Receiver-Transmitter (UART) interface for serial communication, along with dedicated lines for power and system control. All physical connections are made through the General-Purpose Input/Output (GPIO) header of the Orange Pi Zero 2W.
+
+Serial Communication (UART)
+The primary four communication lines enable the Orange Pi Zero 2W to send AT commands and receive data from the SIM868 module:
+
+1. SIM868 RXD to Orange Pi TXD: A Blue wire connects the SIM868's Receive Data (RXD) pin to a dedicated Transmit Data (TXD) pin on the Orange Pi's GPIO header.
+
+2. SIM868 TXD to Orange Pi RXD: A Blue wire connects the SIM868's Transmit Data (TXD) pin to a dedicated Receive Data (RXD) pin on the Orange Pi's GPIO header.
+
+3. SIM868 RTS to Orange Pi CTS: A Blue wire connects the SIM868's RTS (Request to Send) pin to the corresponding CTS (Clear to Send) pin on the Orange Pi.
+
+4. SIM868 CTS to Orange Pi RTS: A Blue wire connects the SIM868's CTS pin to the corresponding RTS pin on the Orange Pi. These four lines collectively form the UART interface, including Hardware Flow Control (RTS/CTS) to ensure reliable data transfer.
+
+Power and System Control
+1. Power Input (V_IN): The Red wire connects the SIM868's V_IN pin to the 5V pin on the Orange Pi's GPIO header, providing the required operating voltage.
+
+2. Ground (GND): The Black wire connects the SIM868's GND pin to a GND pin on the Orange Pi's GPIO header, establishing the necessary common electrical reference.
+
+3. System Control (DTR): The Orange/Red wire connects the SIM868's DTR (Data Terminal Ready) pin to a designated GPIO pin on the Orange Pi. This connection is typically used for sleep/wake control or monitoring module status.
+
+This comprehensive configuration enables the Orange Pi Zero 2W to leverage the SIM868 module for external communication services (cellular networking and GPS), making the single-board computer a mobile data platform.

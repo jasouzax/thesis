@@ -1,0 +1,19 @@
+The MPU9250 Inertial Measurement Unit (IMU) module is connected to the Orange Pi Zero 2W using the Inter-Integrated Circuit (I2C) serial communication interface. This connection uses four wires routed directly through the Orange Pi's General-Purpose Input/Output (GPIO) header.
+
+I2C Communication Lines
+
+The I2C protocol enables data exchange between the master (Orange Pi) and the slave (MPU9250) using two signal lines:
+
+Serial Clock (SCL): The Black wire connects the SCL pin on the MPU9250 module to the designated I2C Clock pin on the Orange Pi's GPIO header. This synchronizes the data transfer.
+
+Serial Data (SDA): The Blue wire connects the SDA pin on the MPU9250 module to the designated I2C Data pin on the Orange Pi's GPIO header. This line carries the data packets.
+
+Power Supply and Ground
+
+The power connections ensure the sensor operates correctly:
+
+Power (VCC): The Red wire connects the VCC pin on the MPU9250 module to the 3.3V pin on the Orange Pi's GPIO header, supplying the necessary operating voltage.
+
+Ground (GND): The Black wire connects the GND pin on the MPU9250 module to a common GND pin on the Orange Pi's GPIO header, establishing the electrical reference.
+
+This configuration allows the Orange Pi Zero 2W to read real-time motion and orientation data (accelerometer, gyroscope, and magnetometer) from the MPU9250 for system operation and processing.

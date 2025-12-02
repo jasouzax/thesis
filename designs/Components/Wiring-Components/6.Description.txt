@@ -1,0 +1,9 @@
+The system connects two OV5640 Camera Modules to the Orange Pi Expansion Board using a chain of components.
+
+Dual Camera Connection via Expansion Board
+
+1.  Camera to Bridge: The two OV5640 Camera Modules are connected via a Digital Video Port (DVP) interface to a 2 x DVP to USB Bridge board.
+2.  Bridge to Expansion Board: The USB output from the Bridge board is connected via a ribbon cable to one of the 2 x USB ports on the Orange Pi Expansion Board.
+3.  Data Flow: The Expansion Board, which is connected to the Orange Pi Zero 2W via a 24-pin FPC cable, acts as a hub. The USB data stream (containing video from both cameras) flows from the bridge board through the Expansion Board's USB interface and then into the Orange Pi Zero 2W for processing.
+
+This configuration allows the Orange Pi Zero 2W to receive and process dual OV5640 camera feeds via its extended USB interface for applications requiring stereo vision or multiple viewing angles.
