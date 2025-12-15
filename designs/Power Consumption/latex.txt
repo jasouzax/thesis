@@ -1,0 +1,56 @@
+ \begin{array}{l}
+\begin{aligned}
+ & \mathbf{Battery:} &  & \\
+ &  & Q_{batt} & \approx \mathbf{3600mAh} \times 2\ (\mathsf{2\ batteries})\\
+ &  & V_{batt} & =3.7\mathrm{V}\\
+ &  &  & \\
+ &  & E_{batt} & =\frac{Q_{batt} \times V_{batt}}{1000}\\
+ &  &  & =\frac{3600\mathrm{mAh} \times 2\times 3.7\mathrm{V}}{1000}\\
+ &  &  & =\boxed{26.64\mathrm{Wh}}\\
+ &  &  & \\
+ & \mathbf{UPS:} &  & \\
+ &  & \eta _{ups} & \approx 85\%\\
+ &  &  & \\
+ & \mathbf{Orange\ Pi:} &  & \\
+ &  & P_{pi-idle} & \approx 1.09\mathrm{W}\\
+ &  & P_{pi-active} & \approx 2.4\mathrm{W}\\
+ &  & I_{pi-peak} & =2\mathrm{A}\\
+ &  & V_{pi} & =5\mathbf{V}\\
+ &  &  & \\
+ &  & P_{pi-idle} & =\boxed{1.09\mathrm{W}}\\
+ &  & P_{pi-active} & =\boxed{2.4\mathrm{W}}\\
+ &  &  & \\
+ & \mathbf{OV5640:} &  & \\
+ &  & I_{5640-sleep} & =20\mathrm{\mu A}\\
+ &  & I_{5640-active} & =140\mathrm{mA}\\
+ &  & V_{5640} & =3.3\mathrm{V}\\
+ &  &  & \\
+ &  & P_{5640-sleep} & =20\mathrm{\mu A} \times 3.3\mathrm{V} =\boxed{66\mathrm{\mu W}}\\
+ &  & P_{5640-active} & =140\mathrm{mA} \times 3.3\mathrm{V} =\boxed{462\mathrm{mW}}\\
+ &  &  & \\
+ & \mathbf{Earphone( Average) :} &  & \\
+ &  & I_{earph} & \approx 19.02\mathrm{mA}\\
+ &  & V_{earph} & \approx 0.21\mathrm{V}\\
+ &  &  & \\
+ &  & P_{earph} & =19.02\mathrm{mA} \times 0.21\mathrm{V} \approx \boxed{4\mathrm{mW}}
+\end{aligned}\\
+\\
+\\
+\begin{aligned}
+P_{total-sleep} & =\frac{P_{pi-idle} +P_{5640-sleep} +P_{earph}}{\eta _{ups}}\\
+ & =\frac{1.09\mathrm{W} +66\mathrm{\mu W} +4\mathrm{mW}}{85\%}\\
+ & =\frac{1.09\mathrm{W} +6.6\times 10^{-5}\mathrm{W} +4\times \mathrm{10^{-3} W}}{85\%}\\
+ & =\frac{1.094066\mathrm{W}}{85\%}\\
+ & =\mathrm{1.28713647W}\\
+ & \approx \boxed{1.3\mathrm{W}}\\
+ & \\
+P_{total-active} & =\frac{P_{pi-active} +P_{5640-active} +P_{earph}}{\eta _{ups}}\\
+ & =\frac{2.4\mathrm{W} +462\mathrm{mW} +4\mathrm{mW}}{85\%}\\
+ & =\frac{\mathrm{2.866W}}{85\%}\\
+ & \approx \boxed{3.37\mathrm{W}}\\
+ & \\
+T_{sleep} & =\frac{E_{batt}}{P_{total-sleep}} =\frac{\mathrm{26.64Wh}}{1.3W} \approx \boxed{20.49\mathrm{h}}\\
+ & \\
+T_{active} & =\frac{E_{batt}}{P_{total-active}} =\frac{\mathrm{26.64Wh}}{3.37\mathrm{W}} \approx \boxed{7.9\mathrm{h}}
+\end{aligned}
+\end{array}
