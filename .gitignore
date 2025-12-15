@@ -2,10 +2,12 @@
 py
 test
 ~$*
+.$*.bkp
 server2
 node_modules
 src/captures*
 calib*/
+ignore_*
 
 # Linux
 *~
