@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+    --bg-color: #ffffff;
+    --text-color: #202124;
+    --sidebar-width: 250px;
+    --header-maroon: #800000; /* Burgundy/Maroon */
+    --header-blue: #1a73e8; /* Bright Blue */
+    --font-main: 'PT Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    display: flex;
+}
+
+/* Sidebar Navigation */
+nav {
+    width: var(--sidebar-width);
+    height: 100vh;
+    background-color: #fff;
+    border-right: 1px solid #dadce0;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 2rem 1.5rem;
+    overflow-y: auto;
+    z-index: 1000;
+}
+
+.site-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #444;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    padding: 0.5rem 0;
+    transition: color 0.2s;
+}
+
+.nav-links a:hover {
+    color: var(--header-blue);
+    font-weight: 700;
+}
+
+/* Main Content Area */
+main {
+    margin-left: var(--sidebar-width);
+    width: calc(100% - var(--sidebar-width));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Hero Banner */
+.hero-banner {
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('assets/design.png'); /* Using design.png as placeholder bg */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.hero-banner p {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: #f1f1f1;
+}
+
+/* Content Sections */
+.content-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    width: 100%;
+}
+
+h2 {
+    color: var(--header-maroon);
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: var(--header-blue);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+/* Member Grid */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.member-card {
+    text-align: center;
+}
+
+.member-card img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 3px solid #eee;
+}
+
+.member-card h4 {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.member-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Progress Report Specifics */
+.report-section ul {
+    list-style-type: none;
+    margin-left: 1rem;
+}
+
+.report-section li {
+    margin-bottom: 0.5rem;
+}
+
+.report-section li strong {
+    color: var(--header-maroon);
+}
+
+/* Footer */
+footer {
+    background: #f8f9fa;
+    padding: 2rem;
+    text-align: center;
+    color: #666;
+    margin-top: auto;
+    border-top: 1px solid #eee;
+}
+
+@media (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+        padding: 1rem;
+    }
+    main {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.hidden {
+    display: none !important;
+}
