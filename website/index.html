@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>World Navigation Hat - Visual Substitution</title>
+    <title>Home - World Navigation Hat</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <!-- Sidebar Navigation -->
     <nav>
+        <img src="assets/logo.png" alt="Logo" class="site-logo">
         <div class="site-title">World Navigation Hat</div>
         <div class="nav-links">
-            <a href="#home">Home</a>
-            <a href="#overview">Project Overview</a>
-            <a href="#team">Team Data</a>
-            <a href="#designs">Design</a>
-            <a href="#report">Progress Report</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="history.html">History</a>
+            <a href="team.html">Team</a>
+            <a href="faq.html">FAQ</a>
         </div>
     </nav>
 
@@ -29,61 +29,21 @@
         </div>
 
         <div class="content-container">
-            
-            <!-- Individual Progress Report Style Section -->
             <section id="overview">
                 <h2>Project Overview</h2>
                 <p>
                     Visual impairment is a global health problem that significantly affects individual’s daily lives.
                     This project develops a wearable navigation hat integrated with AIoT to assist Visually Impaired People (VIP).
+                    This device utilizes 3D point cloud data to provide audio feedback and connects to IoT services, 
+                    enabling navigation in both physical and digital environments.
                 </p>
-            </section>
-
-            <section id="team">
-                <h2>Group Members</h2>
-                <div class="members-grid">
-                    <div class="member-card">
-                        <img src="members/clwang.png" alt="ChenLin Wang">
-                        <h4>ChenLin Wang</h4>
-                        <p>Researcher</p>
-                    </div>
-                    <div class="member-card">
-                        <img src="members/ethel.png" alt="Ethel Herna C. Pabito">
-                        <h4>Ethel Herna C. Pabito</h4>
-                        <p>Researcher</p>
-                    </div>
-                    <div class="member-card">
-                        <img src="members/jason.png" alt="Jason C. D’Souza">
-                        <h4>Jason C. D’Souza</h4>
-                        <p>Researcher</p>
-                    </div>
-                    <div class="member-card">
-                        <img src="members/vgdaywan.png" alt="Vince Ginno B. Daywan">
-                        <h4>Vince Ginno B. Daywan</h4>
-                        <p>Researcher</p>
-                    </div>
-                </div>
             </section>
 
             <section id="designs">
                 <h2>Project Design</h2>
                 <img src="assets/design.png" alt="Wireframe" style="max-width: 100%; border: 1px solid #ddd;">
+                <p><em>Figure 7: Wireframe of the Prototype</em></p>
             </section>
-
-            <!-- Dynamic Progress Report Section matching example structure -->
-            <section id="report" class="report-section">
-                <h2>Individual Progress Report</h2>
-                
-                <div id="report-content">
-                    <p><em>Select a member from the list to view their progress report via URL parameter (e.g. ?member=clwang).</em></p>
-                    <!-- Iframe container for dynamic loading -->
-                    <div id="report-container" class="hidden">
-                        <h3>Progress Report Viewer</h3>
-                        <iframe id="report-frame" style="width:100%; height:800px; border:1px solid #ddd;" src=""></iframe>
-                    </div>
-                </div>
-            </section>
-
         </div>
 
         <footer>

@@ -37,6 +37,13 @@ nav {
     z-index: 1000;
 }
 
+.site-logo {
+    display: block;
+    width: 60px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 1rem;
+}
+
 .site-title {
     font-size: 1.2rem;
     font-weight: 700;
@@ -138,13 +145,41 @@ p {
     margin-top: 2rem;
 }
 
+.members-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+}
+
 .member-card {
     text-align: center;
+    width: 220px;
+    padding: 1.5rem;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    background: #fff;
+    cursor: pointer;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    border-color: var(--header-blue);
+}
+
+.member-card.active {
+    border-color: var(--header-blue);
+    background-color: #f8f9fa;
+    box-shadow: 0 0 0 2px var(--header-blue);
 }
 
 .member-card img {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 1rem;
@@ -154,11 +189,13 @@ p {
 .member-card h4 {
     font-size: 1.1rem;
     color: #333;
+    margin-bottom: 0.25rem;
 }
 
 .member-card p {
     font-size: 0.9rem;
     color: #666;
+    margin-bottom: 1rem;
 }
 
 /* Progress Report Specifics */
@@ -201,6 +238,47 @@ footer {
     }
 }
 
-.hidden {
-    display: none !important;
+
+/* History Page Styling */
+.highlight-box {
+    background-color: #f8f9fa;
+    border-left: 4px solid var(--header-blue);
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.highlight-box h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.objective-statement {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #202124;
+    font-weight: 400;
+    border-bottom: 2px solid var(--header-gold, #f1c40f);
+    padding-bottom: 1rem;
+    display: inline-block;
+}
+
+.check-list {
+    list-style: none;
+    margin-left: 0 !important;
+}
+
+.check-list li {
+    padding-left: 1.5rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+}
+
+.check-list li::before {
+    content: "✓";
+    color: var(--header-blue);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
 }

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - World Navigation Hat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav>
+        <img src="assets/logo.png" alt="Logo" class="site-logo">
+        <div class="site-title">World Navigation Hat</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="team.html">Team</a>
+            <a href="faq.html" class="active">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="hero-banner" style="height: 200px;">
+            <h1>Frequently Asked Questions</h1>
+        </div>
+
+        <div class="content-container">
+            <section id="faq-list">
+                
+                <div class="faq-item">
+                    <h3>What is the World Navigation Hat?</h3>
+                    <p>
+                        The World Navigation Hat is an AIoT-integrated wearable device designed to assist visually impaired individuals. 
+                        It functions as a navigation aid by converting real-time environmental data into audio feedback, helping users navigate both physical spaces and digital environments safely.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>How does the device work?</h3>
+                    <p>
+                        The device uses stereo cameras to capture the surroundings and photogrammetry techniques to create a 3D point cloud of the environment. 
+                        This visual data is processed to emulate human sensory perception and is then translated into intuitive audio cues (like pitch or rhythm) to alert the user of obstacles, depth, and direction.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What technology is used in the project?</h3>
+                    <p>
+                        The system is powered by a **Raspberry Pi Zero 2W** for processing. Key components include:
+                        <ul>
+                            <li><strong>OV5640 Cameras</strong>: For capturing visual input.</li>
+                            <li><strong>MPU6050 IMU</strong>: For tracking head movement and orientation.</li>
+                            <li><strong>SIM868 Module</strong>: For GPS and GPRS connectivity (IoT features).</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Who is the target audience for this device?</h3>
+                    <p>
+                        The primary beneficiaries are **Visually Impaired People (VIP)**, including those with total blindness, severe vision impairment, or low vision. 
+                        The device aims to improve their independence, mobility, and social inclusion.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What advantages does this have over a white cane?</h3>
+                    <p>
+                        While a white cane detects immediate ground-level obstacles, the World Navigation Hat provides head-level protection and long-range environmental awareness (up to 5 meters). 
+                        It also integrates digital navigation (maps) and can recognize specific objects or text, which a traditional cane cannot do.
+                    </p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>What is "AIoT"?</h3>
+                    <p>
+                        AIoT stands for **Artificial Intelligence of Things**. It combines AI capabilities (for processing visual data and decision making) with IoT connectivity (for accessing cloud services, GPS tracking, and connecting to other smart devices), creating a more intelligent and connected assistive tool.
+                    </p>
+                </div>
+
+            </section>
+        </div>
+
+        <footer>
+            <p>University of San Agustin - CpE 423 Project</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

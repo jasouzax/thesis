@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team - World Navigation Hat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Sidebar Navigation -->
+    <nav>
+        <img src="assets/logo.png" alt="Logo" class="site-logo">
+        <div class="site-title">World Navigation Hat</div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="history.html">History</a>
+            <a href="team.html" class="active">Team</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="hero-banner" style="height: 200px;">
+            <h1>Our Team</h1>
+        </div>
+
+        <div class="content-container">
+            <section id="team">
+                <h2>Group Members</h2>
+                <div class="members-grid">
+                    <div class="member-card" onclick="selectMember('clwang', this)">
+                        <img src="members/clwang.png" alt="ChenLin Wang">
+                        <h4>ChenLin Wang</h4>
+                        <p>Researcher</p>
+                    </div>
+                    <div class="member-card" onclick="selectMember('ethel', this)">
+                        <img src="members/ethel.png" alt="Ethel Herna C. Pabito">
+                        <h4>Ethel Herna C. Pabito</h4>
+                        <p>Researcher</p>
+                    </div>
+                    <div class="member-card" onclick="selectMember('jason', this)">
+                        <img src="members/jason.png" alt="Jason C. D’Souza">
+                        <h4>Jason C. D’Souza</h4>
+                        <p>Researcher</p>
+                    </div>
+                    <div class="member-card" onclick="selectMember('vgdaywan', this)">
+                        <img src="members/vgdaywan.png" alt="Vince Ginno B. Daywan">
+                        <h4>Vince Ginno B. Daywan</h4>
+                        <p>Researcher</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="report" class="report-section">
+                <h2>Individual Progress Report</h2>
+                
+                <div id="report-content">
+                    <div id="report-container" class="hidden">
+                        <h3>Progress Report Viewer</h3>
+                        <iframe id="report-frame" style="width:100%; height:800px; border:1px solid #ddd;" src=""></iframe>
+                    </div>
+                    <div id="report-placeholder">
+                        <p><em>Select a member above to view their progress report.</em></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>University of San Agustin - CpE 423 Project</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <style>
+        .view-report-btn {
+            display: inline-block;
+            margin-top: 0.5rem;
+            padding: 0.5rem 1rem;
+            background-color: var(--header-blue);
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-size: 0.9rem;
+        }
+        .view-report-btn:hover {
+            background-color: #1557b0;
+        }
+    </style>
+</body>
+</html>
