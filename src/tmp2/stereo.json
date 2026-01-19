@@ -1,0 +1,85 @@
+{
+    "baseline": 10.0,
+    "file": "flattenstereo-10.0.json",
+    "pixel_error": 1.7156503318749734,
+    "calculated_baseline": 10.306485597673992,
+    "user_baseline_arg": 10.0,
+    "history": [
+        {
+            "timestamp": 1768758251.0027344,
+            "baseline": 15.0,
+            "file": "stereo-15.0.json",
+            "pixel_error": 1.950198989379183,
+            "pixel_error_left": 1.812303035231042,
+            "pixel_error_right": 1.6157092436158238,
+            "calculated_baseline": 15.165129808687261,
+            "fov_left": 115.10077198297252,
+            "fov_right": 113.78701657530951
+        },
+        {
+            "timestamp": 1768758645.6129932,
+            "baseline": 14.0,
+            "file": "stereo-14.0.json",
+            "pixel_error": 1.5785309448621387,
+            "pixel_error_left": 1.3270931299340296,
+            "pixel_error_right": 1.2501806867913836,
+            "calculated_baseline": 14.275041392987477,
+            "fov_left": 112.87689977905016,
+            "fov_right": 112.52263335978316
+        },
+        {
+            "timestamp": 1768759268.7304893,
+            "baseline": 13.0,
+            "file": "stereo-13.0.json",
+            "pixel_error": 2.094236318891345,
+            "pixel_error_left": 1.3855708764387968,
+            "pixel_error_right": 1.3573892348853425,
+            "calculated_baseline": 13.976372199722269,
+            "fov_left": 113.61630421397814,
+            "fov_right": 115.67861456345067
+        },
+        {
+            "timestamp": 1768760963.4584308,
+            "baseline": 15.0,
+            "file": "stereo-15.0.json",
+            "pixel_error": 3.065026779834785,
+            "pixel_error_left": 1.7386966340608088,
+            "pixel_error_right": 1.8115052956171456,
+            "calculated_baseline": 17.185315321372325,
+            "fov_left": 117.71014329266033,
+            "fov_right": 109.27823185672956
+        },
+        {
+            "timestamp": 1768761355.1746628,
+            "baseline": 15.0,
+            "file": "stereo-15.0.json",
+            "pixel_error": 2.385329402736041,
+            "pixel_error_left": 1.8131178293211438,
+            "pixel_error_right": 1.7634088454011578,
+            "calculated_baseline": 15.686085059578774,
+            "fov_left": 117.34571442003504,
+            "fov_right": 120.5678552131384
+        },
+        {
+            "timestamp": 1768761688.00721,
+            "baseline": 10.0,
+            "file": "stereo-10.0.json",
+            "pixel_error": 1.7678323763947192,
+            "pixel_error_left": 1.5240269900718895,
+            "pixel_error_right": 1.312362037073821,
+            "calculated_baseline": 10.030182796720313,
+            "fov_left": 117.4804888161836,
+            "fov_right": 116.93861678759038
+        },
+        {
+            "timestamp": 1768836723.4753332,
+            "baseline": 10.0,
+            "file": "flattenstereo-10.0.json",
+            "pixel_error": 1.7156503318749734,
+            "calculated_baseline": 10.306485597673992,
+            "fov_left": 117.68852495738838,
+            "fov_right": 117.68852495738838,
+            "type": "flat"
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "baseline": 10.0,
+    "file": "stereo-10.0.json",
+    "pixel_error": 1.6051580888311987,
+    "calculated_baseline": 10.46854143401599,
+    "user_baseline_arg": 10.0,
+    "history": [
+        {
+            "timestamp": 1768845277.0598314,
+            "baseline": 10.0,
+            "file": "flattenstereo-10.0.json",
+            "pixel_error": 2.224541899993514,
+            "calculated_baseline": 10.858932736682473,
+            "fov_left": 110.63510326173564,
+            "fov_right": 110.63510326173564,
+            "type": "flat"
+        },
+        {
+            "timestamp": 1768845960.1673033,
+            "baseline": 10.0,
+            "file": "stereo-10.0.json",
+            "pixel_error": 1.6051580888311987,
+            "pixel_error_left": 1.0508418791899703,
+            "pixel_error_right": 1.441113227570831,
+            "calculated_baseline": 10.46854143401599,
+            "fov_left": 116.83903244251476,
+            "fov_right": 118.34133321390547
+        }
+    ]
+}

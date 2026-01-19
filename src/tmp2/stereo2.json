@@ -1,0 +1,20 @@
+{
+    "baseline": 15.0,
+    "file": "stereo-15.0.json",
+    "pixel_error": 1.950198989379183,
+    "calculated_baseline": 15.165129808687261,
+    "user_baseline_arg": 15.0,
+    "history": [
+        {
+            "timestamp": 1768758251.0027344,
+            "baseline": 15.0,
+            "file": "stereo-15.0.json",
+            "pixel_error": 1.950198989379183,
+            "pixel_error_left": 1.812303035231042,
+            "pixel_error_right": 1.6157092436158238,
+            "calculated_baseline": 15.165129808687261,
+            "fov_left": 115.10077198297252,
+            "fov_right": 113.78701657530951
+        }
+    ]
+}

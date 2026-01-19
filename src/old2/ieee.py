@@ -1,14 +1,13 @@
 # IMPORTS
 import cv2
 import mediapipe as mp
+from mediapipe.tasks import python
+from mediapipe.tasks.python import vision
 import sounddevice as sd
 import numpy as np
 import time
 import sys
 import threading
-from mediapipe.python.solutions import hands as mp_hands
-from mediapipe.python.solutions import drawing_utils as mp_drawing
-from mediapipe.python.solutions import drawing_styles as mp_drawing_styles
 import matplotlib.pyplot as plt
 from matplotlib.gridspec import GridSpec
 from collections import deque
@@ -31,18 +30,33 @@ processing_scale            = arg(0.5, '-ps=', float)  # Scale factor for proces
 depth_skip_frames           = arg(2, '-ds=', int)  # Process depth every N frames
 cycle_duration              = arg(4.0, '-cd=', float)  # Cycle duration in seconds
 
+# Download hand landmarker model if not present
+model_path = 'hand_landmarker.task'
+import os
+if not os.path.exists(model_path):
+    print("Downloading hand landmarker model...")
+    import urllib.request
+    url = 'https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task'
+    urllib.request.urlretrieve(url, model_path)
+    print("Model downloaded.")
+
 # SESSION DATA
-hands = mp_hands.Hands(
-    static_image_mode=False,
-    max_num_hands=1,
-    min_detection_confidence=0.5,
-    min_tracking_confidence=0.5
-)
 cycle_start_time = [time.time()]
 current_slice_position = [0]  # Current x position in depth map (0 to width-1)
 slice_direction = [1]  # 1 for left-to-right, -1 for right-to-left
 frequencies = np.logspace(np.log10(100), np.log10(8000), num_bins)
 time_block = np.arange(block_size) / sample_rate
+
+# Initialize MediaPipe Hand Landmarker
+base_options = python.BaseOptions(model_asset_path=model_path)
+options = vision.HandLandmarkerOptions(
+    base_options=base_options,
+    num_hands=1,
+    min_hand_detection_confidence=0.5,
+    min_hand_presence_confidence=0.5,
+    min_tracking_confidence=0.5
+)
+hand_landmarker = vision.HandLandmarker.create_from_options(options)
 
 # Load MiDaS depth model
 print("Loading MiDaS depth model...")
@@ -87,10 +101,8 @@ def is_finger_extended(landmarks, tip_idx, pip_idx, mcp_idx):
     
     return tip_dist > pip_dist * 1.2
 
-def detect_hand_gesture(hand_landmarks):
+def detect_hand_gesture(landmarks):
     """Detect specific hand gestures: open, closed, call"""
-    landmarks = hand_landmarks.landmark
-    
     # Check each finger extension status
     # Thumb: tip(4), IP(3), MCP(2)
     thumb_extended = landmarks[4].x < landmarks[3].x if landmarks[4].x < 0.5 else landmarks[4].x > landmarks[3].x
@@ -124,6 +136,46 @@ def detect_hand_gesture(hand_landmarks):
     
     # Any other configuration
     return None
+
+def draw_landmarks_on_image(rgb_image, detection_result):
+    """Draw hand landmarks on the image"""
+    if not detection_result.hand_landmarks:
+        return rgb_image
+    
+    annotated_image = np.copy(rgb_image)
+    
+    # Define connections (same as mp_hands.HAND_CONNECTIONS)
+    HAND_CONNECTIONS = [
+        (0, 1), (1, 2), (2, 3), (3, 4),  # Thumb
+        (0, 5), (5, 6), (6, 7), (7, 8),  # Index
+        (0, 9), (9, 10), (10, 11), (11, 12),  # Middle
+        (0, 13), (13, 14), (14, 15), (15, 16),  # Ring
+        (0, 17), (17, 18), (18, 19), (19, 20),  # Pinky
+        (5, 9), (9, 13), (13, 17)  # Palm
+    ]
+    
+    height, width, _ = rgb_image.shape
+    
+    for hand_landmarks in detection_result.hand_landmarks:
+        # Draw connections
+        for connection in HAND_CONNECTIONS:
+            start_idx, end_idx = connection
+            start = hand_landmarks[start_idx]
+            end = hand_landmarks[end_idx]
+            
+            start_point = (int(start.x * width), int(start.y * height))
+            end_point = (int(end.x * width), int(end.y * height))
+            
+            cv2.line(annotated_image, start_point, end_point, (0, 255, 0), 2)
+        
+        # Draw landmarks
+        for landmark in hand_landmarks:
+            x = int(landmark.x * width)
+            y = int(landmark.y * height)
+            cv2.circle(annotated_image, (x, y), 5, (0, 0, 255), -1)
+    
+    return annotated_image
+
 def extract_depth_slice(depth_gray, x_pos):
     """Extract a vertical slice from depth map and convert to frequency coefficients"""
     if depth_gray is None:
@@ -379,14 +431,15 @@ def camera_thread():
                     current_depth[0] = np.zeros_like(frame)
                     current_depth_gray[0] = np.zeros((actual_height, actual_width), dtype=np.uint8)
         
-        # Process hand landmarks
-        results = hands.process(frame_rgb)
+        # Process hand landmarks with new API
+        mp_image = mp.Image(image_format=mp.ImageFormat.SRGB, data=frame_rgb)
+        detection_result = hand_landmarker.detect(mp_image)
         
-        # Detect hand gestures and openness
-        if results.multi_hand_landmarks and results.multi_handedness:
-            for hand_landmarks, handedness in zip(results.multi_hand_landmarks, results.multi_handedness):
+        # Detect hand gestures
+        if detection_result.hand_landmarks and detection_result.handedness:
+            for hand_landmarks, handedness in zip(detection_result.hand_landmarks, detection_result.handedness):
                 # Check if it's a right hand
-                is_right_hand = handedness.classification[0].label == "Right"
+                is_right_hand = handedness[0].category_name == "Right"
                 
                 if is_right_hand:
                     # Detect gesture
@@ -400,14 +453,8 @@ def camera_thread():
                             print("Calling...")
                             last_call_time[0] = current_time
                     
-                    # Draw landmarks on camera frame
-                    mp_drawing.draw_landmarks(
-                        frame_rgb,
-                        hand_landmarks,
-                        mp_hands.HAND_CONNECTIONS,
-                        mp_drawing_styles.get_default_hand_landmarks_style(),
-                        mp_drawing_styles.get_default_hand_connections_style()
-                    )
+                    # Draw landmarks on frame
+                    frame_rgb = draw_landmarks_on_image(frame_rgb, detection_result)
                 else:
                     # Not right hand, no audio
                     hand_gesture[0] = None
@@ -527,7 +574,7 @@ finally:
     audio_stream.stop()
     audio_stream.close()
     print("Closing hand detector...")
-    hands.close()
+    hand_landmarker.close()
     print("Closing plots...")
     plt.close('all')
     # Generate FPS graph if data exists
